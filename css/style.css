@@ -1362,6 +1362,7 @@ hr {
 /* Модольные окна */
 /* Вход */
 .entrance {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -1371,6 +1372,7 @@ hr {
   height: 100%;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'OpenSans', sans-serif;
 }
 .entrance-close {
   position: absolute;
@@ -1381,15 +1383,15 @@ hr {
   border: none;
   background-color: transparent;
   font-size: 5rem;
-  color: #ffffff;
+  color: #969696;
 }
 .entrance-content {
   position: fixed;
   text-align: center;
   left: 50%;
-  top: 8%;
+  top: 5%;
   transform: translatex(-50%);
-  padding: 70px 130px;
+  padding: 50px 130px;
   color: #435158;
   background-color: #f0f1f3;
   border: 3px solid #ff6633;
@@ -1419,11 +1421,47 @@ hr {
   margin-bottom: 24px;
 }
 .entrance-content form input {
+  border: none;
   display: block;
-  width: 310px;
-}
-.entrance-content small {
   position: relative;
+  width: 310px;
+  border: 1px solid #cbcbcb;
+  padding: 12px 0 12px 65px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  color: #cbcbcb;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  font-family: 'OpenSans', sans-serif;
+}
+.entrance-content form input[type="text"] {
+  margin-bottom: 20px;
+  background: url(../img/popup/1.png) 20px no-repeat;
+  background-size: 25px;
+}
+.entrance-content form input[type="password"] {
+  margin-bottom: 20px;
+  background: url(../img/popup/2.png) 20px no-repeat;
+  background-size: 25px;
+}
+.entrance-content-hr {
+  position: relative;
+  width: 310px;
+  margin-left: 13%;
+  color: red;
+  background-color: #cbcbcb;
+}
+.entrance-content-hr small {
+  position: absolute;
+  top: -10px;
+  left: 130px;
+  width: 40px;
+  color: #969696;
+  background-color: #f0f1f3;
   font-size: 13px;
   font-weight: 400;
   line-height: 19px;
@@ -1431,6 +1469,7 @@ hr {
 }
 .entrance-content strong {
   display: block;
+  margin-bottom: 20px;
   font-size: 13px;
   font-weight: 400;
   line-height: 19px;
@@ -1440,42 +1479,31 @@ hr {
 }
 .entrance-content-social {
   margin-top: 20px;
-}
-.entrance-content-social img {
-  width: 30px;
-  height: 30px;
-  filter: grayscale(1);
-  padding: 0;
-  margin: 0;
-}
-.entrance-content-social-link {
-  display: inline-block;
-  margin-left: 20px;
-  box-shadow: 1px 1px 10px 4px rgba(243, 103, 56, 0.66);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  margin-left: -25px;
 }
 .entrance-content-btn {
-  border: none;
   display: block;
   padding: 5px 40px;
   font-size: 15px;
-  color: #ffffff;
-  margin-left: 37%;
-  margin-top: 40px;
   background-color: #ff6633;
-  line-height: 41.46px;
+  color: #ffffff;
+  margin-left: 33%;
+  margin-top: 30px;
   letter-spacing: 0.68px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
 }
-.entrance-content span {
+.entrance-content-btn:hover {
+  background-color: transparent;
+  color: #000000;
+}
+.entrance-content-link {
+  margin-top: 25px;
+}
+.entrance-content-link a {
   color: #969696;
-  float: right;
+}
+.entrance-content-link-check {
+  margin-left: 30px;
+}
+.entrance-content-link-password {
+  margin-left: 110px;
 }
