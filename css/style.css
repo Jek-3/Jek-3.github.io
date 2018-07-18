@@ -139,26 +139,22 @@ a:focus {
   position: absolute;
   top: 0;
   margin-top: -0.1rem;
-  left: 50%;
-  margin-left: -1rem;
-  width: 2rem;
-  height: 0.2rem;
+  right: 2rem;
+  width: 2.5rem;
+  height: 0.25rem;
   background-color: #ffffff;
 }
 .nav span::before,
 .nav span::after {
   content: '';
   display: block;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-top: -0.1rem;
   left: 50%;
-  margin-left: -1rem;
-  width: 2rem;
-  height: 0.2rem;
+  margin-left: -1.3rem;
+  width: 2.5rem;
+  height: 0.25rem;
   background-color: #ffffff;
 }
 .nav span::before {
@@ -177,6 +173,7 @@ a:focus {
   display: none;
 }
 .nav label {
+  display: none;
   margin-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -449,7 +446,101 @@ a:focus {
 .footer-social a i:hover {
   opacity: 0.8;
 }
-@media (max-width: 470px) {
+@media (max-width: 992px) {
+  .btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header-phone {
+    text-align: right;
+  }
+  .header-btn {
+    margin-bottom: 2rem;
+  }
+  .nav label {
+    display: none;
+  }
+  .nav ul li {
+    font-size: 1.35rem;
+  }
+  .shop {
+    margin-top: 8rem;
+  }
+  .offer {
+    padding-top: 1rem;
+  }
+  .offer-btn {
+    margin-top: 1rem;
+  }
+  .footer-nav {
+    margin-bottom: 0;
+  }
+  .footer-contacts {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .footer-btn {
+    margin-top: 5rem;
+  }
+  .footer-social {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header-working {
+    text-align: center;
+  }
+  .header-phone {
+    text-align: right;
+  }
+  .header-btn {
+    margin-bottom: 2rem;
+  }
+  .nav span {
+    display: block;
+  }
+  .nav label {
+    display: block;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav ul li {
+    display: block;
+  }
+  input.toggleMenu:checked ~ ul {
+    display: block;
+  }
+  .shop {
+    margin-top: 8rem;
+  }
+  .offer {
+    padding-top: 1rem;
+  }
+  .offer-btn {
+    margin-top: 1rem;
+  }
+  .footer-nav {
+    margin-bottom: 0;
+  }
+  .footer-contacts {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .footer-btn {
+    margin-top: 5rem;
+  }
+  .footer-social {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 550px) {
   .btn {
     width: 100%;
     text-align: center;
@@ -458,13 +549,11 @@ a:focus {
     margin: 0 auto;
   }
   .header-working {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    display: none;
   }
   .header-phone {
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 4rem;
   }
   .header-btn {
     margin-top: 0;
@@ -524,6 +613,7 @@ a:focus {
   }
   .footer-nav span {
     font-size: 1.3rem;
+    text-align: center;
   }
   .footer-nav a {
     display: none;
