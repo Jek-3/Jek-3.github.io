@@ -141,7 +141,7 @@ a:focus {
   margin-top: -0.1rem;
   right: 2rem;
   width: 2.5rem;
-  height: 0.25rem;
+  height: 0.24rem;
   background-color: #ffffff;
 }
 .nav span::before,
@@ -154,7 +154,7 @@ a:focus {
   left: 50%;
   margin-left: -1.3rem;
   width: 2.5rem;
-  height: 0.25rem;
+  height: 0.24rem;
   background-color: #ffffff;
 }
 .nav span::before {
