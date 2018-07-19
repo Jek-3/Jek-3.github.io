@@ -476,6 +476,7 @@ a {
 @media (min-width: 993px) and (max-width: 1204px) {
 	.header {
 		&-working {
+			display: none;
 		}
 	}
 	.nav {
@@ -604,14 +605,20 @@ a {
 		// margin: 0 auto;
 	}
 	.header {
+		&-logo {
+			margin-bottom: 2rem;
+		}
 		&-working {
 			display: none;
 		}
 		&-phone {
 			text-align: center;
+			margin-bottom: 2rem;
 		}
 		&-btn {
 			text-align: center;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
 		}
 	} 
 	.nav {
@@ -649,17 +656,31 @@ a {
 	}
 	.offer {
 		padding-top: 1rem;
+		h4 {
+			margin: 0 auto;
+			margin-top: 2rem;
+		}
 		&-btn {
-			margin-top: 1rem;
+			margin-top: 2rem;
 		}
 	}
 	.footer {
 		&-nav {
 			margin-bottom: 0;
+			span {
+				text-align: center;
+			}
+			a {
+				display: none;
+				margin-top: 0;
+			}
 		}
 		&-contacts {
 			text-align: center;
 			margin-bottom: 0;
+			h4 {
+				margin-top: 5rem;
+			}
 		}
 		&-btn {
 			margin-top: 5rem;
@@ -743,6 +764,8 @@ a {
 		padding-top: 1rem;
 		h4 {
 			font-size: 2.2rem;
+			margin: 0 auto;
+			margin-top: 1rem;
 		}
 		&-btn {
 			margin-top: 1rem;
