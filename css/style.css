@@ -152,7 +152,7 @@ a:focus {
   top: 40%;
   margin-top: -0.1rem;
   left: 50%;
-  margin-left: -1.3rem;
+  margin-left: -1.25rem;
   width: 2.5rem;
   height: 0.24rem;
   background-color: #ffffff;
@@ -228,6 +228,7 @@ a:focus {
   opacity: 1;
 }
 .slider {
+  width: 100%;
   height: 55rem;
 }
 /* Инфо о магазине */
@@ -324,7 +325,7 @@ a:focus {
   text-align: center;
   color: #ffffff;
 }
-.offer p {
+.offer h4 {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -446,25 +447,56 @@ a:focus {
 .footer-social a i:hover {
   opacity: 0.8;
 }
+@media (min-width: 993px) and (max-width: 1204px) {
+  .nav ul li {
+    font-size: 1.45rem;
+  }
+  .shop {
+    margin-top: 8rem;
+  }
+  .catalog-content-two {
+    margin-top: 5rem;
+  }
+  .footer-nav {
+    margin-bottom: 5rem;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+  .footer-btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-social {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
 @media (max-width: 992px) {
   .btn {
     width: 100%;
     margin: 0 auto;
   }
+  .header-working {
+    display: none;
+  }
   .header-phone {
-    text-align: right;
+    text-align: center;
   }
   .header-btn {
-    margin-bottom: 2rem;
+    margin-top: 3rem;
   }
   .nav label {
     display: none;
   }
   .nav ul li {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
   }
   .shop {
     margin-top: 8rem;
+  }
+  .catalog-content-two {
+    margin-top: 5rem;
   }
   .offer {
     padding-top: 1rem;
@@ -487,19 +519,38 @@ a:focus {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 768px) {
-  .btn {
-    width: 100%;
-    margin: 0 auto;
+@media (max-width: 991px) {
+  .nav span {
+    display: block;
   }
+  .nav label {
+    display: block;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav ul li {
+    display: block;
+  }
+  input.toggleMenu:checked ~ ul {
+    display: block;
+  }
+  .catalog-content {
+    margin-top: 2rem;
+  }
+  .catalog-content-two {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 470px) and (max-width: 770px) {
   .header-working {
-    text-align: center;
+    display: none;
   }
   .header-phone {
-    text-align: right;
+    text-align: center;
   }
   .header-btn {
-    margin-bottom: 2rem;
+    text-align: center;
   }
   .nav span {
     display: block;
@@ -518,6 +569,15 @@ a:focus {
   }
   .shop {
     margin-top: 8rem;
+  }
+  .catalog-header h2 {
+    margin-bottom: 2rem;
+  }
+  .catalog-content {
+    margin-top: 2rem;
+  }
+  .catalog-content-two {
+    margin-top: 2rem;
   }
   .offer {
     padding-top: 1rem;
@@ -590,6 +650,9 @@ a:focus {
   }
   .catalog {
     margin-top: 2rem;
+  }
+  .catalog-header h2 {
+    margin-bottom: 2rem;
   }
   .catalog-content {
     margin-bottom: 2rem;
