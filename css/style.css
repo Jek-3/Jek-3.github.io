@@ -316,8 +316,17 @@ a:focus {
 .catalog-content-btn a i {
   margin-right: 1rem;
 }
-.catalog-content-two {
+.catalog-content-top {
+  margin: 0 auto;
+  width: 28rem;
+}
+.catalog-content-bottom {
+  margin: 0 auto;
   margin-top: 10rem;
+  width: 38rem;
+}
+.catalog-content-two {
+  margin-top: 8rem;
 }
 /* Уникальное предложение */
 .offer {
@@ -585,6 +594,9 @@ a:focus {
   .catalog-content {
     margin-top: 2rem;
   }
+  .catalog-content-top {
+    width: 100%;
+  }
   .catalog-content-two {
     margin-top: 2rem;
   }
@@ -680,8 +692,13 @@ a:focus {
   .catalog-content {
     margin-bottom: 2rem;
   }
-  .catalog-content-two {
-    margin-top: 0;
+  .catalog-content-top {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .catalog-content-bottom {
+    width: 100%;
+    margin-bottom: 1rem;
   }
   .offer {
     text-align: center;
@@ -702,6 +719,7 @@ a:focus {
   .footer-nav span {
     font-size: 1.3rem;
     text-align: center;
+    border-bottom: none;
   }
   .footer-nav a {
     display: none;
