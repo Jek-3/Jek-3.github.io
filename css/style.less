@@ -1,15 +1,81 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic.eot');
+    src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CenturyGothic.woff2') format('woff2'),
+        url('../fonts/CenturyGothic.woff') format('woff'),
+        url('../fonts/CenturyGothic.ttf') format('truetype'),
+        url('../fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Cyrl 900';
+    src: url('../fonts/MuseoCyrl-900.eot');
+    src: url('../fonts/MuseoCyrl-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoCyrl-900.woff2') format('woff2'),
+        url('../fonts/MuseoCyrl-900.woff') format('woff'),
+        url('../fonts/MuseoCyrl-900.ttf') format('truetype'),
+        url('../fonts/MuseoCyrl-900.svg#MuseoCyrl-900') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI.woff2') format('woff2'),
+        url('../fonts/SegoeUI.woff') format('woff'),
+        url('../fonts/SegoeUI.ttf') format('truetype'),
+        url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /* fonts */
-.roboto() {
-	font-family: 'Roboto', sans-serif;
+.opn() {
+	font-family: 'Open Sans', sans-serif;
 }
 .century() {
 	font-family: 'Century Gothic', sans-serif;
+}
+.museo() {
+	font-family: 'Museo Cyrl 900', sans-serif;
+}
+.ui() {
+	font-family: 'Segoe UI', sans-serif;
 }
 
 /* colors */
 @white: #fff;
 @black: #000;
-@pink: #c73d87;
+@red: #e74c3c;
+@yellow: #ffc700;
+@section-bg: #f6ede2;
+@color-text: #242424;
+
+@head-bg: #fef5ea;
+@head: #2d1a0a;
+
+@expertise-border: #fff3e9;
+@color-expertise: #492c12;
+@input-border: #e5e5e5;
+@order-small: #d9d9d9;
+@order-info: #e7d8cc;
+
+
+@defect-content: #181818;
+@defect-content-border: #aca397;
+@defect-content-bg: #fcf3e8;
+
+@accordeon-head: #171717;
+@accordeon-bb: #6a6662;
+@accordeon-border: #b1a89c;
+@accordeon-text: #78746f;
+@accordeon-return: #171717;
+
+@footer-text: #42260f;
+
+//
 @gray: #707070;
 @catalog-btn: #16335e;
 @offer-bg: #ff8c27;
@@ -28,8 +94,8 @@ h2, h3, p, ul, li, div, input, iframe  {
 	overflow-x: hidden !important;
 }
 body {
-	.roboto();
-	// color: @color-text;
+	.century();
+	color: @color-text;
 	overflow-x: hidden !important;
 }
 button {
@@ -43,777 +109,878 @@ a {
 		text-decoration: none;
 	}
 }
-.fa-phone {
-	--webkit-transform: rotate(85deg);
-	-ms-transform: rotate(85deg);
-	-o-transform: rotate(85deg);
-	transform: rotate(85deg);
-}
 /* Setting */
+/* кнопка */
 .btn {
 	button {
 		border: none;
-		padding: 1rem 1.5rem;
-		font-size: 1.4rem;
-		background-color: @pink;
+		padding: 0.9rem 11rem;
+		font-size: 1.5rem;
+		background-color: @red;
 		color: @white;
-		box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.41);
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 -2px 2px rgba(0, 0, 0, 0.35);
+		.century();
+		font-weight: 700;
 		-webkit-border-radius: 2rem;
 		-moz-border-radius: 2rem;
 		-ms-border-radius: 2rem;
 		-o-border-radius: 2rem;
 		border-radius: 2rem;
-		--webkit-transition: 0.8s;
-		-o-transition: 0.8s;
-		transition: 0.8s;
-		i {
-			margin-right: 1rem;
-		}
-		&:hover {
-			--webkit-transform: scale(1.1);
-			-ms-transform: scale(1.1);
-			-o-transform: scale(1.1);
-			transform: scale(1.1);
-			--webkit-transition: 0.8s;
-			-o-transition: 0.8s;
-			transition: 0.8s;
-		}
 	}
 }
-
+/* заголовок */
+.head {
+	box-shadow : 1px  1px  5px rgba(78, 69, 56, 0.19);
+	background-color : @head-bg;
+	text-align: center;
+	h2 {
+		border-left: 5px solid @red;
+		color: @head;
+		font-size: 3.2rem;
+		font-weight: 700;
+		padding-top: 2rem;
+		padding-bottom: 1.5rem;
+	}
+}
 
 /* шапка сайта */
 .header {
+	display: none;
+	background: #fff url(../img/header-bg.png) center center no-repeat;
 	&-logo {
-		margin-top: 2.9rem;
-		margin-bottom: 1.9rem;
-		h1 {
-			position: relative;
-			width: 10rem;
-			height: 7rem;
-			font-size: 3rem;
-			z-index: 1;
-			text-transform: uppercase;
-			&::after {
-				content: '';
-				display: block;
-				position: absolute;
-				width: 10rem;
-				height: 7rem;
-				top: -0.7rem;
-				left: 0.7rem;
-				z-index: -1;
-				border: 1px solid @gray;
-			}
-			&::before {
-				content: 'Cable Land';
-				display: block;
-				position: absolute;
-				width: 10rem;
-				height: 7rem;
-				top: 0rem;
-				left: 0rem;
-				z-index: 1;
-				font-weight: 700;
-				background-color: @white;
-				color: @pink;
-				border: 1px solid @gray;
-			}
-		}
-	}
-	&-working {
-		margin-top: 4rem;
-		margin-bottom: 3.9rem;
-		p {
-			font-size: 1.2rem;
-			font-weight: 400;
-			color: @gray;
-			text-align: center;
-		}
-	}
-	&-phone {
-		margin-top: 4rem;
-		margin-bottom: 4rem;
-		a {
-			display: block;
-			font-size: 1.6rem;
-			color: @black;
-			font-weight: 700;
-			span {
-				color: @pink;
-			}
-		}
-	}
-	&-btn {
-		margin-top: 3.5rem;
-	}
-}
-/* Навигация */
-.nav {
-	background-image: linear-gradient(180deg, #3d66c7 0%, #16335e 100%);
-	position: relative;
-	span {
-		position: absolute;
-		top: 0;
-		margin-top: -0.1rem;
-		right: 2rem;
-		// margin-left: 2rem;
-		width: 2.5rem;
-		height: 0.24rem;
-		background-color: @white;
-		&::before,
-		&::after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 40%;
-			margin-top: -0.1rem;
-			left: 50%;
-			margin-left: -1.25rem;
-			width: 2.5rem;
-			height: 0.24rem;
-			background-color: @white;
-		}
-		&::before {
-			-webkit-transform: translateY(-0.5rem);
-			-ms-transform: translateY(-0.5rem);
-			-o-transform: translateY(-0.5rem);
-			transform: translateY(-0.5rem);
-		}
-		&::after {
-			-webkit-transform: translateY(0.5rem);
-			-ms-transform: translateY(0.5rem);
-			-o-transform: translateY(0.5rem);
-			transform: translateY(0.5rem);
-		}
-	}
-	& [type="checkbox"]{
-		display: none;
-	}
-	label {
-		display: none;
-		margin-top: 2rem;
-		padding-bottom: 2rem;
-	}
-	ul {
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-		list-style: none;
-		li {
-			display: inline-block;
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 1.5rem;
-			margin-right: 1.8rem;
-			font-weight: 400;
-			padding: 1.4rem;
-			a {
-				color: @white;
-			}
-			&:hover {
-				padding: 1.4rem;
-				cursor: pointer;
-				background-image: linear-gradient(180deg, #16335e 0%, #3d66c7 100%);
-				-webkit-border-radius: 2rem;
-				-moz-border-radius: 2rem;
-				-ms-border-radius: 2rem;
-				-o-border-radius: 2rem;
-				border-radius: 2rem;
-			} 
-		}
-	}
-}
-/* Фиксированное меню */
-.fixed { 
-	position:fixed;
-	top:0;
-	width: 100%;
-	z-index: 99;
-	transform: translateY(0px);
-    transition: 0.7s;
-}
-/* Слайдер */
-.slick-dots {
-	position: absolute;
-	bottom: 2.4rem;
-}
-.slick-dots li button:before {
-	font-size: 1.7rem;
-	opacity: 1;
-	color: @white;
-}
-.slick-dots li.slick-active button:before {
-	background-image: radial-gradient(undefined undefinedpx at , #16335e 0%, #22427e 73%, #3d66c7 100%);
-	opacity: 1;
-}
-.slider {
-	width: 100%;
-	height: 55rem;
-}
-/* Инфо о магазине */
-.shop {
-	margin-top: 14.2rem;
-	h2 {
-		margin-bottom: 3.2rem;
-		text-align: center;
-		font-size: 4rem;
-		font-weight: 700;
-		color: @gray;
-	}
-	p {
-		color: @gray;
-		padding-bottom: 2.4rem;
-		font-size: 1.6rem;
-		font-weight: 300;
-		line-height: 2.6rem;
-	}
-}
-/* Каталог продукции */
-.catalog {
-	margin-top: 3.6rem;
-	margin-bottom: 3rem;
-	&-header {
-		h2 {
-			margin: 0 auto;
-			margin-bottom: 5rem;
-			width: 20rem;
-			height: 4.5rem;
-			padding-top: 1.5rem;
-			text-align: center;
-			font-size: 1.6rem;
-			color: @white;
-			font-weight: 300;
-			text-transform: uppercase;
-			background-image: linear-gradient(180deg, #16335e 0%, #3d66c7 100%);
-			-webkit-border-radius: 0.2rem;
-			-moz-border-radius: 0.2rem;
-			-ms-border-radius: 0.2rem;
-			-o-border-radius: 0.2rem;
-			border-radius: 0.2rem;
-		}
-	}
-	&-content {
-		background: url(../img/catalog-bg.png) left top no-repeat, linear-gradient(180deg, #3d66c7 0%, #16335e 100%);
-		padding: 3rem;
-		color: @white;
-		-webkit-border-radius: 2.7rem;
-		-moz-border-radius: 2.7rem;
-		-ms-border-radius: 2.7rem;
-		-o-border-radius: 2.7rem;
-		border-radius: 2.7rem;
-		h3 {
-			font-size: 1.7rem;
-			text-transform: uppercase;
-			font-weight: 700;
-			line-height: 2.6rem;
-			letter-spacing: 0.1px;
-			margin-bottom: 2rem;
-		}
-		ul {
-			list-style: none; 
-			li {
-				font-size: 1.3rem;
-				margin-bottom: 1rem;
-				font-weight: 400;
-			}
-		}
-		&-btn {
-			text-align: center;
-			margin-top: 2.5rem; 
-			a {
-				background-image: linear-gradient(180deg, #ffffff 0%, #afafaf 100%);
-				padding: 1rem 3rem;
-				text-transform: uppercase;
-				color: @catalog-btn;
-				-webkit-border-radius: 2.1rem;
-				-moz-border-radius: 2.1rem;
-				-ms-border-radius: 2.1rem;
-				-o-border-radius: 2.1rem;
-				border-radius: 2.1rem;
-				i {
-					margin-right: 1rem;
-				}
-			}
-		}
-		&-top {
-			margin: 0 auto;
-			width: 28rem;
-		}
-		&-bottom {
-			margin: 0 auto;
-			margin-top: 10rem;
-			width: 38rem;
-		}	
-		&-two {
-			margin-top: 8rem;
-		}
-
-	}
-}
-/* Уникальное предложение */
-.offer {
-	background-color: @offer-bg;
-	text-align: center;
-	color: @white;
-	h4 {
-		display: inline-block;
-		font-size: 3rem;
-		font-weight: 300;
-		margin-right: 5rem;
-	}
-	&-btn {
-		display: inline-block;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
-		button {
-			border: none;
-			padding: 1rem 2.5rem;
-			font-size: 1.6rem;
-			background-color: @green;
-			box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.41);
-			-webkit-border-radius: 2.2rem;
-			-moz-border-radius: 2.2rem;
-			-ms-border-radius: 2.2rem;
-			-o-border-radius: 2.2rem;
-			border-radius: 2.2rem;
-			--webkit-transition: 0.8s;
-			-o-transition: 0.8s;
-			transition: 0.8s;
-			i {
-				margin-right: 0.5rem;
-				font-size: 2rem;
-				vertical-align: top;
-			}
-			&:hover {
-				--webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				-o-transform: scale(1.1);
-				transform: scale(1.1);
-				--webkit-transition: 0.8s;
-				-o-transition: 0.8s;
-				transition: 0.8s;
-			}
-		}
-	}
-}
-/* Футер */
-.footer {
-	background-color: @bg-footer;
-	color: @white;
-	&-nav {
-		margin-top: 10rem;
-		margin-bottom: 10rem;
-		span {
-			display: block;
-			font-size: 1.7rem;
-			font-weight: 400;
-			padding-bottom: 1rem;
-			border-bottom: 1px solid @gray;
-		}
-		a {
-			display: block;
-			color: @white;
+		img {
 			margin-top: 3rem;
-			font-size: 1.5rem;
-			font-weight: 300;
-			&:hover {
-				color: @gray;
-			}
+			margin-bottom: 3rem;
+		}
+	}
+	&-laboratory {
+		margin-top: 2.2rem;
+		span {
+			text-shadow : 1px  1px  1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 3rem;
+			font-weight : 400;
+			.opn();
 		}
 	}
 	&-contacts {
-		h4 {
-			font-size: 1.6rem;
-			text-transform: uppercase;
-			color: @gray;
-			font-weight: 400;
-			margin-top: 14rem;
-			margin-bottom: 1.8rem;
+		.century();
+		margin-top: 2.5rem;
+		&-mail {
+			a {
+				text-decoration: underline;
+				text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
+				color: @white;
+				font-size: 2rem;
+				font-weight: 900;
+				i {
+					margin-right: 1rem;
+					color: @yellow;
+				}
+			}
 		}
-		a {
-			display: block;	
-			color: @white;
-			margin-bottom: 2.2rem;
-			font-size: 1.7rem;
-			font-weight: 700;
+		&-phone {
+			position: relative;
+			margin-top: 1rem;
 			i {
-				margin-right: 1rem;
+				position: absolute;
+				font-size: 2.5rem;
+				color: @yellow;
+				--webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
 			}
-			&:hover {
-				color: @gray;
+			a {
+				display: block;
+				color: @white;
+				margin-left: 2.7rem;
+				margin-bottom: 0.5rem;
+				font-size: 1.8rem;
+				letter-spacing: 0.1rem;
+				font-weight: 600;
 			}
+		}
+	}
+	&-address {
+		position: relative;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		.century();
+		i {
+			position: absolute;
+			font-size: 2.5rem;
+			left: 2rem;
+			color: @yellow;
 		}
 		span {
-			font-size: 1.5rem;
+			display: block;
+			text-align: center;;
+			text-shadow: 1px  1px  1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 2rem;
 			font-weight: 700;
-			i {
-				margin-right: 1rem;
+			small {
+				display: block;
+				font-weight: 400;
+
 			}
+		}
+		a {
+			display: block;
+			text-align: center;
+			margin-top: 1rem;
+			text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 1.8rem;
+			font-weight: 700;
+			text-decoration: underline;
+			letter-spacing: 0.1rem;
+		}
+	}
+}
+
+
+
+/* Экспертиза обуви в Москве */
+.expertise {
+	display: none;
+	.museo();
+	background: #fff url(../img/expertise.png) center center no-repeat;
+	&-logo {
+		display: none;
+		img {
+			width: 5rem;
+			padding-top: 1rem;
+		}
+	}
+	&-content {
+		position: relative;
+		margin: 1rem auto;
+		border: 1px dashed @expertise-border;
+		box-shadow: 1px 1px 0 rgba(78, 69, 56, 0.44);
+		color: @color-expertise;
+		-webkit-border-radius: 0.5rem;
+		-moz-border-radius: 0.5rem;
+		-ms-border-radius: 0.5rem;
+		-o-border-radius: 0.5rem;
+		border-radius: 0.5rem;
+		img {
+			position: absolute;
+			width: 31rem;
+			margin-left: 3rem;
+		}
+		p {
+			display: inline-block;
+			margin-left: 26rem;
+			margin-top: 2.3rem;
+			margin-bottom: 2.3rem;
+			font-size: 6.1rem;
+			
+		}
+	}
+}
+
+/* Блок заказать (форма) */
+.order {
+	background: #fff url(../img/leather.png) center center repeat;
+	&-head {
+		text-align: center;
+		margin-top: 3rem;
+		h3 {
+			color: @yellow;
+			font-size: 3rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	&-form {
+		text-align: center;
+		margin-bottom: 1.7rem;
+		input {
+			width: 30rem;
+			height: 3.8rem;
+			margin-top: 2.3rem;
+			margin-right: 2rem;
+			font-size: 1.7rem;
+			text-align: center;
+			font-weight: 700;
+			border: 1px solid @input-border;
+			.opn();
+			-webkit-border-radius: 0.4rem;
+			-moz-border-radius: 0.4rem;
+			-ms-border-radius: 0.4rem;
+			-o-border-radius: 0.4rem;
+			border-radius: 0.4rem;
+		}		
+		&-btn {
+			margin-left: 2rem;
+			margin-top: 4rem;
+			button {
+				display: block;
+				margin-bottom: 1rem;
+			}
+			small {
+				color: @order-small;
+			}
+		}
+	}
+	&-info {
+		color: @white;
+		text-align: center;
+		margin-top: 6rem;
+		font-weight: 700;
+		margin-bottom: 3rem;
+		span {
+			display: inline-block;
+			color: @order-info;
+			font-size: 2.3rem;
+			margin-left: 5rem;
+			strong {
+				display: block;
+				margin-top: 2rem;
+				font-size: 3rem;
+				line-height: 4.8rem;
+				color: @yellow;
+			}
+		}
+		&-btn {
+			margin-left: 3rem;
+			margin-top: -6rem;
+		}
+	}
+}
+/* А какой дефект в Вашей обуви? */
+.defect {
+	background-color: @section-bg;
+	padding-bottom: 2rem;
+	&-content {
+		text-align: center;
+		padding: 4.9rem 1.9rem 1rem 1.9rem;
+		margin-top: 4rem;
+		min-height: 28rem;
+		border: 1px dashed @defect-content-border;
+		box-shadow: 1px  1px  0 rgba( 78, 69, 56, 0.44);
+		background-color: @defect-content-bg;
+		-webkit-border-radius: 0.5rem;
+		-moz-border-radius: 0.5rem;
+		-ms-border-radius: 0.5rem;
+		-o-border-radius: 0.5rem;
+		border-radius: 0.5rem;
+		.opn();
+		img {
+			// width: 10rem;
+			// height: 12.2rem;
+			display: block;
+			margin: 0 auto;
+		}
+		p {
+			display: block;
+			margin-top: 2.3rem;
+			font-size: 1.8rem;
+			font-weight: 700;
+			small {
+				font-weight: 400;
+			}
+		}
+	}
+}
+/* Потребитель имеет Право */
+.consumer {
+	background: @section-bg url(../img/consumer-bg.png) bottom left no-repeat;
+	.opn();
+	line-height: 3rem;
+	color: @accordeon-text;
+	&-info {
+		margin-top: 5rem;
+		p {
+			font-size: 1.9rem;
+			span {
+				display: block;
+				font-weight: 900;
+				font-size: 2rem;
+				font-style: italic;
+			}
+		}
+	}
+	&-return {
+		margin-left: 2rem;
+		margin-bottom: 7rem;
+		.opn();
+		p {
+			font-size: 1.9rem;
+			color: @accordeon-return;
+			font-weight: 900;
+			font-style: italic;
 		}
 	}
 	&-btn {
-		margin-top: 23rem;
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		button {
+			padding: 0.9rem 8rem;
+		}
 	}
-	&-social {
-		margin-top: 3rem;
-		text-align: right;
-		a {
-			color: @white;
+}
+.accordeon {
+	margin-top: 3rem;
+	color: @accordeon-text;
+	.opn();
+	dl {
+		dt {
+			margin-left: 1.5rem;
+			font-size: 2rem;
+			font-weight: 900;
+			letter-spacing: 0.8px;
+			color: @accordeon-head;
+			cursor: pointer;
+			span {
+				border-bottom: 2px solid @accordeon-bb;
+			}
 			i {
-				width: 4.8rem;
-				height: 4.8rem;
-				padding: 1rem;
-				font-size: 2.8rem;
-				text-align: center;
-				background-color: @bg-social;
-				margin-right: 1rem;
-				box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.41);
-				-webkit-border-radius: 50%;
-				-moz-border-radius: 50%;
-				-ms-border-radius: 50%;
-				-o-border-radius: 50%;
-				border-radius: 50%;
-				&:hover {
-					opacity: 0.8;
+				margin-left: 1rem;
+				margin-top: 1rem;
+				font-size: 2.5rem;
+				font-weight: 900;
+			}
+		}
+		dd {
+			background-color: @head-bg;
+			border: 1px dashed @accordeon-border;
+			padding: 1rem;
+			margin-top: 2rem;
+			font-size: 1.9rem;
+			-webkit-border-radius: 0.5rem;
+			-moz-border-radius: 0.5rem;
+			-ms-border-radius: 0.5rem;
+			-o-border-radius: 0.5rem;
+			border-radius: 0.5rem;
+			p {
+				strong {
+					display: block;
 				}
 			}
-
+			ul {
+				list-style: none;
+				li {
+					&::before {
+						content: '-';
+						vertical-align: top;
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+	&-icon {
+		display: inline-block;
+		img {
+			width: 3.6rem;
+			height: 3.5rem;
 		}
 	}
 }
-
-@media (min-width: 993px) and (max-width: 1204px) {
-	.header {
-		&-working {
-			display: none;
-		}
-	}
-	.nav {
-		ul {
-			li {
-				font-size: 1.45rem;
-			}
-		}
-	}
-	.shop {
-		margin-top: 8rem;
-	}
-	.catalog {
-		&-content {
-			&-two {
-				margin-top: 5rem;
-			}
-		}
-	}
-	.footer {
-		&-nav {
-			margin-bottom: 5rem;
-		}
-		&-contacts {
-			text-align: center;
-		}
-		&-btn {
-			width: 100%;
-			margin: 0 auto;
-		} 
-		&-social {
-			text-align: center;
-			margin-bottom: 3rem;
-		}
+.accordeon .active { 
+	i {
+		--webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 }
-@media (max-width: 992px) {
-	.btn {
-		width: 100%;
-		margin: 0 auto;
-	}
-	.header {
-		&-working {
-			display: none;
-		}
-		&-phone {
-			text-align: center;
-		}
-		&-btn {
-			margin-top: 3rem;
-		}
-	}
-	.nav {
-		label {
-			display: none;
-		}
-		ul {
-			li {
-				font-size: 1.45rem;
-			}
-		}
-	}
-	.shop {
-		margin-top: 8rem;
-	}
-	.catalog {
-		&-content {
-			&-two {
-				margin-top: 5rem;
-			}
-		}
-	}
-	.offer {
-		padding-top: 1rem;
-		&-btn {
+/* Основные виды Производственных дефектов Обуви*/
+.kinds {
+	padding-bottom: 5rem;
+	background-color: @section-bg;
+	.opn();
+	&-card {
+		margin-top: 2rem;
+		box-shadow: 1px  1px  5px rgba(78, 69, 56, 0.19);
+		background-color: @head-bg;
+		padding: 2rem 1.5rem;
+		text-align: center;
+		-webkit-border-radius: 0.5rem;
+		-moz-border-radius: 0.5rem;
+		-ms-border-radius: 0.5rem;
+		-o-border-radius: 0.5rem;
+		border-radius: 0.5rem;
+		p {
 			margin-top: 1rem;
+			font-size: 1.6rem;
+			font-weight: 400;
+		}
+		strong {
+			font-size: 1.6rem;
+			font-weight: 600;
+			font-style: italic;
 		}
 	}
-	.footer {
-		&-nav {
-			margin-bottom: 0;
-		}
-		&-contacts {
-			margin-bottom: 0;
+} 
+/* Как себя вести с Продавцом при возврате обуви */
+.return-shoes {
+	background-color: @section-bg;
+	&-content {
+		text-align: center;
+		font-weight: 400;
+		margin-top: 2.5rem;
+		margin-bottom: 3rem;
+		p {
 			text-align: center;
+			font-size: 2rem;
+			a {
+				text-decoration: underline;
+				color: @color-text;
+				font-weight: 700;
+			}
 		}
 		&-btn {
-			margin-top: 5rem;
-		}
-		&-social {
-			text-align: center;
-			margin-bottom: 3rem;
-		}
-	}
-}
-@media (max-width: 991px) {
-	.nav {
-		span {
-			display: block;
-		}
-		label {
-			display: block;
-		}
-		ul {
-			display: none;
-			li {
-				display: block;
-			}
-		}
-	}
-	input.toggleMenu:checked ~ ul {
-		display: block;
-	}
-	.catalog {
-		&-content {
 			margin-top: 2rem;
-			&-two {
-				margin-top: 5rem;
+			margin-bottom: 2rem;
+			button {
+				padding: 0.9rem 8rem;
+			}
+		}
+		&-frame {
+			border: 4px solid @red;
+			background-color: @head-bg;
+			text-align: center;
+			padding: 2.5rem;
+			margin-bottom: 2rem;
+			p {
+				font-size: 2.4rem;
+				font-weight: 600;
+			}
+		}
+	}
+} 
+/* Подробная инструкция по возврату некачественной обуви */
+.manual {
+	background-color: @section-bg;
+	padding-bottom: 3rem;
+	&-info {
+		margin-top: 2rem;
+		ol {
+			margin-left: -2rem;
+			li {
+				font-weight: 900;
+				font-size: 2rem;	
+				p {
+					font-size: 1.8rem;
+					font-weight: 400;
+					padding-top: 1rem;
+					margin-bottom: 1rem;
+				}
+				ul {
+					list-style: none;
+					li {
+						&:before {
+							content: '-';
+							margin-right: 0.5rem;
+						}
+					}
+				}
+			}
+		}
+		&-btn {
+			display: block;
+			text-align: center;
+			button {
+				padding: 0.9rem 5rem;
+			}
+		}
+	}
+} 
+/* Вопросы, на которые отвечает экспертиза обуви */
+.question  {
+	background: @section-bg url(../img/question-bg.png) bottom right no-repeat;
+	.opn();
+	&-list {
+		margin-top: 3.3rem;
+		margin-bottom: 3rem;
+		ul {
+			margin-left: 2.5rem;
+			list-style: none;
+			list-style-image: url(../img/question-list.png);
+			li {
+				font-size: 2.2rem;
+				font-weight: 400;
+				line-height: 4.5rem;
+				padding-left: 0.5rem;
 			}
 		}
 	}
 }
-@media (min-width: 470px) and (max-width: 770px) {
-	.btn {
-		// width: 100%;
-		// margin: 0 auto;
-	}
-	.header {
-		&-logo {
-			margin-bottom: 2rem;
+/* Эксперты нашей компании */ 
+.experts {
+	text-align: center;
+	background-color: @section-bg;
+	&-content {
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		background-color: @head-bg;
+		border: 4px solid @red;
+		p {
+			font-size: 2.4rem;
+			font-weight: 900;
+			line-height: 3.5rem;
 		}
-		&-working {
-			display: none;
+	}
+}
+
+.maps {
+	height: 10rem;
+	background-color: @red;
+}
+
+.footer {
+	.century();
+	background: @section-bg url(../img/footer-bg.png) bottom right no-repeat;
+	&-logo {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	&-nav {
+		margin-top: 4rem;
+		a {
+			display: block;
+			font-size: 1.6rem;
+			margin-left: 1rem;
+			margin-bottom: 1rem;
+			color: @footer-text;
+			font-weight: 900;
+			text-decoration: underline;
+		}
+	}
+	&-contacts {
+		text-align: center;
+		margin-top: 3rem;
+		&-mail {
+			a {
+				font-size: 1.8rem;
+				font-weight: 400;
+				text-decoration: underline;
+				color: @footer-text;
+				i {
+					margin-right: 1rem;
+					color: @yellow;
+				}
+			}
 		}
 		&-phone {
-			text-align: center;
-			margin-bottom: 2rem;
-		}
-		&-btn {
-			text-align: center;
-			margin-top: 2rem;
-			margin-bottom: 2rem;
-		}
-	} 
-	.nav {
-		span {
-			display: block;
-		}
-		label {
-			display: block;
-		}
-		ul {
-			display: none;
-			li {
-				display: block;
-			}
-		}
-	}
-	input.toggleMenu:checked ~ ul {
-		display: block;
-	}
-	.shop {
-		margin-top: 8rem;
-	}
-	.catalog {
-		&-header {
-			h2 {
-				margin-bottom: 2rem;
-			}
-		}
-		&-content {
-			margin-top: 2rem;
-			&-top {
-				width: 100%;
-			}
-			&-two {
-				margin-top: 2rem;
-			}
-		}
-	}
-	.offer {
-		padding-top: 1rem;
-		h4 {
-			margin: 0 auto;
-			margin-top: 2rem;
-		}
-		&-btn {
-			margin-top: 2rem;
-		}
-	}
-	.footer {
-		&-nav {
-			margin-bottom: 0;
-			span {
-				text-align: center;
+			position: relative;
+			margin-top: 1rem;
+			i {
+				position: absolute;
+				font-size: 2.5rem;
+				left: 2.7rem;
+				color: @yellow;
+				--webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
 			}
 			a {
-				display: none;
-				margin-top: 0;
+				display: block;
+				color: @footer-text;
+				margin-bottom: 0.5rem;
+				font-size: 1.6rem;
+				font-weight: 400;
+			}
+			&-main {
+				a {
+					font-size: 2rem;
+					font-weight: 900;
+					margin-left: 1rem;
+					letter-spacing: 0.1rem;
+				}
 			}
 		}
-		&-contacts {
+	}
+	&-address {
+		position: relative;
+		margin-top: 3.5rem;
+		margin-bottom: 1rem;
+		.century();
+		i {
+			position: absolute;
+			font-size: 3rem;
+			left: 2rem;
+			top: 1.3rem;
+			color: @yellow;
+		}
+		span {
+			display: block;
 			text-align: center;
-			margin-bottom: 0;
-			h4 {
-				margin-top: 5rem;
+			color: @footer-text;
+			margin-left: 3rem;
+			font-size: 2rem;
+			font-weight: 700;
+			small {
+				display: block;
+				font-weight: 400;
 			}
 		}
-		&-btn {
-			margin-top: 5rem;
-		}
-		&-social {
+	}
+	&-mobile-nav {
+		.ui();
+		background-color: red;
+		&-link {
 			text-align: center;
-			margin-bottom: 3rem;
+			a {
+				color: @footer-mobile;
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 5rem;
+				}
+				span {
+					display: block;
+					margin: 0 auto;
+					font-size: 1.2rem;
+					font-weight: 600;
+				}
+			}
 		}
 	}
 }
-@media (max-width: 550px) {
-	.btn {
-		width: 100%;
-		text-align: center;
+@footer-mobile: #4c4c4c;
+
+@media (max-width: 600px) {
+	.px-0 {
+	  padding: 0 !important;
 	}
-	.header {
-		&-logo {
-			h1 {
+	.head {
+		border-left: 5px solid @red;
+		h2 {
+			border: none;
+			font-size: 2.2rem;
+		}
+	}
+	.order {
+		&-head {
+			h3 {
+				font-size: 2rem;
+			}
+		}
+		&-form {
+			input {
+				margin: 0 auto;
+				margin-top: 2rem;
+				font-size: 1.5rem;
+			} 
+			&-btn {
+				margin: 0 auto;
+				margin-top: 1rem;
+			}
+		}
+		&-info {
+			span {
+				margin: 0 auto;
+				font-size: 1.8rem;
+				strong {
+					font-size: 2.3rem;
+					margin-top: 1rem;
+				}
+			}
+			&-btn {
 				margin: 0 auto;
 			}
 		}
-		&-working {
-			display: none;
+	}
+	.defect {
+		&-content {
+			display: inline-block;
+			width: 100%;
+			border: none;
+			box-shadow: none;
+			background-color: @section-bg;
+			margin-top: 0;
+			min-height: 0;
+			padding: 0;
+			border-bottom: 1px dashed @defect-content-border;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			-ms-border-radius: 0;
+			-o-border-radius: 0;
+			border-radius: 0;
+			img {
+				display: inline-block;
+				width: 8rem;
+				height: 8rem;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+			p {
+				display: inline-block;
+				font-size: 1.4rem;
+				margin-left: 1rem;
+				small {
+					display: none;
+				}
+			}
 		}
-		&-phone {
+	}
+	.consumer {
+		background-color: @section-bg;
+		background-image: none;
+		&-info {
+			p {
+				font-size: 1.5rem;
+				span {
+					font-size: 1.6rem;
+				}
+			}
+		}
+		&-return {
 			text-align: center;
-			margin-top: 4rem;		
+			margin-bottom: 3rem;
+			p {
+			 	font-size: 1.6rem;
+			}
 		}
 		&-btn {
-			margin-top: 0;
+			display: block;
+			margin-top: 1rem;
 			margin-bottom: 1rem;
+			button {
+				padding: 0.5rem 2rem;
+				font-size: 1.1rem;
+			}
 		}
 	}
-	.nav {
-		span {
-			display: block;
+	.accordeon {
+		dl {
+			dt {
+				margin-left: 0;
+				font-size: 1.5rem;
+				i {
+					font-size: 1.5rem;
+				}
+			}
+			dd {
+				font-size: 1.5rem;
+				p {
+					text-align: center;
+				}
+				ul {
+					li {
+						font-size: ;
+					}
+				}
+			}
 		}
-		label {
-			display: block;
-		}
-		ul {
-			display: none;
-		}
-	}
-	input.toggleMenu:checked ~ ul {
-		display: block;
-	}
-	.slider {
-		height: 25rem;
-		img {
-			height: 25rem;
-		}
-	}
-	.shop {
-		margin-top: 5rem;
-		h2 {
-			font-size: 2rem;
-		}
-		p {
-			font-size: 1.3rem;
-			line-height: 2;
-			padding-bottom: 1.5rem;
+		&-icon {
+			img {
+				width: 2.6rem;
+				height: 2.5rem;
+			}
 		}
 	}
-	.catalog {
-		margin-top: 2rem;
-		&-header {
-			h2 {
+	.kinds {
+		&-card {
+			margin-top: 1rem;
+			padding: 0;
+			margin-bottom: 1rem;
+			box-shadow: none;
+			background-color: @section-bg;
+			border-bottom: 1px dashed @defect-content-border;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			-ms-border-radius: 0;
+			-o-border-radius: 0;
+			border-radius: 0;
+			strong  {
+				display: inline-block;
 				margin-bottom: 2rem;
 			}
 		}
+	}
+	.return-shoes {
 		&-content {
-			margin-bottom: 2rem;
-			&-top {
-				width: 100%;
-				margin-bottom: 1rem;
+			p {
+				font-size: 1.5rem;
 			}
-			&-bottom {
-				width: 100%;
+			&-btn {
+				margin-top: 1rem;
 				margin-bottom: 1rem;
+				button {
+					padding: 0.7rem 5rem;
+				}
+			}
+			&-frame {
+				padding: 1.5rem;
+				p {
+					font-size: 1.5rem;
+				}
+			} 
+		}
+	}
+	.manual {
+		&-info {
+			text-align: center;
+			ol {
+				li {
+					p {
+						font-size: 1.8rem;
+					}
+				}
+			}
+			&-btn {
+				display: block;
+				margin: 0 auto;
+				button {
+					font-size: 1.4rem;
+					padding: 0.5rem 1rem;
+				}
 			}
 		}
 	}
-	.offer {
-		text-align: center;
-		padding-top: 1rem;
-		h4 {
-			font-size: 2.2rem;
-			margin: 0 auto;
-			margin-top: 1rem;
+	.question {
+		background-image: none;
+		&-list {
+			ul {
+				li {
+					font-size: 1.5rem;
+					line-height: 2rem;
+					margin-bottom: 2rem;
+				}
+			}
 		}
-		&-btn {
-			margin-top: 1rem;
+	}
+	.experts {
+		&-content {
+			border: none;
+			padding: 0;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			background-color: @section-bg;
+			p {
+				font-size: 1.8rem;
+				line-height: 2.5rem;
+				font-weight: 600;
+			}
 		}
 	}
 	.footer {
+		background-image: none;
+		&-logo {
+			display: none;
+		}
 		&-nav {
-			margin-top: 3rem;
-			margin-bottom: 3rem;
-			span {
-				font-size: 1.3rem;
-				text-align: center;
-				border-bottom: none;
-			}
-			a {
-				display: none;
-			}
+			margin-top: 0;
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+			border-left: 4px solid @red;
+			margin-bottom: 1rem;
 		}
 		&-contacts {
-			text-align: center;
-			h4 {
-				margin-top: 0;
-			}
+			display: none;
 		}
-		&-btn {
-			margin-top: 3rem;
-		}
-		&-social {
-			text-align: center;
-			margin-bottom: 3rem;
+		&-address {
+			display: none;
 		}
 	}
 }
-
