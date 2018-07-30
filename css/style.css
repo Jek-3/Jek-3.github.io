@@ -86,12 +86,11 @@ a:focus {
 }
 /* шапка сайта */
 .header {
-  display: none;
   background: #ffffff url(../img/header-bg.png) center center no-repeat;
 }
 .header-logo img {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.7rem;
 }
 .header-laboratory {
   margin-top: 2.2rem;
@@ -143,7 +142,7 @@ a:focus {
 .header-address {
   position: relative;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   font-family: 'Century Gothic', sans-serif;
 }
 .header-address i {
@@ -175,6 +174,17 @@ a:focus {
   text-decoration: underline;
   letter-spacing: 0.1rem;
 }
+.header-nav {
+  margin-top: 6rem;
+  text-align: right;
+}
+.header-nav a {
+  color: #42260f;
+}
+.header-nav a i {
+  font-size: 3.5rem;
+}
+/* Навигация */
 /* Экспертиза обуви в Москве */
 .expertise {
   display: none;
@@ -301,7 +311,7 @@ a:focus {
   border-radius: 0.5rem;
   font-family: 'Open Sans', sans-serif;
 }
-.defect-content img {
+.defect-content-picture img {
   display: block;
   margin: 0 auto;
 }
@@ -458,6 +468,8 @@ a:focus {
   font-weight: 700;
 }
 .return-shoes-content-btn {
+  display: block;
+  margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -639,8 +651,8 @@ a:focus {
   font-weight: 400;
 }
 .footer-mobile-nav {
+  display: none;
   font-family: 'Segoe UI', sans-serif;
-  background-color: red;
 }
 .footer-mobile-nav-link {
   text-align: center;
@@ -692,6 +704,30 @@ a:focus {
   }
   .order-info-btn {
     margin: 0 auto;
+  }
+  .header {
+    position: relative;
+    background: url(../img/header-mobile-bg.png) top no-repeat;
+  }
+  .header-logo img {
+    width: 10rem;
+    margin-top: 1rem;
+  }
+  .header-laboratory {
+    margin-top: 1rem;
+  }
+  .header-laboratory span {
+    font-size: 1.8rem;
+  }
+  .header-nav {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    text-align: left;
+    margin-top: 0;
+  }
+  .header-nav i {
+    color: red;
   }
   .defect-content {
     display: inline-block;
@@ -855,5 +891,8 @@ a:focus {
   }
   .footer-address {
     display: none;
+  }
+  .footer-mobile-nav {
+    display: block;
   }
 }
