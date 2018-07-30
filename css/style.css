@@ -707,7 +707,7 @@ a:focus {
   }
   .header {
     position: relative;
-    background: url(../img/header-mobile-bg.png) top no-repeat;
+    background: #fef5ea url(../img/header-mobile-bg.png) top no-repeat;
   }
   .header-logo img {
     width: 10rem;
@@ -719,15 +719,52 @@ a:focus {
   .header-laboratory span {
     font-size: 1.8rem;
   }
+  .header-contacts {
+    margin-top: 1rem;
+    color: #42260f;
+  }
+  .header-contacts-mail {
+    text-align: center;
+  }
+  .header-contacts-mail a {
+    text-shadow: none;
+    font-size: 1.8rem;
+    color: #42260f;
+  }
+  .header-contacts-mail a i {
+    color: #42260f;
+  }
+  .header-contacts-phone i {
+    top: 3rem;
+    left: 4rem;
+    color: #42260f;
+  }
+  .header-contacts-phone a {
+    text-align: center;
+    color: #42260f;
+    font-weight: 900;
+  }
+  .header-address i {
+    left: 4rem;
+    color: #42260f;
+  }
+  .header-address span {
+    color: #42260f;
+    text-shadow: none;
+    display: inline-block;
+  }
+  .header-address span small {
+    display: inline-block;
+  }
+  .header-address a {
+    display: none;
+  }
   .header-nav {
     position: absolute;
     top: 3rem;
     right: 1rem;
     text-align: left;
     margin-top: 0;
-  }
-  .header-nav i {
-    color: red;
   }
   .defect-content {
     display: inline-block;
