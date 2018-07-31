@@ -85,6 +85,122 @@ a:focus {
   padding-bottom: 1.5rem;
 }
 /* шапка сайта */
+/* .header {
+	background: #fff url(../img/header-bg.png) center center no-repeat;
+	&-logo {
+		img {
+			margin-top: 3rem;
+			margin-bottom: 2.7rem;
+		}
+	}
+	&-laboratory {
+		margin-top: 2.2rem;
+		span {
+			text-shadow : 1px  1px  1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 3rem;
+			font-weight : 400;
+			.opn();
+		}
+	}
+	&-contacts {
+		.century();
+		margin-top: 2.5rem;
+		&-mail {
+			a {
+				text-decoration: underline;
+				text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
+				color: @white;
+				font-size: 2rem;
+				font-weight: 900;
+				i {
+					margin-right: 1rem;
+					color: @yellow;
+				}
+			}
+		}
+		&-phone {
+			position: relative;
+			margin-top: 1rem;
+			i {
+				position: absolute;
+				font-size: 2.5rem;
+				color: @yellow;
+				--webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			a {
+				display: block;
+				color: @white;
+				margin-left: 2.7rem;
+				margin-bottom: 0.5rem;
+				font-size: 1.8rem;
+				letter-spacing: 0.1rem;
+				font-weight: 600;
+			}
+		}
+	}
+	&-address {
+		position: relative;
+		margin-top: 2rem;
+		margin-bottom: 0.9rem;
+		.century();
+		i {
+			position: absolute;
+			font-size: 2.5rem;
+			left: 2rem;
+			color: @yellow;
+		}
+		span {
+			display: block;
+			text-align: center;;
+			text-shadow: 1px  1px  1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 2rem;
+			font-weight: 700;
+			small {
+				display: block;
+				font-weight: 400;
+
+			}
+		}
+		a {
+			display: block;
+			text-align: center;
+			margin-top: 1rem;
+			text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 1.8rem;
+			font-weight: 700;
+			text-decoration: underline;
+			letter-spacing: 0.1rem;
+		}
+	}
+	&-nav {
+		margin-top: 6rem;
+		text-align: right;
+		a {
+			color: @footer-text;
+			i {
+				font-size: 3.5rem;
+			}
+		}
+		& [type="checkbox"]{
+			display: none;
+			&:checked ~ .nav {
+				display: block;
+			}
+		}
+		label {
+			// display: none;
+			// margin-top: 6rem;
+			font-size: 3.5rem;
+		}
+		
+	}
+} */
 .header {
   background: #ffffff url(../img/header-bg.png) center center no-repeat;
 }
@@ -175,6 +291,7 @@ a:focus {
   letter-spacing: 0.1rem;
 }
 .header-nav {
+  position: relative;
   margin-top: 6rem;
   text-align: right;
 }
@@ -184,7 +301,51 @@ a:focus {
 .header-nav a i {
   font-size: 3.5rem;
 }
+.header-nav [type="checkbox"] {
+  display: none;
+}
+.header-nav [type="checkbox"]:checked ~ ul {
+  display: block;
+}
+.header-nav label {
+  font-size: 3.5rem;
+}
+.header-nav-link {
+  position: absolute;
+  background-color: white;
+  z-index: 99;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #fef5ea;
+}
+.header-nav-link ul {
+  list-style-type: none;
+}
+.header-nav-link ul li {
+  display: inline-block;
+}
+.header-nav-link ul li a {
+  color: #42260f;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-left: 2.3rem;
+  line-height: 4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.header-nav-link ul li a:hover {
+  text-decoration: underline;
+}
 /* Навигация */
+.nav {
+  display: none;
+}
+.nav_active {
+  display: block;
+}
+input.toggleMenu:checked ~ .nav {
+  display: block;
+}
 /* Экспертиза обуви в Москве */
 .expertise {
   font-family: 'Museo Cyrl 900', sans-serif;
@@ -733,6 +894,87 @@ a:focus {
   margin: 0 auto;
   font-size: 1.2rem;
   font-weight: 600;
+}
+/* Меню справа */
+#menu-right {
+  position: fixed;
+  width: 71px;
+  margin-left: auto;
+  margin-right: 3rem;
+  height: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  z-index: 5;
+  top: 79px;
+  transition: .3s;
+}
+#menu-right ul {
+  display: block;
+  width: 54px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+#menu-right ul li {
+  display: block;
+  width: 175px;
+  position: relative;
+}
+/* картинка */
+#menu-right ul li a {
+  position: relative;
+  display: block;
+  width: 63px;
+  height: 63px;
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: 2em;
+  text-shadow: 2px 2px 3px #222;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* контент */
+#menu-right ul li ul {
+  position: absolute;
+  top: 0.1rem;
+  right: 15rem;
+  text-align: center;
+  display: none;
+  z-index: -1;
+  width: auto;
+}
+#menu-right ul li:hover ul {
+  display: block;
+}
+#menu-right a:hover {
+  display: block;
+}
+#menu-right ul li ul li a {
+  white-space: nowrap;
+  text-transform: none;
+  padding-top: 2rem;
+  background-color: transparent;
+  background-image: none;
+  color: blue;
+  text-shadow: 0 1px 0 #c6c1ba;
+  width: 18rem;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #42260f;
+  box-shadow: 1px 1px 6px rgba(66, 38, 15, 0.33);
+  background-color: #fdf4e9;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
 }
 @media (max-width: 600px) {
   .px-0 {

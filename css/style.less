@@ -144,13 +144,12 @@ a {
 }
 
 /* шапка сайта */
-.header {
-	display: none;
+/* .header {
 	background: #fff url(../img/header-bg.png) center center no-repeat;
 	&-logo {
 		img {
 			margin-top: 3rem;
-			margin-bottom: 3rem;
+			margin-bottom: 2.7rem;
 		}
 	}
 	&-laboratory {
@@ -205,7 +204,7 @@ a {
 	&-address {
 		position: relative;
 		margin-top: 2rem;
-		margin-bottom: 1rem;
+		margin-bottom: 0.9rem;
 		.century();
 		i {
 			position: absolute;
@@ -238,15 +237,212 @@ a {
 			letter-spacing: 0.1rem;
 		}
 	}
+	&-nav {
+		margin-top: 6rem;
+		text-align: right;
+		a {
+			color: @footer-text;
+			i {
+				font-size: 3.5rem;
+			}
+		}
+		& [type="checkbox"]{
+			display: none;
+			&:checked ~ .nav {
+				display: block;
+			}
+		}
+		label {
+			// display: none;
+			// margin-top: 6rem;
+			font-size: 3.5rem;
+		}
+		
+	}
+} */
+
+.header {
+	background: #fff url(../img/header-bg.png) center center no-repeat;
+	&-logo {
+		img {
+			margin-top: 3rem;
+			margin-bottom: 2.7rem;
+		}
+	}
+	&-laboratory {
+		margin-top: 2.2rem;
+		span {
+			text-shadow : 1px  1px  1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 3rem;
+			font-weight : 400;
+			.opn();
+		}
+	}
+	&-contacts {
+		.century();
+		margin-top: 2.5rem;
+		&-mail {
+			a {
+				text-decoration: underline;
+				text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
+				color: @white;
+				font-size: 2rem;
+				font-weight: 900;
+				i {
+					margin-right: 1rem;
+					color: @yellow;
+				}
+			}
+		}
+		&-phone {
+			position: relative;
+			margin-top: 1rem;
+			i {
+				position: absolute;
+				font-size: 2.5rem;
+				color: @yellow;
+				--webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			a {
+				display: block;
+				color: @white;
+				margin-left: 2.7rem;
+				margin-bottom: 0.5rem;
+				font-size: 1.8rem;
+				letter-spacing: 0.1rem;
+				font-weight: 600;
+			}
+		}
+	}
+	&-address {
+		position: relative;
+		margin-top: 2rem;
+		margin-bottom: 0.9rem;
+		.century();
+		i {
+			position: absolute;
+			font-size: 2.5rem;
+			left: 2rem;
+			color: @yellow;
+		}
+		span {
+			display: block;
+			text-align: center;;
+			text-shadow: 1px  1px  1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 2rem;
+			font-weight: 700;
+			small {
+				display: block;
+				font-weight: 400;
+
+			}
+		}
+		a {
+			display: block;
+			text-align: center;
+			margin-top: 1rem;
+			text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
+			color: @white;
+			font-size: 1.8rem;
+			font-weight: 700;
+			text-decoration: underline;
+			letter-spacing: 0.1rem;
+		}
+	}
+	&-nav {
+		position: relative;
+		margin-top: 6rem;
+		text-align: right;
+		a {
+			color: @footer-text;
+			i {
+				font-size: 3.5rem;
+			}
+		}
+		& [type="checkbox"]{
+			display: none;
+			&:checked ~ ul {
+				display: block;
+			}
+		}
+		label {
+			// display: none;
+			// margin-top: 6rem;
+			font-size: 3.5rem;
+		}
+
+
+
+
+
+		&-link {
+			position: absolute;
+			background-color: white;
+			z-index: 99;
+			width: 100%;
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+			background-color: @head-bg;
+			ul {
+				list-style-type: none;
+				li {
+					display: inline-block;
+					a {
+						color: @footer-text;
+						font-size: 1.7rem;
+						font-weight: 400;
+						margin-left: 2.3rem;
+						line-height: 4rem;
+						.opn();
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+		
+	}
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Навигация */
+.nav {
+	display: none;
+	&-link {
+
+	}
+}
+.nav_active {
+	display: block;
+}
+input.toggleMenu:checked ~ .nav {
+			display: block;
+		}
+
 /* Экспертиза обуви в Москве */
 .expertise {
-	display: none;
 	.museo();
-	background: #fff url(../img/expertise.png) center center no-repeat;
+	background:  url(../img/expertise-logo.png) left center no-repeat, 
+	             url(../img/expertise.png) no-repeat;
 	&-logo {
 		display: none;
 		img {
@@ -368,12 +564,13 @@ a {
 		-o-border-radius: 0.5rem;
 		border-radius: 0.5rem;
 		.opn();
-		img {
-			// width: 10rem;
-			// height: 12.2rem;
-			display: block;
-			margin: 0 auto;
+		&-picture {
+			img {
+				display: block;
+				margin: 0 auto;
+			} 
 		}
+		
 		p {
 			display: block;
 			margin-top: 2.3rem;
@@ -384,6 +581,7 @@ a {
 			}
 		}
 	}
+
 }
 /* Потребитель имеет Право */
 .consumer {
@@ -519,7 +717,8 @@ a {
 } 
 /* Как себя вести с Продавцом при возврате обуви */
 .return-shoes {
-	background-color: @section-bg;
+	// background-color: @section-bg;
+	background: @section-bg url(../img/return-shoes-bg.png) left bottom no-repeat;
 	&-content {
 		text-align: center;
 		font-weight: 400;
@@ -535,6 +734,8 @@ a {
 			}
 		}
 		&-btn {
+			display: block;
+			margin: 0 auto;
 			margin-top: 2rem;
 			margin-bottom: 2rem;
 			button {
@@ -584,7 +785,8 @@ a {
 		}
 		&-btn {
 			display: block;
-			text-align: center;
+			// text-align: center;
+			margin: 0 auto;
 			button {
 				padding: 0.9rem 5rem;
 			}
@@ -629,12 +831,74 @@ a {
 		}
 	}
 }
-
-.maps {
-	height: 10rem;
-	background-color: @red;
+/* Карта */
+.map{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	&-content {
+		position: absolute;
+		top: 8%;
+		left: 43%;
+		width: 47rem;
+		background-color: @white;
+		padding: 1rem;
+		box-shadow: 1px 1px 10px rgba(53, 51, 49, 0.5);
+		-webkit-border-radius: 0.2rem;
+		-moz-border-radius: 0.2rem;
+		-ms-border-radius: 0.2rem;
+		-o-border-radius: 0.2rem;
+		border-radius: 0.2rem;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -1.15rem;
+			left: 6.5rem;
+			width: 2.5rem;
+			height: 2.5rem;
+			background-color: @white;
+			border: 1px solid rgba(53, 51, 49, 0.5);
+			border-bottom: none;
+			border-right: none;
+			-webkit-transform: rotate(-136deg);
+			-ms-transform: rotate(-136deg);
+			-o-transform: rotate(-136deg);
+			transform: rotate(-136deg);
+		}
+		span {
+			display: block;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+			margin-left: 2rem;
+			font-weight: 600;
+			color: @black;
+			img {
+				display: inline-block;
+				margin-right: 1rem;
+				text-align: left;
+			}
+			strong {
+				text-align: left;
+			}
+			small {
+				font-weight: 400;
+			}
+		}
+		&-logo {
+			margin-bottom: 2rem;
+			img {
+				display: inline-block;
+				vertical-align: top;
+				text-align: left;
+				&:last-child {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
 }
-
+/* Футер */
 .footer {
 	.century();
 	background: @section-bg url(../img/footer-bg.png) bottom right no-repeat;
@@ -725,8 +989,8 @@ a {
 		}
 	}
 	&-mobile-nav {
+		display: none;
 		.ui();
-		background-color: red;
 		&-link {
 			text-align: center;
 			a {
@@ -747,6 +1011,102 @@ a {
 	}
 }
 @footer-mobile: #4c4c4c;
+
+
+
+/* Меню справа */
+
+#menu-right {	
+	position: fixed;
+	width: 71px;
+	margin-left: auto;
+	margin-right: 3rem;
+	height: auto;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	z-index: 5;
+	top: 79px;
+	transition: .3s;
+}
+
+#menu-right ul{
+	display: block;
+	width: 54px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+#menu-right ul li{
+	display: block;
+	width: 175px;
+	position: relative;
+}
+
+/* картинка */
+#menu-right ul li a{ 
+	position: relative;
+	display: block;
+	width: 63px;
+	height: 63px;
+	text-align: center;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	line-height: 2em;
+	// background: url(../img/menu-right/menu-right-bg.png) center center no-repeat;
+	text-shadow: 2px 2px 3px #222;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+
+/* контент */
+#menu-right ul li ul{
+	position: absolute;
+	top: 0.1rem;
+	right: 15rem;
+	text-align: center;
+	display: none;
+	z-index: -1;
+	width: auto;
+}
+
+#menu-right ul li:hover ul{
+	display: block;
+}
+
+#menu-right a:hover{
+	display: block;
+}
+
+#menu-right ul li ul li a{
+	white-space: nowrap;
+	text-transform: none;
+	padding-top: 2rem;
+	background-color: transparent;
+	background-image: none;
+	color: blue;
+	text-shadow: 0 1px 0 #c6c1ba;
+	width: 18rem;
+	height: 80px;
+	font-size: 2rem;
+	font-weight: 400;
+	color: @footer-text;
+	box-shadow: 1px 1px 6px rgba(66, 38, 15, 0.33);
+	background-color: #fdf4e9;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	border-radius: 1rem;
+}
+
 
 @media (max-width: 600px) {
 	.px-0 {
@@ -790,6 +1150,96 @@ a {
 			}
 		}
 	}
+	.header {
+		position: relative;
+		background: @head-bg url(../img/header-mobile-bg.png) top no-repeat;
+		// background-position: top;
+		width: 100%;
+		&-logo {
+			img {
+				width: 10rem;
+				margin-top: 1rem;
+			}
+		} 
+		&-laboratory {
+			margin-top: 1rem;
+			span {
+				font-size: 1.8rem;
+			}
+		}
+		&-contacts {
+			margin-top: 1rem;
+			color: @footer-text;
+			&-mail {
+				text-align: center;
+				a {
+					text-shadow: none;
+					font-size: 1.8rem;
+					color: @footer-text;
+					i {
+						color: @footer-text;
+					}
+				}
+			}
+			&-phone {
+				i {
+					top: 3rem;
+					left: 4rem;
+					color: @footer-text;
+				}
+				a {
+					text-align: center;
+					color: @footer-text;
+					font-weight: 900;
+				}
+			}
+		}
+		&-address {
+			margin-top: 1rem;
+			i {
+				left: 4rem;
+				color: @footer-text;
+			}
+			span {
+				color: @footer-text;
+				text-shadow: none;
+				display: inline-block;
+				small {
+					display: inline-block;
+				}
+			}
+			a {
+				display: none;
+
+			}
+		}
+		&-nav {
+			position: absolute;
+			top: 3rem;
+			right: 1rem;
+			text-align: left;
+			margin-top: 0; 
+		}
+	}
+	.expertise {
+		background: url(../img/expertise.png) center no-repeat;
+		&-content {
+			box-shadow: none;
+			margin: 0.3rem;
+			img {
+				width: 20rem;
+				margin-left: 0;
+				// left: -4rem;
+			}
+			p {
+				font-size: 2.35rem;
+				text-align: right;
+				margin-left: 8rem;
+				margin-right: 1rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
 	.defect {
 		&-content {
 			display: inline-block;
@@ -807,11 +1257,11 @@ a {
 			-o-border-radius: 0;
 			border-radius: 0;
 			img {
-				display: inline-block;
-				width: 8rem;
-				height: 8rem;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
+					display: inline-block;
+					width: 8rem;
+					height: 8rem;
+					margin-top: 1rem;
+					margin-bottom: 1rem;
 			}
 			p {
 				display: inline-block;
@@ -899,6 +1349,7 @@ a {
 		}
 	}
 	.return-shoes {
+		background-image: none;
 		&-content {
 			p {
 				font-size: 1.5rem;
@@ -929,11 +1380,9 @@ a {
 				}
 			}
 			&-btn {
-				display: block;
-				margin: 0 auto;
 				button {
 					font-size: 1.4rem;
-					padding: 0.5rem 1rem;
+					padding: 0.7rem 1rem;
 				}
 			}
 		}
@@ -981,6 +1430,9 @@ a {
 		}
 		&-address {
 			display: none;
+		}
+		&-mobile-nav {
+			display: block;
 		}
 	}
 }
