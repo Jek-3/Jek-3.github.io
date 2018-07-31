@@ -1013,19 +1013,94 @@ input.toggleMenu:checked ~ .nav {
 @footer-mobile: #4c4c4c;
 
 
-
-/* Меню справа */
-
-#menu-right {	
+/* Меню слева */
+.social {
 	position: fixed;
 	width: 71px;
 	margin-left: auto;
-	margin-right: 3rem;
+	margin-right: 2rem;
 	height: auto;
 	margin-top: 10rem;
 	margin-bottom: 10rem;
 	z-index: 5;
-	top: 79px;
+	top: 18rem;
+	left: 0;
+	transition: .3s;
+	margin-left: 1rem;
+	ul {
+		list-style: none;
+		-webkit-border-radius: 1rem;
+		-moz-border-radius: 1rem;
+		-ms-border-radius: 1rem;
+		-o-border-radius: 1rem;
+		border-radius: 1rem;
+		li {
+			a {
+				img {
+					width: 5rem;
+					height: 5rem;
+					--webkit-transition: 0.8s;
+					-o-transition: 0.8s;
+					transition: 0.8s;
+					&:hover {
+						--webkit-transition: 0.8s;
+						-o-transition: 0.8s;
+						transition: 0.8s;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						-o-transform: scale(1.1);
+						transform: scale(1.1);
+						-webkit-border-radius: 1rem;
+						-moz-border-radius: 1rem;
+						-ms-border-radius: 1rem;
+						-o-border-radius: 1rem;
+						border-radius: 1rem;
+					}
+				}
+
+			}
+		}
+	}
+	&-img {
+		&-top {
+			-webkit-border-top-left-radius: 0.5rem;
+			-moz-border-top-left-radius: 0.5rem;
+			-ms-border-top-left-radius: 0.5rem;
+			-o-border-top-left-radius: 0.5rem;
+			border-top-left-radius: 0.5rem;
+			-webkit-border-top-right-radius: 0.5rem;
+			-moz-border-top-right-radius: 0.5rem;
+			-ms-border-top-right-radius: 0.5rem;
+			-o-border-top-right-radius: 0.5rem;
+			border-top-right-radius: 0.5rem;
+		}
+		&-bottom {
+			-webkit-border-bottom-left-radius: 0.5rem;
+			-moz-border-bottom-left-radius: 0.5rem;
+			-ms-border-bottom-left-radius: 0.5rem;
+			-o-border-bottom-left-radius: 0.5rem;
+			border-bottom-left-radius: 0.5rem;
+			-webkit-border-bottom-right-radius: 0.5rem;
+			-moz-border-bottom-right-radius: 0.5rem;
+			-ms-border-bottom-right-radius: 0.5rem;
+			-o-border-bottom-right-radius: 0.5rem;
+			border-bottom-right-radius: 0.5rem;
+		}
+	}
+}
+
+/* Меню справа */
+#menu-right {	
+	position: fixed;
+	width: 71px;
+	margin-left: auto;
+	margin-right: 2rem;
+	height: auto;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	z-index: 5;
+	top: 18rem;
+	right: 0;
 	transition: .3s;
 }
 
@@ -1051,11 +1126,11 @@ input.toggleMenu:checked ~ .nav {
 	display: block;
 	width: 63px;
 	height: 63px;
+	margin-bottom: 2.5rem;
 	text-align: center;
 	box-sizing: border-box;
 	text-transform: uppercase;
 	line-height: 2em;
-	// background: url(../img/menu-right/menu-right-bg.png) center center no-repeat;
 	text-shadow: 2px 2px 3px #222;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -1105,6 +1180,9 @@ input.toggleMenu:checked ~ .nav {
 	-ms-border-radius: 1rem;
 	-o-border-radius: 1rem;
 	border-radius: 1rem;
+	&:hover {
+		display: block;
+	}
 }
 
 

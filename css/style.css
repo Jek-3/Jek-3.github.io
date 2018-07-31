@@ -895,17 +895,86 @@ input.toggleMenu:checked ~ .nav {
   font-size: 1.2rem;
   font-weight: 600;
 }
+/* Меню слева */
+.social {
+  position: fixed;
+  width: 71px;
+  margin-left: auto;
+  margin-right: 2rem;
+  height: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  z-index: 5;
+  top: 18rem;
+  left: 0;
+  transition: .3s;
+  margin-left: 1rem;
+}
+.social ul {
+  list-style: none;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}
+.social ul li a img {
+  width: 5rem;
+  height: 5rem;
+  --webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.social ul li a img:hover {
+  --webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}
+.social-img-top {
+  -webkit-border-top-left-radius: 0.5rem;
+  -moz-border-top-left-radius: 0.5rem;
+  -ms-border-top-left-radius: 0.5rem;
+  -o-border-top-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  -webkit-border-top-right-radius: 0.5rem;
+  -moz-border-top-right-radius: 0.5rem;
+  -ms-border-top-right-radius: 0.5rem;
+  -o-border-top-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.social-img-bottom {
+  -webkit-border-bottom-left-radius: 0.5rem;
+  -moz-border-bottom-left-radius: 0.5rem;
+  -ms-border-bottom-left-radius: 0.5rem;
+  -o-border-bottom-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  -webkit-border-bottom-right-radius: 0.5rem;
+  -moz-border-bottom-right-radius: 0.5rem;
+  -ms-border-bottom-right-radius: 0.5rem;
+  -o-border-bottom-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
 /* Меню справа */
 #menu-right {
   position: fixed;
   width: 71px;
   margin-left: auto;
-  margin-right: 3rem;
+  margin-right: 2rem;
   height: auto;
   margin-top: 10rem;
   margin-bottom: 10rem;
   z-index: 5;
-  top: 79px;
+  top: 18rem;
+  right: 0;
   transition: .3s;
 }
 #menu-right ul {
@@ -928,6 +997,7 @@ input.toggleMenu:checked ~ .nav {
   display: block;
   width: 63px;
   height: 63px;
+  margin-bottom: 2.5rem;
   text-align: center;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -975,6 +1045,9 @@ input.toggleMenu:checked ~ .nav {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   border-radius: 1rem;
+}
+#menu-right ul li ul li a:hover {
+  display: block;
 }
 @media (max-width: 600px) {
   .px-0 {
