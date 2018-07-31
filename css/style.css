@@ -188,7 +188,7 @@ a:focus {
 /* Экспертиза обуви в Москве */
 .expertise {
   font-family: 'Museo Cyrl 900', sans-serif;
-  background: #ffffff url(../img/expertise.png) center center no-repeat;
+  background: url(../img/expertise-logo.png) left center no-repeat, url(../img/expertise.png) no-repeat;
 }
 .expertise-logo {
   display: none;
@@ -449,7 +449,7 @@ a:focus {
 }
 /* Как себя вести с Продавцом при возврате обуви */
 .return-shoes {
-  background-color: #f6ede2;
+  background: #f6ede2 url(../img/return-shoes-bg.png) left bottom no-repeat;
 }
 .return-shoes-content {
   text-align: center;
@@ -833,6 +833,9 @@ a:focus {
     text-align: left;
     margin-top: 0;
   }
+  .expertise {
+    background: url(../img/expertise.png) center no-repeat;
+  }
   .expertise-content {
     box-shadow: none;
     margin: 0.3rem;
@@ -941,6 +944,9 @@ a:focus {
   .kinds-card strong {
     display: inline-block;
     margin-bottom: 2rem;
+  }
+  .return-shoes {
+    background-image: none;
   }
   .return-shoes-content p {
     font-size: 1.5rem;
