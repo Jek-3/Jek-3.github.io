@@ -187,7 +187,6 @@ a:focus {
 /* Навигация */
 /* Экспертиза обуви в Москве */
 .expertise {
-  display: none;
   font-family: 'Museo Cyrl 900', sans-serif;
   background: #ffffff url(../img/expertise.png) center center no-repeat;
 }
@@ -517,7 +516,7 @@ a:focus {
 }
 .manual-info-btn {
   display: block;
-  text-align: center;
+  margin: 0 auto;
 }
 .manual-info-btn button {
   padding: 0.9rem 5rem;
@@ -560,10 +559,73 @@ a:focus {
   font-weight: 900;
   line-height: 3.5rem;
 }
-.maps {
-  height: 10rem;
-  background-color: #e74c3c;
+/* Карта */
+.map {
+  position: relative;
+  text-align: center;
 }
+.map-content {
+  position: absolute;
+  top: 8%;
+  left: 43%;
+  width: 47rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px rgba(53, 51, 49, 0.5);
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.map-content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1.15rem;
+  left: 6.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(53, 51, 49, 0.5);
+  border-bottom: none;
+  border-right: none;
+  -webkit-transform: rotate(-136deg);
+  -ms-transform: rotate(-136deg);
+  -o-transform: rotate(-136deg);
+  transform: rotate(-136deg);
+}
+.map-content span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #000000;
+}
+.map-content span img {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: rem;
+  text-align: left;
+}
+.map-content span strong {
+  text-align: left;
+}
+.map-content span small {
+  font-weight: 400;
+}
+.map-content-logo {
+  margin-bottom: 2rem;
+}
+.map-content-logo img {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+.map-content-logo img:last-child {
+  margin-left: 2rem;
+}
+/* Футер */
 .footer {
   font-family: 'Century Gothic', sans-serif;
   background: #f6ede2 url(../img/footer-bg.png) bottom right no-repeat;
@@ -708,6 +770,7 @@ a:focus {
   .header {
     position: relative;
     background: #fef5ea url(../img/header-mobile-bg.png) top no-repeat;
+    width: 100%;
   }
   .header-logo img {
     width: 10rem;
@@ -768,6 +831,21 @@ a:focus {
     right: 1rem;
     text-align: left;
     margin-top: 0;
+  }
+  .expertise-content {
+    box-shadow: none;
+    margin: 0.3rem;
+  }
+  .expertise-content img {
+    width: 20rem;
+    margin-left: 0;
+  }
+  .expertise-content p {
+    font-size: 2.35rem;
+    text-align: right;
+    margin-left: 8rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
   }
   .defect-content {
     display: inline-block;
@@ -885,13 +963,9 @@ a:focus {
   .manual-info ol li p {
     font-size: 1.8rem;
   }
-  .manual-info-btn {
-    display: block;
-    margin: 0 auto;
-  }
   .manual-info-btn button {
     font-size: 1.4rem;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
   }
   .question {
     background-image: none;
