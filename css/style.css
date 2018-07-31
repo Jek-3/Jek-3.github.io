@@ -562,7 +562,8 @@ a:focus {
 /* Карта */
 .map {
   position: relative;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .map-content {
   position: absolute;
@@ -599,13 +600,13 @@ a:focus {
   display: block;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-left: 2rem;
   font-weight: 600;
   color: #000000;
 }
 .map-content span img {
   display: inline-block;
   margin-right: 1rem;
-  margin-left: rem;
   text-align: left;
 }
 .map-content span strong {
