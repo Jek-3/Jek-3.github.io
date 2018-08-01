@@ -1082,14 +1082,20 @@ a:focus {
     height: auto;
     box-shadow: none;
   }
+  .header-nav-link ul {
+    border-bottom: none;
+  }
   .header-nav-link ul li {
     display: block;
     text-align: center;
     border-bottom: 1px dashed #b9b9b9;
     padding: 0.4rem;
   }
-  .header-nav-link ul li:nth-child(6) {
+  .header-nav-link ul li:last-child {
     border-bottom: none;
+  }
+  .header-nav-link ul li a {
+    margin-left: 0;
   }
   .expertise {
     background: url(../img/expertise.png) center no-repeat;
@@ -1109,6 +1115,9 @@ a:focus {
     margin-right: 1rem;
     margin-top: 0.5rem;
   }
+  .defect {
+    padding-bottom: none;
+  }
   .defect-content {
     display: inline-block;
     width: 100%;
@@ -1125,20 +1134,32 @@ a:focus {
     -o-border-radius: 0;
     border-radius: 0;
   }
-  .defect-content img {
+  .defect-content-picture {
+    width: 10rem;
+    height: 5rem;
+  }
+  .defect-content-picture img {
     display: inline-block;
     width: 8rem;
-    height: 8rem;
+    height: 10rem;
+    margin-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .defect-content p {
+    width: auto;
+    height: auto;
     display: inline-block;
     font-size: 1.4rem;
-    margin-left: 1rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 4rem;
+    padding-top: 0;
+    margin-left: 9rem;
+    vertical-align: top;
   }
-  .defect-content p small {
-    display: none;
+  .defect-content-fittings {
+    border-bottom: none;
   }
   .consumer {
     background-color: #f6ede2;
@@ -1186,11 +1207,15 @@ a:focus {
     width: 2.6rem;
     height: 2.5rem;
   }
+  .kinds {
+    padding-bottom: 0;
+  }
   .kinds-card {
     margin-top: 1rem;
     padding: 0;
     margin-bottom: 1rem;
     box-shadow: none;
+    min-height: auto;
     background-color: #f6ede2;
     border-bottom: 1px dashed #aca397;
     -webkit-border-radius: 0;
@@ -1202,6 +1227,9 @@ a:focus {
   .kinds-card strong {
     display: inline-block;
     margin-bottom: 2rem;
+  }
+  .kinds-card-gap {
+    border-bottom: none;
   }
   .return-shoes {
     background-image: none;
@@ -1262,6 +1290,7 @@ a:focus {
     display: none;
   }
   .footer-nav {
+    text-align: center;
     margin-top: 0;
     padding-top: 2rem;
     padding-bottom: 1rem;
