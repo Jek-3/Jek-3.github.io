@@ -1301,6 +1301,7 @@ a:focus {
     top: 30%;
     right: 0;
     left: 0;
+    margin: auto;
   }
   .map-content::before {
     left: 12rem;
