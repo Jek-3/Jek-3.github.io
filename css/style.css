@@ -119,20 +119,11 @@ a:focus {
   color: #ffc700;
 }
 .header-contacts-phone {
-  position: relative;
   margin-top: 1rem;
   font-weight: bold;
 }
-.header-contacts-phone i {
-  position: absolute;
-  font-size: 2.5rem;
-  color: #ffc700;
-  --webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
 .header-contacts-phone a {
+  position: relative;
   display: block;
   color: #ffffff;
   margin-left: 2.7rem;
@@ -140,6 +131,17 @@ a:focus {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
+}
+.header-contacts-phone a i {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 0;
+  left: -2.5rem;
+  color: #ffc700;
+  --webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .header-address {
   position: relative;
@@ -215,15 +217,14 @@ a:focus {
 }
 /* Экспертиза обуви в Москве */
 .expertise {
+  position: relative;
   font-family: 'Museo Cyrl 900', sans-serif;
-  background: url(../img/expertise-logo.png) left 20% center no-repeat, url(../img/expertise.png) no-repeat;
+  background: url(../img/expertise.png) no-repeat;
 }
 .expertise-logo {
-  display: none;
-}
-.expertise-logo img {
-  width: 5rem;
-  padding-top: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: -12rem;
 }
 .expertise-content {
   position: relative;
@@ -703,6 +704,9 @@ a:focus {
 .map-content span small {
   font-weight: 400;
 }
+.map-content span #mobile {
+  display: none;
+}
 .map-content-logo {
   margin-bottom: 2rem;
 }
@@ -1040,15 +1044,15 @@ a:focus {
   .header-contacts-mail a i {
     color: #42260f;
   }
-  .header-contacts-phone i {
-    top: 3rem;
-    left: 4rem;
-    color: #42260f;
-  }
   .header-contacts-phone a {
     text-align: center;
     color: #42260f;
     font-weight: 900;
+  }
+  .header-contacts-phone a i {
+    top: 2.5rem;
+    left: 3rem;
+    color: #42260f;
   }
   .header-address {
     margin-top: 1rem;
@@ -1280,8 +1284,37 @@ a:focus {
     line-height: 2.5rem;
     font-weight: 600;
   }
-  .map {
+  .map-route {
     display: none;
+  }
+  .map-content {
+    width: auto;
+    top: 30%;
+    left: 2%;
+  }
+  .map-content::before {
+    left: 12rem;
+  }
+  .map-content-logo img {
+    width: 8rem;
+  }
+  .map-content-logo img:last-child {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 20rem;
+  }
+  .map-content span {
+    padding-left: 1.8rem;
+    font-size: 1.2rem;
+  }
+  .map-content span #web {
+    display: none;
+  }
+  .map-content span img {
+    width: 2rem;
+  }
+  .map-content span small {
+    font-size: 0.9rem;
   }
   .footer {
     background-image: none;
