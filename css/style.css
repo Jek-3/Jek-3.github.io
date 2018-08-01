@@ -296,29 +296,36 @@ a:focus {
 .order-form-btn small {
   color: #d9d9d9;
 }
-.order-info {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 6rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
+.order__column {
+  padding: 60px 0;
 }
-.order-info span {
-  display: inline-block;
-  color: #e7d8cc;
-  font-size: 2.3rem;
-  margin-left: 5rem;
-}
-.order-info span strong {
+.order__column span,
+.minfo__block strong {
   display: block;
-  margin-top: 2rem;
-  font-size: 3rem;
-  line-height: 4.8rem;
+}
+.order__column span {
+  color: #fff;
+  font-size: 16pt;
+}
+.order__column strong {
+  font-size: 18px;
+  text-transform: uppercase;
   color: #ffc700;
 }
 .order-info-btn {
-  margin-left: 3rem;
-  margin-top: -6rem;
+  border: none;
+  margin-top: 20px;
+  padding: 0.9rem 11rem;
+  background-color: #e74c3c;
+  color: #ffffff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 -2px 2px rgba(0, 0, 0, 0.35);
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 700;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border-radius: 2rem;
 }
 /* А какой дефект в Вашей обуви? */
 .defect {
@@ -329,7 +336,7 @@ a:focus {
   text-align: center;
   padding: 4.9rem 1.9rem 1rem 1.9rem;
   margin-top: 4rem;
-  min-height: 30.5rem;
+  min-height: 30.3rem;
   border: 1px dashed #aca397;
   box-shadow: 1px 1px 0 rgba(78, 69, 56, 0.44);
   background-color: #fcf3e8;
@@ -981,6 +988,274 @@ a:focus {
 #menu-right ul li ul li a:hover {
   display: block;
 }
+@media (min-width: 951px) and (max-width: 1182px) {
+  .px-0 {
+    padding: 0 !important;
+  }
+  .header-laboratory {
+    display: none;
+  }
+  .header-nav-link {
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+  .header-nav-link ul {
+    border-bottom: none;
+  }
+  .header-nav-link ul li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px dashed #b9b9b9;
+    padding: 0.4rem;
+  }
+  .header-nav-link ul li:last-child {
+    border-bottom: none;
+  }
+  .header-nav-link ul li a {
+    margin-left: 0;
+  }
+  .expertise-logo {
+    display: none;
+  }
+  .expertise-content img {
+    margin-left: 0;
+    width: 25rem;
+  }
+  .expertise-content p {
+    font-size: 5.5rem;
+    margin-left: 15rem;
+  }
+  .order-form input {
+    margin-top: 2rem;
+  }
+  .order__column span {
+    font-size: 1.6rem;
+  }
+  .order__column strong {
+    font-size: 1.8rem;
+  }
+  .defect-content-picture {
+    width: 100%;
+  }
+  .consumer {
+    background-image: none;
+  }
+  .return-shoes {
+    background-image: none;
+  }
+  .question {
+    background-image: none;
+  }
+  .map-content {
+    left: 40%;
+    top: 27%;
+  }
+  .footer {
+    background-image: none;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-nav {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-contacts {
+    display: none;
+  }
+  .footer-address {
+    display: none;
+  }
+  .footer-mobile-nav {
+    display: block;
+  }
+  #menu-right {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 950px) {
+  .header {
+    position: relative;
+    background: #fef5ea url(../img/header-bg.png) top center no-repeat;
+    width: 100%;
+    background-size: 100% 12rem;
+  }
+  .header-logo img {
+    width: 15rem;
+    margin-top: 1rem;
+  }
+  .header-laboratory {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .header-laboratory br {
+    display: none;
+  }
+  .header-laboratory span {
+    font-size: 3rem;
+  }
+  .header-contacts {
+    margin-top: 1rem;
+    color: #42260f;
+  }
+  .header-contacts-mail {
+    text-align: center;
+  }
+  .header-contacts-mail a {
+    text-shadow: none;
+    font-size: 1.8rem;
+    color: #42260f;
+  }
+  .header-contacts-mail a i {
+    color: #42260f;
+  }
+  .header-contacts-phone {
+    width: 21rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .header-contacts-phone a {
+    text-align: center;
+    color: #42260f;
+    font-weight: 900;
+  }
+  .header-contacts-phone a i {
+    top: 3rem;
+    color: #42260f;
+  }
+  .header-address {
+    margin-top: 1rem;
+  }
+  .header-address span {
+    margin: 0 auto;
+    width: 25rem;
+    color: #42260f;
+    text-shadow: none;
+  }
+  .header-address span i {
+    color: #42260f;
+  }
+  .header-address a {
+    display: none;
+  }
+  .header-nav {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    text-align: left;
+    margin-top: 0;
+  }
+  .header-nav-link {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+  .header-nav-link ul {
+    border-bottom: none;
+  }
+  .header-nav-link ul li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px dashed #b9b9b9;
+    padding: 0.4rem;
+  }
+  .header-nav-link ul li:last-child {
+    border-bottom: none;
+  }
+  .header-nav-link ul li a {
+    margin-left: 0;
+  }
+  .expertise {
+    background: url(../img/expertise.png) center no-repeat;
+  }
+  .expertise-logo {
+    display: none;
+  }
+  .expertise-content {
+    box-shadow: none;
+    margin: 0.3rem;
+  }
+  .expertise-content img {
+    width: 20rem;
+    margin-left: 0;
+  }
+  .expertise-content p {
+    font-size: 4rem;
+    text-align: right;
+    margin-left: 9rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
+  .order-form input {
+    margin-top: 2rem;
+  }
+  .order__column {
+    padding: 10px 0;
+  }
+  .order-info-btn {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .defect-content-picture {
+    width: 100%;
+  }
+  .consumer {
+    background-image: none;
+  }
+  .return-shoes {
+    background-image: none;
+  }
+  .question {
+    background-image: none;
+  }
+  .map-route {
+    display: none;
+  }
+  .map-content {
+    left: 37%;
+    top: 25%;
+  }
+  .footer {
+    background-image: none;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-nav {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-left: 4px solid #e74c3c;
+    margin-bottom: 1rem;
+  }
+  .footer-contacts {
+    display: none;
+  }
+  .footer-address {
+    display: none;
+  }
+  .footer-mobile-nav {
+    display: block;
+  }
+  .social {
+    display: none;
+  }
+  #menu-right {
+    display: none;
+  }
+}
 @media (max-width: 600px) {
   .px-0 {
     padding: 0 !important;
@@ -1014,6 +1289,9 @@ a:focus {
   }
   .order-info-btn {
     margin: 0 auto;
+  }
+  .order__column {
+    padding: 10px 0;
   }
   .header {
     position: relative;
@@ -1269,7 +1547,7 @@ a:focus {
     font-size: 1.8rem;
   }
   .manual-info-btn button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 0.7rem 1rem;
   }
   .question {
