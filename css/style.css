@@ -1292,17 +1292,15 @@ a:focus {
     line-height: 2.5rem;
     font-weight: 600;
   }
-  .map {
-    width: 100%;
-  }
   .map-route {
     display: none;
   }
   .map-content {
-    width: 100%;
+    position: absolute;
+    width: 31rem;
     top: 30%;
-    left: 10%;
-    margin-left: -25%;
+    right: 0;
+    left: 0;
   }
   .map-content::before {
     left: 12rem;
