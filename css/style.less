@@ -67,14 +67,19 @@
 @defect-content-border: #aca397;
 @defect-content-bg: #fcf3e8;
 
+
 @accordeon-head: #171717;
 @accordeon-bb: #6a6662;
 @accordeon-border: #b1a89c;
-@accordeon-text: #78746f;
-@accordeon-return: #171717;
+@accordeon-text: #171717;
+
+
+@map-route-text: #585858;
 
 @footer-text: #42260f;
+@footer-mobile: #4c4c4c;
 
+@mobile-bb: #b9b9b9;
 //
 @gray: #707070;
 @catalog-btn: #16335e;
@@ -137,130 +142,13 @@ a {
 		border-left: 5px solid @red;
 		color: @head;
 		font-size: 3.2rem;
-		font-weight: 700;
+		font-weight: bold;
 		padding-top: 2rem;
 		padding-bottom: 1.5rem;
 	}
 }
 
 /* шапка сайта */
-/* .header {
-	background: #fff url(../img/header-bg.png) center center no-repeat;
-	&-logo {
-		img {
-			margin-top: 3rem;
-			margin-bottom: 2.7rem;
-		}
-	}
-	&-laboratory {
-		margin-top: 2.2rem;
-		span {
-			text-shadow : 1px  1px  1px rgba(66, 38, 15, 0.48);
-			color: @white;
-			font-size: 3rem;
-			font-weight : 400;
-			.opn();
-		}
-	}
-	&-contacts {
-		.century();
-		margin-top: 2.5rem;
-		&-mail {
-			a {
-				text-decoration: underline;
-				text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
-				color: @white;
-				font-size: 2rem;
-				font-weight: 900;
-				i {
-					margin-right: 1rem;
-					color: @yellow;
-				}
-			}
-		}
-		&-phone {
-			position: relative;
-			margin-top: 1rem;
-			i {
-				position: absolute;
-				font-size: 2.5rem;
-				color: @yellow;
-				--webkit-transform: rotate(-45deg);
-				-ms-transform: rotate(-45deg);
-				-o-transform: rotate(-45deg);
-				transform: rotate(-45deg);
-			}
-			a {
-				display: block;
-				color: @white;
-				margin-left: 2.7rem;
-				margin-bottom: 0.5rem;
-				font-size: 1.8rem;
-				letter-spacing: 0.1rem;
-				font-weight: 600;
-			}
-		}
-	}
-	&-address {
-		position: relative;
-		margin-top: 2rem;
-		margin-bottom: 0.9rem;
-		.century();
-		i {
-			position: absolute;
-			font-size: 2.5rem;
-			left: 2rem;
-			color: @yellow;
-		}
-		span {
-			display: block;
-			text-align: center;;
-			text-shadow: 1px  1px  1px rgba(66, 38, 15, 0.48);
-			color: @white;
-			font-size: 2rem;
-			font-weight: 700;
-			small {
-				display: block;
-				font-weight: 400;
-
-			}
-		}
-		a {
-			display: block;
-			text-align: center;
-			margin-top: 1rem;
-			text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
-			color: @white;
-			font-size: 1.8rem;
-			font-weight: 700;
-			text-decoration: underline;
-			letter-spacing: 0.1rem;
-		}
-	}
-	&-nav {
-		margin-top: 6rem;
-		text-align: right;
-		a {
-			color: @footer-text;
-			i {
-				font-size: 3.5rem;
-			}
-		}
-		& [type="checkbox"]{
-			display: none;
-			&:checked ~ .nav {
-				display: block;
-			}
-		}
-		label {
-			// display: none;
-			// margin-top: 6rem;
-			font-size: 3.5rem;
-		}
-		
-	}
-} */
-
 .header {
 	background: #fff url(../img/header-bg.png) center center no-repeat;
 	&-logo {
@@ -271,10 +159,11 @@ a {
 	}
 	&-laboratory {
 		margin-top: 2.2rem;
+		text-align: center;
 		span {
 			text-shadow : 1px  1px  1px rgba(66, 38, 15, 0.48);
 			color: @white;
-			font-size: 3rem;
+			font-size: 2.8rem;
 			font-weight : 400;
 			.opn();
 		}
@@ -287,7 +176,7 @@ a {
 				text-decoration: underline;
 				text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
 				color: @white;
-				font-size: 2rem;
+				font-size: 1.8rem;
 				font-weight: 900;
 				i {
 					margin-right: 1rem;
@@ -298,6 +187,7 @@ a {
 		&-phone {
 			position: relative;
 			margin-top: 1rem;
+			font-weight: bold;
 			i {
 				position: absolute;
 				font-size: 2.5rem;
@@ -334,13 +224,8 @@ a {
 			text-align: center;;
 			text-shadow: 1px  1px  1px rgba(66, 38, 15, 0.48);
 			color: @white;
-			font-size: 2rem;
-			font-weight: 700;
-			small {
-				display: block;
-				font-weight: 400;
-
-			}
+			font-size: 1.6rem;
+			font-weight: bold;
 		}
 		a {
 			display: block;
@@ -364,32 +249,17 @@ a {
 				font-size: 3.5rem;
 			}
 		}
-		& [type="checkbox"]{
-			display: none;
-			&:checked ~ ul {
-				display: block;
-			}
-		}
-		label {
-			// display: none;
-			// margin-top: 6rem;
-			font-size: 3.5rem;
-		}
-
-
-
-
-
 		&-link {
+			display: none;
 			position: absolute;
-			background-color: white;
 			z-index: 99;
 			width: 100%;
-			padding-top: 1.5rem;
-			padding-bottom: 1.5rem;
+			height: 4.2rem;
 			background-color: @head-bg;
+			box-shadow: 6px 6px 6px rgba(0, 0, 0, .36);
 			ul {
 				list-style-type: none;
+				border-bottom: 1px dashed @accordeon-border;
 				li {
 					display: inline-block;
 					a {
@@ -409,39 +279,14 @@ a {
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Навигация */
-.nav {
-	display: none;
-	&-link {
-
-	}
-}
 .nav_active {
 	display: block;
 }
-input.toggleMenu:checked ~ .nav {
-			display: block;
-		}
 
 /* Экспертиза обуви в Москве */
 .expertise {
 	.museo();
-	background:  url(../img/expertise-logo.png) left center no-repeat, 
+	background:  url(../img/expertise-logo.png) left 20% center no-repeat, 
 	             url(../img/expertise.png) no-repeat;
 	&-logo {
 		display: none;
@@ -486,6 +331,7 @@ input.toggleMenu:checked ~ .nav {
 		h3 {
 			color: @yellow;
 			font-size: 3rem;
+			font-weight: bold;
 			font-weight: 700;
 			text-transform: uppercase;
 		}
@@ -496,11 +342,9 @@ input.toggleMenu:checked ~ .nav {
 		input {
 			width: 30rem;
 			height: 3.8rem;
-			margin-top: 2.3rem;
 			margin-right: 2rem;
 			font-size: 1.7rem;
 			text-align: center;
-			font-weight: 700;
 			border: 1px solid @input-border;
 			.opn();
 			-webkit-border-radius: 0.4rem;
@@ -511,10 +355,11 @@ input.toggleMenu:checked ~ .nav {
 		}		
 		&-btn {
 			margin-left: 2rem;
-			margin-top: 4rem;
+			margin-top: 3.5rem;
 			button {
 				display: block;
 				margin-bottom: 1rem;
+				font-weight: bold;
 			}
 			small {
 				color: @order-small;
@@ -525,7 +370,7 @@ input.toggleMenu:checked ~ .nav {
 		color: @white;
 		text-align: center;
 		margin-top: 6rem;
-		font-weight: 700;
+		font-weight: bold;
 		margin-bottom: 3rem;
 		span {
 			display: inline-block;
@@ -554,7 +399,7 @@ input.toggleMenu:checked ~ .nav {
 		text-align: center;
 		padding: 4.9rem 1.9rem 1rem 1.9rem;
 		margin-top: 4rem;
-		min-height: 28rem;
+		min-height: 30.5rem;
 		border: 1px dashed @defect-content-border;
 		box-shadow: 1px  1px  0 rgba( 78, 69, 56, 0.44);
 		background-color: @defect-content-bg;
@@ -565,17 +410,19 @@ input.toggleMenu:checked ~ .nav {
 		border-radius: 0.5rem;
 		.opn();
 		&-picture {
+			width: 20rem;
+			height: 12rem;
 			img {
 				display: block;
 				margin: 0 auto;
 			} 
-		}
-		
+		}		
 		p {
 			display: block;
 			margin-top: 2.3rem;
 			font-size: 1.8rem;
 			font-weight: 700;
+			vertical-align: middle;
 			small {
 				font-weight: 400;
 			}
@@ -595,7 +442,7 @@ input.toggleMenu:checked ~ .nav {
 			font-size: 1.9rem;
 			span {
 				display: block;
-				font-weight: 900;
+				font-weight: bold;
 				font-size: 2rem;
 				font-style: italic;
 			}
@@ -607,7 +454,7 @@ input.toggleMenu:checked ~ .nav {
 		.opn();
 		p {
 			font-size: 1.9rem;
-			color: @accordeon-return;
+			color: @accordeon-text;
 			font-weight: 900;
 			font-style: italic;
 		}
@@ -697,6 +544,7 @@ input.toggleMenu:checked ~ .nav {
 		box-shadow: 1px  1px  5px rgba(78, 69, 56, 0.19);
 		background-color: @head-bg;
 		padding: 2rem 1.5rem;
+		min-height: 53rem;
 		text-align: center;
 		-webkit-border-radius: 0.5rem;
 		-moz-border-radius: 0.5rem;
@@ -750,7 +598,7 @@ input.toggleMenu:checked ~ .nav {
 			margin-bottom: 2rem;
 			p {
 				font-size: 2.4rem;
-				font-weight: 600;
+				font-weight: 600i;
 			}
 		}
 	}
@@ -774,6 +622,7 @@ input.toggleMenu:checked ~ .nav {
 				}
 				ul {
 					list-style: none;
+					font-weight: 600;
 					li {
 						&:before {
 							content: '-';
@@ -826,7 +675,7 @@ input.toggleMenu:checked ~ .nav {
 		border: 4px solid @red;
 		p {
 			font-size: 2.4rem;
-			font-weight: 900;
+			font-weight: 600;
 			line-height: 3.5rem;
 		}
 	}
@@ -836,10 +685,61 @@ input.toggleMenu:checked ~ .nav {
 	position: relative;
 	margin: 0;
 	padding: 0;
+	height: 48rem;
+	&-route {
+		position: absolute;
+		top: 1rem;
+		right: 15%;
+		background-color: @white;
+		color: @map-route-text;
+		padding: 1.5rem 3rem;
+		font-size: 1.7rem;
+		font-weight: 400;
+		letter-spacing: 0.6px;
+		line-height: 1.6rem;
+		box-shadow: 1px 1px 10px rgba(53, 51, 49, 0.5);
+		-webkit-border-radius: 0.3rem;
+			-moz-border-radius: 0.3rem;
+			-ms-border-radius: 0.3rem;
+			-o-border-radius: 0.3rem;
+			border-radius: 0.3rem;	
+		.century();
+		&-pedestrian {
+			img {
+				margin-left: 1rem;
+				margin-right: 2rem;
+			}
+			a {
+				color: @map-route-text;
+				font-weight: bold;
+				i {
+					margin-left: 0.5rem;
+					font-size: 2rem;
+					vertical-align: middle;
+				}
+			}
+		}
+		&-automotive {
+			margin-top: 1rem;
+			img {
+				margin-right: 1rem;
+			}
+			a {
+				color: @map-route-text;
+				font-weight: bold;
+				border-bottom: 2px solid @red;
+				i {
+					margin-left: 0.5rem;
+					font-size: 2rem;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
 	&-content {
 		position: absolute;
-		top: 8%;
-		left: 43%;
+		top: 23%;
+		left: 42%;
 		width: 47rem;
 		background-color: @white;
 		padding: 1rem;
@@ -853,7 +753,7 @@ input.toggleMenu:checked ~ .nav {
 			content: '';
 			display: block;
 			position: absolute;
-			bottom: -1.15rem;
+			bottom: -1.21rem;
 			left: 6.5rem;
 			width: 2.5rem;
 			height: 2.5rem;
@@ -867,14 +767,18 @@ input.toggleMenu:checked ~ .nav {
 			transform: rotate(-136deg);
 		}
 		span {
+			position: relative;
 			display: block;
+			padding-left: 2.2rem;
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
 			margin-left: 2rem;
 			font-weight: 600;
 			color: @black;
 			img {
-				display: inline-block;
+				top: 0;
+				left: -1.2rem;
+				position: absolute;
 				margin-right: 1rem;
 				text-align: left;
 			}
@@ -1010,7 +914,7 @@ input.toggleMenu:checked ~ .nav {
 		}
 	}
 }
-@footer-mobile: #4c4c4c;
+
 
 
 /* Меню слева */
@@ -1297,6 +1201,26 @@ input.toggleMenu:checked ~ .nav {
 			right: 1rem;
 			text-align: left;
 			margin-top: 0; 
+			&-link {
+				position: absolute;
+				top: 10rem;
+				width: 100%;
+				height: auto;
+				box-shadow: none;
+				ul {
+					li {
+						display: block;
+						text-align: center;
+						border-bottom: 1px dashed @mobile-bb;
+						padding: 0.4rem;
+						// box-shadow: 0 1px 0 rgba(78, 69, 56, 0.44);
+						&:nth-child(6) {
+							border-bottom: none;
+						}
+					}
+				}
+
+			}
 		}
 	}
 	.expertise {
@@ -1491,6 +1415,9 @@ input.toggleMenu:checked ~ .nav {
 			}
 		}
 	}
+	.map {
+		display: none;
+	}
 	.footer {
 		background-image: none;
 		&-logo {
@@ -1512,5 +1439,11 @@ input.toggleMenu:checked ~ .nav {
 		&-mobile-nav {
 			display: block;
 		}
+	}
+	#menu-right {
+		display: none;
+	}
+	.social {
+		display: none;
 	}
 }
