@@ -1025,8 +1025,6 @@ a:focus {
 .popup-info {
   display: none;
 }
-/* Всплавающее окна */
-/* Кнопка */
 @media (min-width: 951px) and (max-width: 1199px) {
   .header-laboratory {
     display: none;
@@ -1333,12 +1331,16 @@ a:focus {
     background: #fef5ea url(../img/header-mobile-bg.png) top center no-repeat;
     width: 100%;
   }
-  .header-logo img {
+  .header-logo a img {
     width: 10rem;
     margin-top: 1rem;
   }
   .header-laboratory {
-    display: none;
+    text-align: left;
+    margin-top: 1.2rem;
+  }
+  .header-laboratory span {
+    font-size: 1.8rem;
   }
   .header-contacts {
     margin-top: 1rem;
@@ -1716,6 +1718,7 @@ a:focus {
 }
 @media (max-width: 380px) {
   .popup {
+    display: none;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -1726,7 +1729,6 @@ a:focus {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .popup-close {
-    display: none;
     position: absolute;
     bottom: -1.5rem;
     margin: 0 auto;
@@ -1735,7 +1737,7 @@ a:focus {
     border: none;
     background-color: transparent;
     font-size: 6rem;
-    color: #e74c3c;
+    color: #88632d;
   }
   .popup-content {
     position: fixed;
@@ -1748,17 +1750,32 @@ a:focus {
     padding-bottom: 5rem;
     background-color: #fef5ea;
     top: 8%;
+    box-shadow: 0 1px 5px rgba(78, 69, 56, 0.19);
   }
   .popup-info-btn {
     margin: 0 auto;
+    margin-bottom: 1rem;
   }
   .popup-info-btn button {
-    padding: 0.9rem 7rem;
+    border: none;
+    padding: 0.9rem 6rem;
     font-size: 1.3rem;
+    background-color: #e74c3c;
+    color: #ffffff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 -2px 2px rgba(0, 0, 0, 0.35);
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 700;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
   }
   /* Контент */
   .popup-info {
+    display: none;
     position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
@@ -1770,38 +1787,43 @@ a:focus {
   }
   .popup-info-close {
     position: absolute;
-    top: -1.5rem;
-    right: -2rem;
+    bottom: -1.5rem;
+    left: 43%;
     width: 2rem;
+    margin: 0 auto;
     text-align: center;
     border: none;
     background-color: transparent;
-    font-size: 3rem;
-    color: #ffffff;
+    font-size: 6rem;
+    color: #88632d;
   }
   .popup-info-content {
     position: fixed;
+    position: absolute;
     text-align: center;
     margin-top: 5.3rem;
     width: 100%;
     left: 0;
     right: 0;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 5rem;
     background-color: #fef5ea;
     top: 8%;
+    box-shadow: 0 1px 5px rgba(78, 69, 56, 0.19);
   }
   .popup-info-content h4 {
-    font-size: 1.6rem;
-    font-style: italic;
-    font-weight: 700;
+    font-size: 1.8rem;
     line-height: 2;
-    font-family: 'Open Sans', sans-serif;
-    font-family: "Open Sans - Semibold Italic";
+    font-weight: 600;
+    font-style: italic;
+    color: #181818;
   }
   .popup-info-content p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+  .popup-info-content p strong {
+    font-style: italic;
   }
 }
