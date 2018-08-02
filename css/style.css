@@ -6,6 +6,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Century Gothic Bold';
+  src: url('../fonts/CenturyGothic-Bold.eot');
+  src: url('../fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/CenturyGothic-Bold.woff2') format('woff2'), url('../fonts/CenturyGothic-Bold.woff') format('woff'), url('../fonts/CenturyGothic-Bold.ttf') format('truetype'), url('../fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Museo Cyrl 900';
   src: url('../fonts/MuseoCyrl-900.eot');
   src: url('../fonts/MuseoCyrl-900.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-900.woff2') format('woff2'), url('../fonts/MuseoCyrl-900.woff') format('woff'), url('../fonts/MuseoCyrl-900.ttf') format('truetype'), url('../fonts/MuseoCyrl-900.svg#MuseoCyrl-900') format('svg');
@@ -75,6 +82,7 @@ a:focus {
   box-shadow: 1px 1px 5px rgba(78, 69, 56, 0.19);
   background-color: #fef5ea;
   text-align: center;
+  font-family: 'Century Gothic Bold', sans-serif;
 }
 .head h2 {
   border-left: 5px solid #e74c3c;
@@ -88,7 +96,8 @@ a:focus {
 .header {
   background: #ffffff url(../img/header-bg.png) center center no-repeat;
 }
-.header-logo img {
+.header-logo a img {
+  display: block;
   margin-top: 3rem;
   margin-bottom: 2.7rem;
 }
@@ -117,6 +126,7 @@ a:focus {
 .header-contacts-mail a i {
   margin-right: 1rem;
   color: #ffc700;
+  text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
 }
 .header-contacts-phone {
   margin-top: 1rem;
@@ -138,6 +148,7 @@ a:focus {
   top: 0;
   left: -2.5rem;
   color: #ffc700;
+  text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
   --webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -163,6 +174,7 @@ a:focus {
   top: 1.5rem;
   left: 0;
   color: #ffc700;
+  text-shadow: 1px 1px 1px rgba(66, 38, 15, 0.48);
 }
 .header-address a {
   display: block;
@@ -304,17 +316,18 @@ a:focus {
   display: block;
 }
 .order__column span {
-  color: #fff;
-  font-size: 16pt;
+  color: #ffffff;
+  font-size: 2.4rem;
 }
 .order__column strong {
-  font-size: 18px;
+  font-size: 2.7rem;
   text-transform: uppercase;
   color: #ffc700;
 }
 .order-info-btn {
   border: none;
   margin-top: 20px;
+  font-size: 1.5rem;
   padding: 0.9rem 11rem;
   background-color: #e74c3c;
   color: #ffffff;
@@ -383,6 +396,7 @@ a:focus {
   font-weight: bold;
   font-size: 2rem;
   font-style: italic;
+  font-family: 'Century Gothic Bold', sans-serif;
 }
 .consumer-return {
   margin-left: 2rem;
@@ -397,7 +411,6 @@ a:focus {
 }
 .consumer-btn {
   display: block;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .consumer-btn button {
@@ -415,6 +428,7 @@ a:focus {
   letter-spacing: 0.8px;
   color: #171717;
   cursor: pointer;
+  font-family: 'Century Gothic Bold', sans-serif;
 }
 .accordeon dl dt span {
   border-bottom: 2px solid #6a6662;
@@ -437,16 +451,26 @@ a:focus {
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
+.accordeon dl dd p {
+  margin-bottom: 1rem;
+}
+.accordeon dl dd p span {
+  font-style: italic;
+  font-weight: bold;
+}
 .accordeon dl dd p strong {
-  display: block;
+  font-weight: bold;
 }
 .accordeon dl dd ul {
-  list-style: none;
+  list-style-image: url(../img/question-list.png);
+  margin-left: 2.7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
 }
-.accordeon dl dd ul li::before {
-  content: '-';
-  vertical-align: top;
-  margin-right: 1rem;
+.accordeon dl dd ul li {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 .accordeon-icon {
   display: inline-block;
@@ -746,6 +770,7 @@ a:focus {
   color: #42260f;
   font-weight: 900;
   text-decoration: underline;
+  font-family: 'Century Gothic Bold', sans-serif;
 }
 .footer-contacts {
   text-align: center;
@@ -782,6 +807,9 @@ a:focus {
   font-size: 1.6rem;
   font-weight: 400;
 }
+.footer-contacts-phone-main {
+  font-family: 'Century Gothic Bold', sans-serif;
+}
 .footer-contacts-phone-main a {
   font-size: 2rem;
   font-weight: 900;
@@ -808,10 +836,12 @@ a:focus {
   margin-left: 3rem;
   font-size: 2rem;
   font-weight: 700;
+  font-family: 'Century Gothic Bold', sans-serif;
 }
 .footer-address span small {
   display: block;
   font-weight: 400;
+  font-family: 'Century Gothic', sans-serif;
 }
 .footer-mobile-nav {
   display: none;
@@ -988,10 +1018,16 @@ a:focus {
 #menu-right ul li ul li a:hover {
   display: block;
 }
-@media (min-width: 951px) and (max-width: 1182px) {
-  .px-0 {
-    padding: 0 !important;
-  }
+/* всплывающие окна */
+.popup {
+  display: none;
+}
+.popup-info {
+  display: none;
+}
+/* Всплавающее окна */
+/* Кнопка */
+@media (min-width: 951px) and (max-width: 1199px) {
   .header-laboratory {
     display: none;
   }
@@ -1082,7 +1118,7 @@ a:focus {
     display: none;
   }
 }
-@media (min-width: 767px) and (max-width: 950px) {
+@media (min-width: 767px) and (max-width: 991px) {
   .header {
     position: relative;
     background: #fef5ea url(../img/header-bg.png) top center no-repeat;
@@ -1237,7 +1273,6 @@ a:focus {
     margin-top: 0;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    border-left: 4px solid #e74c3c;
     margin-bottom: 1rem;
   }
   .footer-contacts {
@@ -1256,7 +1291,7 @@ a:focus {
     display: none;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .px-0 {
     padding: 0 !important;
   }
@@ -1303,10 +1338,7 @@ a:focus {
     margin-top: 1rem;
   }
   .header-laboratory {
-    margin-top: 1rem;
-  }
-  .header-laboratory span {
-    font-size: 1.8rem;
+    display: none;
   }
   .header-contacts {
     margin-top: 1rem;
@@ -1637,12 +1669,139 @@ a:focus {
   .social {
     display: none;
   }
+  .popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup-close {
+    position: absolute;
+    left: 40%;
+    margin: 0 auto;
+    width: 1rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 6rem;
+    color: #e74c3c;
+  }
+  .popup-content {
+    position: fixed;
+    text-align: center;
+    margin-top: 5.3rem;
+    left: 0;
+    right: 0;
+    padding: 3rem 5rem 5rem 5rem;
+    background-color: #fef5ea;
+    top: 8%;
+  }
 }
-@media (min-width: 340px) and (max-width: 500px) {
+@media (min-width: 400px) and (max-width: 600px) {
+  .header-laboratory {
+    display: none;
+  }
+}
+@media (min-width: 340px) and (max-width: 767px) {
   .header {
     position: relative;
     background: #fef5ea url(../img/header-bg.png) top center no-repeat;
     background-size: 100% 10rem;
     width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup-close {
+    display: none;
+    position: absolute;
+    bottom: -1.5rem;
+    margin: 0 auto;
+    width: 1rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 6rem;
+    color: #e74c3c;
+  }
+  .popup-content {
+    position: fixed;
+    text-align: center;
+    margin-top: 5.3rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: #fef5ea;
+    top: 8%;
+  }
+  .popup-info-btn {
+    margin: 0 auto;
+  }
+  .popup-info-btn button {
+    padding: 0.9rem 7rem;
+    font-size: 1.3rem;
+  }
+  /* Контент */
+  .popup-info {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup-info-close {
+    position: absolute;
+    top: -1.5rem;
+    right: -2rem;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  .popup-info-content {
+    position: fixed;
+    text-align: center;
+    margin-top: 5.3rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: #fef5ea;
+    top: 8%;
+  }
+  .popup-info-content h4 {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans - Semibold Italic";
+  }
+  .popup-info-content p {
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
