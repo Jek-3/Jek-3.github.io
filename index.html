@@ -869,13 +869,10 @@
       <div class="popup-dialog">
         <!-- содержимое модального окна -->
         <div class="popup-content">
-          <button class="popup-close">&times;</button>
-            <!-- Заголовок окна -->
-            	<div class="popup-info-btn">
-            		<button>Почитать о компании?</button>
-            	</div>
-            </div>
-          </div>
+        	<div class="popup-info-btn">
+        		<button>Почитать о компании?</button>
+        	</div>
+        	<button class="popup-close"><!-- &times; --><i class="fas fa-times"></i></button>
         </div>
       </div>
     </div>
@@ -887,7 +884,6 @@
       <div class="popup-info-dialog">
         <!-- содержимое модального окна -->
         <div class="popup-info-content">
-          <button class="popup-info-close">&times;</button>
             	<h4>Несколько слов от руководителя группы компаний АНО «Лаборатория экспертных Исследований» Евгения Романова</h4>
 				<p>Здравствуйте, уважаемый Клиент и Посетитель нашего сайта, Вы
 				сделали правильный выбор, посетив наш информационный ресурс в поисках квалифицированной профессиональной экспертной помощи. </p>
@@ -917,9 +913,7 @@
 				<strong>С уважением, руководитель группы компаний <br> АНО «Лаборатория
 					экспертных Исследований» <br>
 					Е.Ю. Романов</strong></p>
-
-            </div>
-          </div>
+				<button class="popup-close"><!-- &times; --><i class="fas fa-times"></i></button>
         </div>
       </div>
     </div>
@@ -956,6 +950,7 @@
 			$('.popup-info-btn').on('click', function(event) {
 			  event.preventDefault();
 			  $('.popup-info').fadeIn();
+			  $('.popup').fadeOut();
 			});
 			$('.popup-info-close').on('click', function(event) {
 			  event.preventDefault();
