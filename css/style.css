@@ -368,6 +368,10 @@ a:focus {
   display: block;
   margin: 0 auto;
 }
+.defect-content-blotting {
+  height: 12rem;
+  margin: 0 auto;
+}
 .defect-content p {
   display: block;
   margin-top: 2.3rem;
@@ -1434,7 +1438,7 @@ a:focus {
     margin-top: 0.5rem;
   }
   .defect {
-    padding-bottom: none;
+    padding-bottom: 0;
   }
   .defect-content {
     display: inline-block;
@@ -1477,13 +1481,36 @@ a:focus {
     vertical-align: top;
   }
   .defect-content-blotting {
-    padding-top: 1rem;
+    height: 3rem;
+    margin: 0;
   }
   .defect-content-blotting img {
+    width: 12rem;
+    height: 7rem;
+  }
+  .defect-content-ruptures {
+    height: 3rem;
+  }
+  .defect-content-ruptures img {
+    height: 9rem;
+    margin-bottom: 0;
+  }
+  .defect-content-peeling {
+    height: 2rem;
+  }
+  .defect-content-peeling img {
+    margin-top: 1rem;
     height: 8rem;
   }
   .defect-content-fittings {
     border-bottom: none;
+  }
+  .defect-content-fittings-picture {
+    height: 4rem;
+  }
+  .defect-content-fittings-picture img {
+    width: 6rem;
+    height: 9rem;
   }
   .consumer {
     background-color: #f6ede2;
