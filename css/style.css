@@ -1671,37 +1671,6 @@ a:focus {
   .social {
     display: none;
   }
-  .popup {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .popup-close {
-    position: absolute;
-    left: 40%;
-    margin: 0 auto;
-    width: 1rem;
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    font-size: 6rem;
-    color: #e74c3c;
-  }
-  .popup-content {
-    position: fixed;
-    text-align: center;
-    margin-top: 5.3rem;
-    left: 0;
-    right: 0;
-    padding: 3rem 5rem 5rem 5rem;
-    background-color: #fef5ea;
-    top: 8%;
-  }
 }
 @media (min-width: 400px) and (max-width: 600px) {
   .header-laboratory {
@@ -1729,14 +1698,12 @@ a:focus {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .popup-close {
-    position: absolute;
-    bottom: -1.5rem;
-    margin: 0 auto;
-    width: 1rem;
-    text-align: center;
+    width: 5rem;
+    height: auto;
+    padding: 0;
     border: none;
     background-color: transparent;
-    font-size: 6rem;
+    font-size: 4rem;
     color: #88632d;
   }
   .popup-content {
@@ -1747,7 +1714,6 @@ a:focus {
     left: 0;
     right: 0;
     padding-top: 3rem;
-    padding-bottom: 5rem;
     background-color: #fef5ea;
     top: 8%;
     box-shadow: 0 1px 5px rgba(78, 69, 56, 0.19);
@@ -1759,7 +1725,7 @@ a:focus {
   .popup-info-btn button {
     border: none;
     padding: 0.9rem 6rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     background-color: #e74c3c;
     color: #ffffff;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 -2px 2px rgba(0, 0, 0, 0.35);
@@ -1786,15 +1752,13 @@ a:focus {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .popup-info-close {
-    position: absolute;
-    bottom: -1.5rem;
-    left: 43%;
-    width: 2rem;
-    margin: 0 auto;
-    text-align: center;
+    width: 5rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
     border: none;
     background-color: transparent;
-    font-size: 6rem;
+    font-size: 4rem;
     color: #88632d;
   }
   .popup-info-content {
@@ -1806,7 +1770,6 @@ a:focus {
     left: 0;
     right: 0;
     padding-top: 1rem;
-    padding-bottom: 5rem;
     background-color: #fef5ea;
     top: 8%;
     box-shadow: 0 1px 5px rgba(78, 69, 56, 0.19);
