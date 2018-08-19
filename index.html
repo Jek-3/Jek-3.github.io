@@ -982,6 +982,10 @@
      //    $(".head h3").click(function() {
      //        $(this).css('color', 'blue');
      //    });
+     	/* Закладки каталог */
+     	$('img.catalog-card-bookmarks').click(function() {
+     	  $(this).toggleClass("catalog-card-bookmarks-click");
+     	});
     	/* Каталог */
     	 $('.catalog-slider-for').slick({
 		  slidesToShow: 1,
@@ -1011,10 +1015,6 @@
 		    variableWidth: false,
 		    dots: false
 		  });
-     	/* Закладки каталог */
-     	$('img.catalog-card-bookmarks').click(function() {
-     	  $(this).toggleClass("catalog-card-bookmarks-click");
-     	});
      	/* Счетчик */
 		$(".catalog-card-slider").on('afterChange', function(event, slick, currentSlide){
     	    $("#count").text(currentSlide + 1);
