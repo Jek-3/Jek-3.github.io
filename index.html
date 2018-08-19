@@ -9,11 +9,13 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="/favicon.ico"> -->
 
-    <title>Лаборатория Экспертных Иследований</title>
+    <title>Bloom</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,722 +25,745 @@
   </head>
 
   <body>
-
+	
 <!-- Шапка сайта -->
-	<section class="main">
-		<div class="header">
-			<div class="container">
+	<header>
+		<section class="header">
+			<div class="container">	
 				<div class="row">
-					<div class="col-lg-2 col-sm-3 col-md-3 col-xs-4">
-						<div class="header-logo">
-							<a class="popup-link" href="#"><img src="img/header-logo.png" alt="логотип лаборатории"></a>
-						</div>
-					</div>
-					<!-- /.col-lg-2 -->
-					<div class="col-lg-3 col-sm-8 col-xs-7">
-						<div class="header-laboratory">
-							<span>Лаборатория <br>Экспертных<br> Иследований</span>
-						</div>
-					</div>
-					<!-- /.col-lg-3 -->
-					<div class="col-lg-3 col-sm-12 col-md-4 col-xs-12">
-						<div class="header-contacts">
-							<div class="header-contacts-mail">
-								<a href="mailto:88002341704@mail.ru"><i class="fas fa-envelope"></i>88002341704@mail.ru</a>
-							</div>
-							<div class="header-contacts-phone">	
-								
-								<a href="tel:+78002341704"><i class="fas fa-phone-volume"></i>8 800 234 17 04</a>
-								<a href="tel:+74957640158">+7 495 764 01 58</a>
-								<a href="tel:+79857640158">+7 985 764 01 58</a>
-							</div>
-						</div>
-					</div>
-					<!-- /.col-lg-3 -->
-					<div class="col-lg-3 col-sm-12 col-md-4 col-xs-12">
-						<div class="header-address">	
-							<span><i class="fas fa-map-marker-alt"></i>125167, г. Москва,<br> Ленинградский проспект<br> д.62, подъезд 1, офис 1 метро<br> «Аэропорт»</span>
-							<a href="#">Как нас найти</a>
-						</div>
-					</div>
-					<!-- /.col-lg-3 -->
+					
+
 					<div class="col-lg-1">
-						<div class="header-nav">
-							<!-- <input type="checkbox" id="menu" class="toggleMenu">
-								<label for="menu" class="tog gleMenu"><i class="fas fa-bars"></i></label>-->
-							<a href="#"><i class="fas fa-bars"></i></a>
+						<div class="header-logo">
+							<a href="#"><span>l</span>ogo</a>
 						</div>
 					</div>
 					<!-- /.col-lg-1 -->
-				</div>
-			</div>
-		</div>
-		<div class="header-nav-link">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 px-0">
-						<ul>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Стоимость экспертизы</a></li>
-							<li><a href="#">Сроки проведения экспертизы</a></li>
-							<li><a href="#">Потребитель, знай свои права </a></li>
-							<li><a href="#">Написать</a></li>
-							<li><a href="#">Контакты</a></li>	                           
-						</ul>
+					<div class="col-lg-3">
+						<div class="header-city">
+							<i class="fas fa-map-marker-alt"></i>
+							<select>
+								<option>New York</option>
+								<option>Denver</option>
+							</select>
+						</div>
+						<div class="header-phone">
+							<a href="#"><i class="fas fa-phone"></i>000 654 43 43</a>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Экспертиза обуви в Москве -->
-	<section class="expertise">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 px-0">
-					<div class="expertise-logo">
-						<img src="img/expertise-logo.png" alt="лого лаборатории">
+					<!-- /.col-lg-3 -->
+					<div class="col-lg-6">
+						<div class="header-nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">catalog</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Reviews</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="expertise-content">
-						<img src="img/shoes.png" alt="фото туфля">
-						<p>Экспертиза обуви в Москве</p>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Блок заказать (форма) -->
-	<section class="order">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="order-head">
-						<h3>Проверим обувь на дефекты (бесплатно*)</h3>
-					</div>
-					<div class="order-form">
-						<form action="#">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Номер телефона или e-mail ">
-							<div class="order-form-btn btn">
-								<button>Заказать</button>
-								<small>* услуга предоставляется бесплатно для <br>Потребителя</small>
+					<!-- /.col-lg-6 -->
+					<div class="col-lg-2">
+						<div class="header-icons">
+							<a href="#"><img src="img/entrance.png" alt="ярлык входа"></a>
+							<a href="#"><img src="img/bookmarks_black.png" alt="избранное"></a>
+							<div class="header-icons-basket">
+								<a href="#"><img src="img/basket_black.png" alt="корзина"></a>
+								<span>0</span>
 							</div>
-						</form>
-						
+						</div>
 					</div>
+					<!-- /.col-lg-2 -->
+					</div> <!-- row-->
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</header>
 
-<!-- А какой дефект в Вашей обуви? -->
-	<section class="head">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h2>А какой дефект в Вашей обуви?</h2>
-					</div>
-				</div>
-			</div>
-	</section>
-	<section class="defect">
+
+<!-- Информация о сайте -->
+	<section class="info">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="defect-content">
-						<div class="defect-content-picture">
-							<img src="img/defect/destruction_of_materials.png" alt="разрушение материалов">
+				<div class="col-lg-4">
+					<div class="info-content">
+						<h1><span>B</span>loom Flower</h1>
+						<small>Flower for your special day...</small>
+						<p><span>Look at yours best bouquet.</span> Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus</p>
+						<div class="info-content-btn btn-pink">
+							<button>Catalog </button>
 						</div>
-						<p>Разрушение материалов<br> <small>(разрывы трещины/отслоения)</small></p>
 					</div>
 				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="defect-content">
-						<div class="defect-content-picture defect-content-blotting">
-							<img src="img/defect/blotting.png" alt="Промокание">
-						</div>
-						<p>Промокание</p>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-6">
+					<div class="info-picture">
+						<img src="img/bg.png" alt="">
+						<img class="info-picture_more" src="img/bg_.png" alt="">
 					</div>
 				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="defect-content">
-						<div class="defect-content-picture defect-content-ruptures">
-							<img src="img/defect/seam_ruptures.png" alt="Разрывы швов/асимметрия швов">
-						</div>
-						<p>Разрывы швов/ <br>асимметрия швов</p>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="defect-content">
-						<div class="defect-content-picture defect-content-peeling">
-							<img src="img/defect/peeling_sole.png" alt="Отклеивание подошвы и верха обуви">
-						</div>
-						<p>Отклеивание подошвы и <br>верха обуви</p>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="defect-content">
-						<div class="defect-content-picture">
-							<img src="img/defect/dye.png" alt="Сход красителя/окрашивание стопы">
-						</div>
-						<p>Сход красителя/<br>окрашивание стопы</p>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="defect-content defect-content-fittings">
-						<div class="defect-content-picture defect-content-fittings-picture">
-							<img src="img/defect/fittings.png" alt="Неисправность фурнитуры (отделение, разрушение)">
-						</div>
-						<p>Неисправность фурнитуры<br> (отделение, разрушение)</p>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
+				<!-- /.col-lg-6 -->
 			</div>
 		</div>
 	</section>
 
-<!-- Блок заказать (инфо) -->
-<section class="order">
-	<div class="container">
-		<div class="row">
-			<div class="order__column col-lg-4 col-md-4 text-center">
-				<span>Срок проведения экспертизы</span>
-				<strong>– 20 минут</strong>
-			</div>
-			<div class="order__column col-lg-4 col-md-4 text-center">
-				<span>Стоимость экспертизы обуви</span>
-				<strong>от 1500 рублей</strong>					
-			</div>
-			<div class="order__column col-lg-4 col-md-4 text-center">
-				<button class="order-info-btn btn">Заказать</button>
+<!-- Наши приимущества -->
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-4">
+					<div class="advantages-content">
+						<p>More then <br>
+						<span>215 000</span> smiles</p>
+					</div>			
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<div class="advantages-content">
+						<p>Delivery in <br>
+							<span>200</span> countries</p>
+					</div>
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<div class="advantages-content">
+						<p>Over <br>
+							<span>2000</span> partners</p>
+					</div>
+				</div>
+				<!-- /.col-lg-4 -->
+
+
+
+
 			</div>
 		</div>
-	</div>
+	</section>
+
+
+
+
+<img class="catalog-card-bookmarks test" src="img/catalog/bookmarks.png" alt="bookmarks">
+
+
+
+
+<!-- Каталог -->
+	<section class="catalog">
+		<div class="head catlog-head">
+			<h3>Our <span>catalog.</span></h3>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="catalog-slider">
+					<div class="catalog-slider-nav">
+						<span class="catalog-slider-nav-item">Wedding bouquets</span>
+						<span class="catalog-slider-nav-item">With love</span>
+						<span class="catalog-slider-nav-item">Most popular</span>
+						<span class="catalog-slider-nav-item">New-born</span>
+						<span class="catalog-slider-nav-item">Business</span>
+						<span class="catalog-slider-nav-item">Sorry</span>
+					</div>
+
+
+					<div class="catalog-slider-for">
+					    <div>
+					  	<div class="catalog-card-slider">
+					  	  <div class="news-slider-content">
+							<div class="col-lg-3">
+					  			<div class="catalog-card">
+									<div class="catalog-card-wrapper">
+										<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+						  				<div class="catalog-card-content">
+						  					<span class="catalog-card-content_head">Pink roses</span>
+						  					<span class="catalog-card-content_price">25 $</span>
+						  					<button class="catalog-card-content_btn">BUY now</button>
+						  				</div>
+									</div>
+					  			</div>
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		<div class="col-lg-3">
+					  			<div class="catalog-card">
+					  				<div class="catalog-card-wrapper">
+					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+					  					<div class="catalog-card-content">
+					  						<span class="catalog-card-content_head">White roses</span>
+					  						<span class="catalog-card-content_price">30 $</span>
+					  						<button class="catalog-card-content_btn">BUY now</button>
+					  					</div>
+					  				</div>
+					  			</div>	
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		<div class="col-lg-3">
+					  			<div class="catalog-card">
+					  				<div class="catalog-card-wrapper">
+					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+					  					<div class="catalog-card-content">
+					  						<span class="catalog-card-content_head">Red roses</span>
+					  						<span class="catalog-card-content_price">50 $</span>
+					  						<button class="catalog-card-content_btn">BUY now</button>
+					  					</div>
+					  				</div>
+					  			</div>	
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		<div class="col-lg-3">
+					  			<div class="catalog-card">
+					  				<div class="catalog-card-wrapper">
+					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+					  					<div class="catalog-card-content">
+					  						<span class="catalog-card-content_head">Yellow roses</span>
+					  						<span class="catalog-card-content_price">45 $</span>
+					  						<button class="catalog-card-content_btn">BUY now</button>
+					  					</div>
+					  				</div>
+					  			</div>	
+					  		</div>
+					  		<!-- /.col-lg-3 --><div class="col-lg-3">
+					  			<div class="catalog-card">
+									<div class="catalog-card-wrapper">
+										<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+						  				<div class="catalog-card-content">
+						  					<span class="catalog-card-content_head">Pink roses</span>
+						  					<span class="catalog-card-content_price">25 $</span>
+						  					<button class="catalog-card-content_btn">BUY now</button>
+						  				</div>
+									</div>
+					  			</div>
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		<div class="col-lg-3">
+					  			<div class="catalog-card">
+					  				<div class="catalog-card-wrapper">
+					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+					  					<div class="catalog-card-content">
+					  						<span class="catalog-card-content_head">White roses</span>
+					  						<span class="catalog-card-content_price">30 $</span>
+					  						<button class="catalog-card-content_btn">BUY now</button>
+					  					</div>
+					  				</div>
+					  			</div>	
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		<div class="col-lg-3">
+					  			<div class="catalog-card">
+					  				<div class="catalog-card-wrapper">
+					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+					  					<div class="catalog-card-content">
+					  						<span class="catalog-card-content_head">Red roses</span>
+					  						<span class="catalog-card-content_price">50 $</span>
+					  						<button class="catalog-card-content_btn">BUY now</button>
+					  					</div>
+					  				</div>
+					  			</div>	
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		<div class="col-lg-3">
+					  			<div class="catalog-card">
+					  				<div class="catalog-card-wrapper">
+					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+					  					<div class="catalog-card-content">
+					  						<span class="catalog-card-content_head">Yellow roses</span>
+					  						<span class="catalog-card-content_price">45 $</span>
+					  						<button class="catalog-card-content_btn">BUY now</button>
+					  					</div>
+					  				</div>
+					  			</div>	
+					  		</div>
+					  		<!-- /.col-lg-3 -->
+					  		
+
+					  	  </div>
+					  	  <!-- news-slider-content -->
+					  	  <div class="news-slider-content">
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+					  	  	<div class="col-lg-3">
+					  	  		<div class="catalog-card">
+					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+					  	  			<div class="catalog-card-content">
+					  	  				<span class="catalog-card-content_head">Yellow roses</span>
+					  	  				<span class="catalog-card-content_price">45 $</span>
+					  	  				<button class="catalog-card-content_btn">BUY now</button>
+					  	  			</div>
+					  	  		</div>	
+					  	  	</div>
+					  	  	<!-- /.col-lg-3 -->
+
+					  	  </div>
+					  	  <!-- news-slider-content -->
+					  	</div>
+					  	<div class="catalog-card-slider-counter"><span id="count">1</span>/2</div>
+					    </div>
+					  <div>
+						<div class="catalog-card-slider">
+						  <div class="news-slider-content">
+
+							
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">Pink roses</span>
+										<span class="catalog-card-content_price">25 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">White roses</span>
+										<span class="catalog-card-content_price">30 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">Red roses</span>
+										<span class="catalog-card-content_price">50 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">Yellow roses</span>
+										<span class="catalog-card-content_price">45 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">Pink roses</span>
+										<span class="catalog-card-content_price">25 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">White roses</span>
+										<span class="catalog-card-content_price">30 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">Red roses</span>
+										<span class="catalog-card-content_price">50 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3">
+								<div class="catalog-card">
+									<img src="img/catalog/bookmarks.png" alt="bookmarks">
+									<div class="catalog-card-content">
+										<span class="catalog-card-content_head">Yellow roses</span>
+										<span class="catalog-card-content_price">45 $</span>
+										<button class="catalog-card-content_btn">BUY now</button>
+									</div>
+								</div>	
+							</div>
+							<!-- /.col-lg-3 -->
+
+						  </div>
+						  <!-- news-slider-content -->
+						  <div class="news-slider-content">
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+						  	<div class="col-lg-3">
+						  		<div class="catalog-card">
+						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
+						  			<div class="catalog-card-content">
+						  				<span class="catalog-card-content_head">Yellow roses</span>
+						  				<span class="catalog-card-content_price">45 $</span>
+						  				<button class="catalog-card-content_btn">BUY now</button>
+						  			</div>
+						  		</div>	
+						  	</div>
+						  	<!-- /.col-lg-3 -->
+
+						  </div>
+						  <!-- news-slider-content -->
+						</div>
+						<div class="catalog-card-slider-counter"><span id="count2">1</span>/2</div>
+					  </div>
+					  <div>3</div>
+					  <div>4</div>
+					  <div>5</div>
+					  <div>6</div>
+					</div>
+				</div>
+
+
+		
+
+
+			
+			</div>
+		</div>
+		
+	</section>
+
+<!-- Отзывы -->
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="reviews-slider">
+      	<div class="reviews-slider-content">
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<h4>Our <span>clients.</span></h4>
+					<p>Donec maximus nisi ut ligula elementum elementum. </p>
+					<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentu. Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
+					Vivamus consectetur fermentum</p>
+					<small><img src="img/quote.png" alt="quote">JOHN jones</small>
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+					<div class="reviews-slider-picture">
+						<div class="reviews-slider-picture-count"><span>1</span>/3</div>
+					</div>
+					
+				</div>
+				<!-- /.col-lg-6 -->
+				<!-- <div class="reviews-count"><span id="counter">1</span>/3</div> -->
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+      	<div class="reviews-slider-content">
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<h4>Our <span>clients.</span></h4>
+					<p>Donec maximus nisi ut ligula elementum elementum. </p>
+					<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentu. Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
+					Vivamus consectetur fermentum</p>
+					<small><img src="img/quote.png" alt="quote">JOHN jones</small>
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+					<div class="reviews-slider-picture">
+						<div class="reviews-slider-picture-count"><span>2</span>/3</div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+      	<div class="reviews-slider-content">
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<h4>Our <span>clients.</span></h4>
+					<p>Donec maximus nisi ut ligula elementum elementum. </p>
+					<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentu. Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
+					Vivamus consectetur fermentum</p>
+					<small><img src="img/quote.png" alt="quote">JOHN jones</small>
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+					<div class="reviews-slider-picture">
+						<div class="reviews-slider-picture-count"><span>3</span>/3</div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+
+
+
+      </div>
+      <!-- <div class="reviews-count"><span id="counter">1</span>/3</div> -->
+    </div>
+  </div>
+  <!-- <div class="reviews-count"><span id="counter">1</span>/3</div> -->
+  <!-- <div class="reviews-slider-picture-count"><span id="counter">1</span>/3</div> -->
 </section>
 
-<!-- Потребитель имеет Право -->
-	<section class="head">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Потребитель имеет Право</h2>
-				</div>
-			</div>
+<!-- Блог -->
+	<section class="blog">
+		<div class="head blog-head">
+			<h3>Our <span>blog.</span></h3>
 		</div>
-	</section>
-	<section class="consumer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="consumer-info"><p><span>Потребитель имеет право вернуть обувь продавцу в течении 2 (двух) лет после покупки</span>
-							Вы, как Потребитель имеете очень много прав, они закреплены в Законе РФ <strong>№ 2300-1 от 07.02.1992 «О защите прав потребителей»</strong>, мы сделали небольшую справочную выборку для Вас:</p>
-					</div>
-					<div class="accordeon">
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>Срок для возврата некачественной обуви – 2 (два) года с момента покупки</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	<p>- с момента передачи Обуви Покупателю (ч.2 ст. 19 ФЗ «О защите правпотребителей»); (ч.5 ст. 19 Закона РФ от 07 февраля 1992 № 2300-I «О защите прав потребителя»): <br>
-					    	«В случаях, когда предусмотренный договором <span>гарантийный срок составляет менее двух лет и недостатки товара обнаружены потребителем по истечении гарантийного срока, но в пределах двух лет, потребитель вправе предъявить продавцу (изготовителю) требования</span>, предусмотренные статьёй 18 настоящего Закона, если докажет, что недостатки товара возникли до его передачи потребителю или по причинам, возникшим до этого момента.»</p>
-					    </dd>
-					  </dl>
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>Почитать подробней</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	<p><strong>Почему возможно вернуть некачественную Обувь в течении двух лет?</strong> <br>
-					    	Для начала следует пояснить, что ст. 5 ФЗ «О защите прав потребителей» устанавливает следующие сроки:</p>
-						    	<ul>
-	    							<li>Срок службы обуви</li>
-	    							<li>Гарантийный срок обуви</li>
-	    							<li>Срок для возврата некачественной обуви</li>
-	    						</ul>
-	    					<p><strong>Срок службы</strong> – период, в течение которого изготовитель (исполнитель) обеспечивает потребителю возможность использования товара (работы) по назначению и нести ответственность за существенные недостатки. Срок службы устанавливается изготовителем, в противном случае срок службы товара составляет 10 (десять) лет с момента приобретения товара (п. 6 ст. 19 ФЗ Закона «О защите прав потребителя»).
-					    	</p>
-							<p><strong>Гарантийный срок</strong> - период, в течение которого в случае обнаружения в Обуви недостатков Продавец, изготовитель, обязаны удовлетворить требования потребителя, если не докажет, что они возникли по вине Покупателя (п. 6 ст. 5 ФЗ Закона «О защите прав потребителя»).
-							Именно о гарантийном сроке покупатель уведомляется Продавцом в момент приобретения товара – «Вы можете вернуть Обувь в течении 14 рабочих дней», «60 дней» и так далее.</p>
-							<p><strong>Срок для возврата некачественной Обуви – два года!!!</strong><br>
-							«В случаях, когда предусмотренный договором <span>гарантийный срок составляет менее двух лет и недостатки товара обнаружены потребителем по истечении гарантийного срока, но в пределах двух лет, потребитель вправе предъявить продавцу (изготовителю)</span> требования, предусмотренные статьёй 18 настоящего Закона, если докажет, что недостатки товара возникли до его передачи потребителю или по причинам, возникшим до этого момента.» (ч.5 ст. 19 ФЗ Закона «О защите прав потребителя»)</p>	    	
-					    </dd>
-					  </dl>
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>С какого момента начинает течь срок для возврата Обуви</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	- с момента передачи Обуви Покупателю (ч.2 ст. 19 ФЗ «О защите правпотребителей»); <br>
-							- для сезонных товаров к которым относится Обувь - с момента начала соответствующего сезона 
-							(абзац 2, ч.2 ст. ФЗ «О защите прав потребителей»); <br>
-							- с момента получения Обуви Покупателем при покупке обуви по каталогам, образцам или почте, а также если момент заключение договора купли-продажи обуви, не совпадает с моментом передачи изделия Покупателю 
-							(абзац 3, ч.2 ст. 19 ФЗ «О защите прав потребителей»).
-					    </dd>
-					  </dl>
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>Права Потребителя при возврате обуви</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	<strong>Какие права имеет Потребитель при возврате некачественной Обуви (ч.1 ст. 18 ФЗ «О защите прав потребителей»)</strong>
-							<ul>
-								<li>потребовать замены на Обувь этой же марки (этих же модели и (или) артикула);</li>
-								<li>потребовать замены на такую же Обувь другой марки (модели, артикула) ссоответствующим перерасчётом покупной цены;</li>
-								<li>потребовать соразмерного уменьшения покупной цены Обуви;</li>
-								<li>потребовать незамедлительного безвозмездного устранения недостатков Обуви или возмещения расходов на их исправление не Продавцом, а в мастерской;</li>
-								<li>отказаться от исполнения договора купли-продажи и потребовать возврата уплаченной за Обувь суммы.</li>
-							</ul>
-					    </dd>
-					  </dl>
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>Порядок возврата некачественной обуви продавцу</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	<p>В пределах гарантийного срока действует «презумпция вины Продавца» - Продавец обязан удовлетворить требования потребителя, если не докажет, что они возникли по вине Покупателя (п. 6 ст. 5 Закона РФ № 2300-1 от 07.02.1992 «О защите прав потребителей»), гарантийный срок устанавливает Продавец или производитель;
-							По истечении гарантийного срока, но в пределах двух лет Покупатель имеет право предъявить Продавцу требования об удовлетворении претензий, если докажет, что недостатки возникли до передачи Обуви Покупателю. Бремя доказывания наличия дефектов и причина их происхождения лежит на Покупателе.
-							<span>Порядок действий при возврате Обуви в пределах гарантийного срока :</span></p>
-					    	<p>- Обращайтесь с претензией к Продавцу</p>
-								<div class="consumer-btn btn">
-									<button>Скачать универсальную претензию</button>
-								</div>
-				    		<p>- Продавец рассматривает претензию и удовлетворяет Ваши требования ИЛИ отказывает Вам ИЛИ назначает независимую экспертизу (за свой счёт)</p>
-				    		<p>- По результатам проведённой экспертизы Продавец удовлетворяет Вашу требования ИЛИ отказывает Вам</p>
-				    		<p>- В случае отказа Вы соглашаетесь с отказом Продавца ИЛИ обращаетесь в нашу Лабораторию</p>
-								<div class="consumer-btn btn">
-									<button>Получить бесплатную консультацию</button>
-								</div>
-				    		<p>- Мы бесплатно проведём для Вас предварительное исследование Оформить заявку на экспертизу - это кнопка</p>
-								<div class="consumer-btn btn">
-									<button>Оформить заявку на экспертизу</button>
-								</div>
-					    	<p>- Обращайтесь с повторной претензией к Продавцу (прикладываете к ней независимую экспертизу).</p>
-								<div class="consumer-btn btn">
-									<button>Скачать универсальную претензию</button>
-								</div>
-				    		<p>- Продавец рассматривает претензию и удовлетворяет Ваши требования при этом возмещает все понесённые Вами расходы (оплата экспертизы, юристов и так далее)</p>
-					    	</ul>
-					    </dd>
-					  </dl>
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>Срок для удовлетворения требований Потребителя – 10 (десять) дней со дня предъявления претензии</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	<p><span>Срок для удовлетворения требований Потребителя – 10 (десять) дней со дня предъявления претензии</span>
-							«Требования потребителя о соразмерном уменьшении покупной цены товара, возмещении расходов на исправление недостатков товара потребителем или третьим лицом, возврате уплаченной за товар денежной суммы, а также требование о возмещении убытков, причиненных потребителю вследствие продажи товара ненадлежащего качества либо предоставления ненадлежащей информации о товаре, подлежат удовлетворению продавцом (изготовителем, уполномоченной организацией или уполномоченным индивидуальным предпринимателем, импортером) в течение десяти дней со дня предъявления соответствующего требования.» (ст. 22 Закона РФ № 2300-1 от 07.02.1992 «О защите прав потребителей»)</p>
-					    </dd>
-					  </dl>
-					  <dl>
-					    <dt>
-					      <div class="accordeon-icon">
-					        <img src="img/consumer-info.png" alt="иконка">
-					      </div>
-					      <span>Практические рекомендации при возврате некачественной Обуви</span><i class="fas fa-angle-down"></i></dt>
-					    <dd>
-					    	<p>1. Всегда фиксируйте свои обращения к продавцу – не ленитесь писать письменные претензии в двух экземплярах (один экземпляр передаёте продавцу, на втором Вам в магазине должны поставить отметку о получении). Если претензию принимать отказываются (под предлогом «мы не уполномочены на приём корреспонденции») – претензию следует отправить в адрес продавца заказным письмом (лучше с описью вложения) и обязательно сохранить квитанцию.</p>
-						    	<div class="consumer-btn btn">
-									<button>Скачать универсальную претензию</button>
-								</div>
-							<p>2. В случае если продавец предлагает передать ему Обувь для проверки качества или проведения экспертизы, следует зафиксировать факт передачи товара с указанием цели передачи посредством составления обычного акта.
-								-указать дату и место передачи товара <br>
-								- кто передаёт и кто принимает товар <br>
-								- описать состояние Обуви (новая, имеет следы ношения, и т.д.) <br>
-								- описать своими словами обнаруженный дефект Обуви <br>
-							Обязательно сделайте фотографии Обуви (можно даже на мобильный телефон) подробные фотографии упаковки, коробки, Обуви со всех сторон и подробно дефекты.</p>
-							<p>3. В случае проведения продавцом экспертизы товара, уместно письменно предложить продавцу согласовать экспертное учреждение и заявить о своём желании присутствовать при проведении экспертизы. Следует помнить, что Закон о защите прав потребителей не содержит обязанности продавца согласовывать экспертное учреждение (это является его правом и признаком добросовестности продавца), однако предоставить возможность потребителю присутствовать при проведении экспертизы – его обязанность.</p>
-							<p>4. Не стоит слепо доверять экспертизе, проведённой «по правилам» продавца, в особенности если она проведена в Ваше отсутствие. Практика нашей работы показывает, что в большинстве случаев экспертиза проведённая продавцом содержит необоснованные выводы. Решение простое и бесплатное для Вас Потребитель - </p>
-						    	<div class="consumer-btn btn">
-									<button>Получить уникальную консультацию</button>
-								</div>
-					    </dd>
-					  </dl>
-						
+				
+				<div class="col-lg-8">
+					
 
 
-
-
-					</div>
-					<div class="consumer-return">
-						<p>При возврате некачественной обуви Потребителю возвращаются: оплаченные деньги за обувь расходы на проведение экспертизы расходы на оказание юридической помощи (ч. 1, ст.18 Закона РФ «О защите прав потребителей»)</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Блок заказать (форма) -->
-	<section class="order">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="order-head">
-						<h3>Проверим обувь на дефекты (бесплатно*)</h3>
-					</div>
-					<div class="order-form">
-						<form action="#">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Номер телефона или e-mail ">
-							<div class="order-form-btn btn">
-								<button>Заказать</button>
-								<small>* услуга предоставляется бесплатно для <br>Потребителя</small>
-							</div>
-						</form>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Основные виды Производственных дефектов Обуви -->
-	<section class="head">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Основные виды Производственных дефектов Обуви</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="kinds">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/1.png" alt="Растрескивание покровной плёнки">
-						<p>Растрескивание покровной плёнки материала обуви (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: низкое качество кожи или нарушение технологии производства обуви.</p>
-						<strong>Порок материала.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/2.png" alt="Неустойчивость покрытия кожи">
-						<p>Неустойчивость покрытия кожи (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: неправильная подготовка лицевой поверхности кожи перед покрытием, нарушение рецептуры покрытий, нарушение технологии крашения.</p>
-						<strong>Порок материала.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/3.png" alt="растрескивание">
-						<p>Растрескивание, отслаивание, липкость покровной плёнки материала обуви (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: неправильный состав компонентов лакового покрытия или нарушения температурного режима сушки. Порок материала.</p>
-						<strong>Порок материала.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/4.png" alt="Жировые налёты">
-						<p>Жировые налёты, причина: неправильная подготовка лицевой поверхности кожи перед покрытием, нарушение рецептуры покрытий, нарушение технологии крашения (Товароведная экспертиза качества кожаной обуви. Учебно-методическое пособие/ Сост. В.Б. Игнатенко - М.: Изд-во Рос. экон. акад., 2000, с. 16).</p>
-						<strong>Порок материала.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/5.png" alt="Повторный шов">
-						<p>Повторный шов (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: нарушение технологии производства строчек.</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/6.png" alt="Разная длина и ширина одноименных деталей">
-						<p>Разная длина и ширина одноименных деталей в паре (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: нарушение технологии подбора деталей заготовки верха, её формования и при креплении низа обуви.</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/7.png" alt="неправильно поставленный каблук">
-						<p>Неправильно поставленный каблук (ГОСТ 28371-89 "Обувь. Определение сортности").</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/8.png" alt="неприклеенная подошва">
-						<p>Неприклеенная подошва (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: нарушение технологии крепления подошвы.</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/9.png" alt="плохое соединение швов">
-						<p>Плохое соединение швов (ГОСТ 28371-89 "Обувь. Определение сортности"), причина: нарушение технологии производства строчек.</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/10.png" alt="деформация носочной части">
-						<p>Деформация носочной части обуви (мягкие подноски), причина: нарушение технологии формования подноска (Товароведная экспертиза качества кожаной обуви. Учебно-методическое пособие/ Сост. В.Б. Игнатенко - М.: Изд-во Рос. экон. акад., 2000, с. 20).</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card">
-						<img src="img/kinds/11.png" alt="деформация задников">
-						<p>Деформация задников (мягкие задники), причина: нарушение технологии формования задников (Товароведная экспертиза качества кожаной обуви. Учебно-методическое пособие/ Сост. В.Б. Игнатенко - М.: Изд-во Рос. экон. акад., 2000, с. 20). </p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3 col-sm-6 col-md-4 col-xs-12 px-0">
-					<div class="kinds-card kinds-card-gap">
-						<img src="img/kinds/12.png" alt="розрыв материала">
-						<p>Разрыв материала заготовки верха обуви по грани следа, причина: взъерошивание затяжной кромки выше грани следа (Товароведная экспертиза качества кожаной обуви. Учебно-методическое пособие/ Сост. В.Б. Игнатенко - М.: Изд-во Рос. экон. акад., 2000, с. 21).</p>
-						<strong>Производственный порок.</strong>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-			</div>
-		</div>
-	</section>
-
-<!-- Блок заказать (инфо) -->
-	<section class="order">
-		<div class="container">
-			<div class="row">
-				<div class="order__column col-lg-4 col-md-4 text-center">
-					<span>Срок проведения экспертизы</span>
-					<strong>– 20 минут</strong>
-				</div>
-				<div class="order__column col-lg-4 col-md-4 text-center">
-					<span>Стоимость экспертизы обуви</span>
-					<strong>от 1500 рублей</strong>					
-				</div>
-				<div class="order__column col-lg-4 col-md-4 text-center">
-					<button class="order-info-btn btn">Заказать</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Как себя вести с Продавцом при возврате обуви -->
-	<section class="head">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Как себя вести с Продавцом при возврате обуви</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="return-shoes">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 px-0">
-					<div class="return-shoes-content">
-						<p>Обращаетесь к Продавцу с устной или <a href="#">письменной претензией</a>. <br>
-							Продавец обязан рассмотреть её в течении 10 дней. <br>
-							В случае отказа Продавцом удовлетворить претензии обращайтесь внашу экспертную компанию. <br>
-							Мы проведём экспертизу и окажем Вам помощь в возврате обуви.</p>
-						<div class="return-shoes-content-btn btn">
-							<button>Заказать экспертизу</button>
+				<div class="blog-picture-info"></div>
+				<div class="blog-information">
+					<div class="blog-information-wrapper">
+						<p>You will learn a lot of useful <small>information</small> in <span>our blog.</span></p>
+						<div class="blog-btn btn-black">
+							<button>Read more</button>
 						</div>
-						<div class="return-shoes-content-frame">
-							<p>Продавец обязан в течении 10 дней с момента обращения вернуть вам деньги за обувь и возместить понесенные расходы на проведение независимой экспертизы.</p>
+					</div>
+				</div>
+				<div class="blog-information-picture"></div>
+
+
+
+
+
+
+					
+					
+				</div>
+				<!-- /.col-lg-8 -->
+				<div class="col-lg-4">
+					<div class="blog-roses">
+						<div class="blog-roses-info">
+							<strong>Bouquet of <span>roses.</span></strong>
+							<p>Donec maximus nisi ut ligula elementum elementum.</p>
+							<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
+							
+							Vivamus consectetur fermentum </p>
+							<div class="blog-btn btn-black">
+								<button>Read more </button>
+							</div>
 						</div>
-						<p>(ч.1, ст. 18 Закона РФ «О защите прав потребителей») <br>Продавец возместить в 100 % размере стоимость проведенной нами экспертизы!!!</p>
 					</div>
 				</div>
+				<!-- /.col-lg-4 -->
+
 			</div>
 		</div>
 	</section>
 
-<!-- Подробная инструкция по возврату некачественной обуви -->
-	<section class="head">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Подробная инструкция по возврату некачественной обуви</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="manual">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="manual-info">
-						<ol>
-							<li><p>Всегда фиксируйте свои обращения  к продавцу – не ленитесь писать письменные претензии в двух экземплярах (один экземпляр передаёте продавцу, на втором Вам в магазине должны поставить отметку о получении). </p>
-							<p>Если претензию принимать отказываются (под предлогом «мы не уполномочены на приём корреспонденции») – претензию следует отправить в адрес продавца заказным письмом (лучше с описью вложения) и обязательно сохранить квитанцию.</p>
-							<div class="manual-info-btn btn">
-								<button>Скачать универсальную презинтацию</button>
-							</div>	
-							</li>
-							<li><p>В случае если продавец предлагает передать ему Обувь для проверки качества или проведения экспертизы, следует зафиксировать факт передачи товара с указанием цели передачи посредством составления обычного акта.</p>
-								<ul>
-									<li>указать дату и место передачи товара,</li>
-									<li>кто передаёт и кто принимает товар,</li>
-									<li>описать состояние Обуви (новая, имеет следы ношения, и т.д.),</li>
-									<liописать своими словами обнаруженный дефект Обуви,></li>
-								</ul>
-							<p>Обязательно сделайте фотографии Обуви (можно даже на мобильный телефон) подробные фотографии упаковки, коробки, Обуви со всех сторон и подробно дефекты.</p>
-							</li>
-							<li><p>В случае проведения продавцом экспертизы товара, уместно письменно предложить продавцу согласовать экспертное учреждение и заявить о своём желании присутствовать при проведении экспертизы. </p>
-							<p>Следует помнить, что Закон о защите прав потребителей не содержит обязанности продавца согласовывать экспертное учреждение (это является его правом и признаком добросовестности продавца), однако предоставить возможность потребителю присутствовать при проведении экспертизы – его обязанность.</p></li>
-							<li><p>Не стоит слепо доверять экспертизе, проведённой «по правилам» продавца, в особенности если она проведена в Ваше отсутствие. Практика нашей работы показывает, что в большинстве случаев экспертиза проведённая продавцом содержит необоснованные выводы. Решение простое и бесплатное для Вас:</p></li>
-							<div class="manual-info-btn btn">
-								<button>Бесплатная экспресс-консультация</button>
-							</div>
-						</ol>
+<!-- Рассылка -->
+	<section class="newsletter">
+		<div class="newsletter-wrapper">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-lg-6">
+						<div class="newsletter-content">
+							<strong><span>News</span>letter</strong>
+							<small>Sing up for the news</small>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Вопросы, на которые отвечает экспертиза обуви   -->
-	<section class="head">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Вопросы, на которые отвечает экспертиза обуви </h2> 
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="question">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="question-list">
-						<ul>
-							<li>Имеются ли дефекты (пороки)?</li>
-							<li>Дефект (пороки) является производственным или эксплуатационным?</li>
-							<li>Причины возникновения дефектов (пороков)?</li>
-							<li>Пригодна ли обувь для дальнейшей эксплуатации?</li>
-							<li>Соответствует ли обувь требованиям?</li>
-							<li>Соответствует ли обувь сертификату?</li>
-							<li>Соответствуют ли характеристики обуви маркировке?</li>
-							<li>Ремонтировалась ли обувь?</li>
-							<li>Правильно ли подобрана обувь по размеру?</li>
-							<li>Стоимость обуви?</li>
-							<li>Возможен ли ремонт обуви?</li>
-							<li>Сколько будет стоить ремонт обуви?</li>
-						</ul>
+					<!-- /.col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="newsletter-form">
+							<form action="#">
+								<input type="text" placeholder="Email">
+								<input type="submit" value="Subscribe >>">
+							</form>
+						</div>
 					</div>
+					<!-- /.col-lg-6 -->
+
 				</div>
 			</div>
 		</div>
+
 	</section>
 
-<!-- Блок заказать (форма) -->
-	<section class="order">
+<!-- Клиенты -->
+	<section class="client">
+			<div class="head client-head">
+				<h3>Our <span>clients.</span></h3>
+			</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="order-head">
-						<h3>Проверим обувь на дефекты (бесплатно*)</h3>
-					</div>
-					<div class="order-form">
-						<form action="#">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Номер телефона или e-mail ">
-							<div class="order-form-btn btn">
-								<button>Заказать</button>
-								<small>* услуга предоставляется бесплатно для <br>Потребителя</small>
-							</div>
-						</form>
-						
-					</div>
+				<div class="col-lg-3">
+					<div class="client-content"></div>
 				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Эксперты нашей компании -->
-	<section class="head">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Эксперты нашей компании</h2>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-3">
+					<div class="client-content"></div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="experts">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="experts-content">
-						<p>Эксперты нашей Компании это профессионалы высокого уровня.</p>
-						<p>Наша компания основана в 2008 году.</p>
-						<p>Поведено свыше 20000 экспертиз и исследований.</p>
-						<p>Мы имеем опыт в проведении судебных экспертиз и внесудебных исследований.</p>
-						<p>С гордостью отстаиваем свои экспертизы в суде.</p>
-					</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-3">
+					<div class="client-content"></div>
 				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-3">
+					<div class="client-content"></div>
+				</div>
+				<!-- /.col-lg-3 -->
 			</div>
-		</div>
-	</section>
-
-<!-- Карта -->
-
-	<section class="map">
-		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae83bc6be484649184558bc73b558a3ee857297247f1030876e4d611363fba776&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-		<div class="map-route">
-			<div class="map-route-pedestrian">
-				<img src="img/map/pedestrian.png" alt="пешеходный маршрут">
-				<a href="#">Пешеходный маршрут<i class="fas fa-angle-right"></i></a>
-			</div>
-			<div class="map-route-automotive">
-				<img src="img/map/automotive.png" alt="автомобильный маршрут">
-				<a href="#">Автомобильный маршрут<i class="fas fa-angle-right"></i></a>
-			</div>
-		</div>
-		<div class="map-content">
-			<div class="map-content-logo">
-				<img src="img/map/map-logo.png" alt="логотип лаборатории">
-				<img src="img/map/written-logo.png" alt="письменный логотип лаборатории">
-			</div>
-			<span>
-				<img id="web" src="img/map/map-mobile.png" alt="карта на мобильном телефоне">
-				<img id="mobile" src="img/map/map-mobile-ad.png" alt="карта на мобильном телефоне">
-				<strong>г. Москва, Ленинградский проспект,<br> д. 62,подъезд 1, офис 1</strong>
-			</span>
-			<span>
-				<img id="web" src="img/map/map-metro.png" alt="станция метро">
-				<img id="mobile" src="img/map/map-metro-ad.png" alt="станция метро">
-				Ст. метро “Аэропорт” <br><small>(мы находимся в здании станции метро "Аэропорт")</small>
-			</span>
-			<span>
-				<img id="web" src="img/map/map-phone.png" alt="телефон">
-				<img id="mobile" src="img/map/map-phone-ad.png" alt="телефон">
-				8 (800) 234-17-05
-			</span>
-
-
-
 		</div>
 	</section>
 
@@ -746,216 +771,289 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
+				
+				<!-- <div class="col-lg-2">
+					<div class="footer-logo">
+						<a href="#">logo</a>
+					</div>
+					<div class="footer-city">
+						<i class="fas fa-map-marker-alt"></i>
+						<select>
+							<option>New York</option>
+							<option>Denver</option>
+						</select>
+					</div>
+					<div class="footer-phone">
+						<a href="#"><i class="fas fa-phone"></i>000 654 43 43</a>
+					</div>
+					<div class="footer-social">
+						<a href="#"><img src="img/footer/instagram.png" alt="instagram"></a>
+						<a href="#"><img src="img/footer/twitter.png" alt="twitter"></a>
+						<a href="#"><img src="img/footer/facebook.png" alt="facebook"></a>
+					</div>
+				</div>
+				/.col-lg-2
+				<div class="col-lg-4">
+					<div class="footer-icons">
+						<a href="#"><img src="img/footer/bookmarks.png" alt="избранное"></a>
+						<div class="header-icons-basket">
+							<a href="#"><img src="img/footer/basket.png" alt="корзина"></a>
+							<span>0</span>
+						</div>
+					</div>
+					<div class="footer-newsletter">
+							<div class="footer-newsletter-content">
+								<strong><span>News</span>letter</strong>
+								<small>Sing up for the news</small>
+							</div>
+							<div class="footer-newsletter-form">
+								<form action="#">
+									<input type="text" placeholder="Email">
+									<input type="submit" value="Subscribe >>">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				/.col-lg-4
+				<div class="col-lg-6">
+					<div class="footer-nav">
+						
+				
+					<div class="footer-nav-link">
+						<ul>
+							<li>
+								<a href="#">Guarantee</a>
+							</li>
+							<li>
+								<a href="#">Privacy policy</a>
+							</li>
+							<li>
+								<a href="#">Goods replacement</a>
+							</li>
+							<li>
+								<a href="#">Order cancellation</a>
+							</li>
+							<li>
+								<a href="#">Bonuses policy</a>
+							</li>
+							<li>
+								<a href="#">flower delivery</a>
+							</li>
+						</ul>
+					</div>
+				
+				
+				
+				
+				
+					</div>
+				</div>
+				/.col-lg-6 -->
+
 				<div class="col-lg-2">
 					<div class="footer-logo">
-						<img src="img/footer-logo.png" alt="логотип лаборатории">
+						<a href="#">logo</a>
+					</div>
+					<div class="footer-city">
+						<i class="fas fa-map-marker-alt"></i>
+						<select>
+							<option>New York</option>
+							<option>Denver</option>
+						</select>
+					</div>
+					<div class="footer-phone">
+						<a href="#"><i class="fas fa-phone"></i>000 654 43 43</a>
+					</div>
+					<div class="footer-social">
+						<a href="#"><img src="img/footer/instagram.png" alt="instagram"></a>
+						<a href="#"><img src="img/footer/twitter.png" alt="twitter"></a>
+						<a href="#"><img src="img/footer/facebook.png" alt="facebook"></a>
 					</div>
 				</div>
 				<!-- /.col-lg-2 -->
-				<div class="col-lg-3 col-xs-12 px-0">
-					<div class="footer-nav">
-						<a href="#">Подробный прайс</a>
-						<a href="#">Образец претензии</a>
-						<a href="#">Потребитель, знай свои права</a>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
-				<div class="col-lg-3">
-					<div class="footer-contacts">
-						<div class="footer-contacts-mail">
-							<a href="mailto:88002341704@mail.ru"><i class="fas fa-envelope"></i>88002341704@mail.ru</a>
-						</div>
-						<div class="footer-contacts-phone">
-							<i class="fas fa-phone-volume"></i>
-							<div class="footer-contacts-phone-main">
-								<a href="tel:+78002341704">8 800 234 17 04</a>
-							</div>
-							<a href="tel:+74957640158">+7 495 764 01 58</a>
-							<a href="tel:+79857640158">+7 985 764 01 58</a>
-						</div>
-					</div>
-				</div>
-				<!-- /.col-lg-3 -->
 				<div class="col-lg-4">
-					<div class="footer-address">
-						<i class="fas fa-map-marker-alt"></i>
-						<span><small>125167, г. Москва,</small> Ленинградский проспект д.62, подъезд 1, офис 1 метро «Аэропорт»</span>
+					<div class="footer-icons">
+						<a href="#"><img src="img/footer/bookmarks.png" alt="избранное"></a>
+						<div class="footer-icons-basket">
+							<a href="#"><img src="img/footer/basket.png" alt="корзина"></a>
+							<span>0</span>
+						</div>
 					</div>
+					
+					<!-- <div class="footer-newsletter">
+							<div class="footer-newsletter-content">
+								<strong><span>News</span>letter</strong>
+								<small>Sing up for the news</small>
+							</div>
+							<div class="footer-newsletter-form">
+								<form action="#">
+									<input type="text" placeholder="Email">
+									<input type="submit" value="Subscribe >>">
+								</form>
+							</div>
+						</div>
+					</div> -->
+					
+					<div class="footer-newsletter">
+						<div class="footer-newsletter-content">
+							<strong><span>News</span>letter</strong>
+							<small>Sing up for the news</small>
+						</div>
+						<div class="footer-newsletter-form">
+							<form action="#">
+								<input type="text" placeholder="Email">
+								<input type="submit" value="Subscribe >>">
+							</form>
+						</div>
+					</div>
+
+
+
 				</div>
 				<!-- /.col-lg-4 -->
-				<div class="footer-mobile-nav">
-					<div class="test"><div class="col-xs-3">
-							<div class="footer-mobile-nav-link">
-								<a href="#"><img src="img/footer/order.png" alt="иконка заказать">
-									<span>Заказать</span>
-								</a>
-							</div>
+				<div class="col-lg-6">
+					<div class="footer-nav">	
+						<div class="footer-nav-link">
+							<ul>
+								<li><a href="#">Guarantee</a></li>
+								<li><a href="#">Privacy policy</a></li>
+								<li><a href="#">Goods replacement</a></li>
+								<li><a href="#">Order cancellation</a></li>
+								<li><a href="#">Bonuses policy</a></li>
+								<li><a href="#">flower delivery</a></li>
+							</ul>
+						</div>	
+						<div class="footer-nav-link">
+							<ul>
+								<li><a href="#">Privacy policy</a></li>
+								<li><a href="#">Goods replacement</a></li>
+								<li><a href="#">Order cancellation</a></li>
+								<li><a href="#">Bonuses policy</a></li>
+								<li><a href="#">flower delivery</a></li>
+							</ul>
 						</div>
-						<!-- /.col-xs-3 -->
-						<div class="col-xs-3">
-							<div class="footer-mobile-nav-link">
-								<a href="#"><img src="img/footer/contacts.png" alt="иконка заказать">
-									<span>Контакты</span>
-								</a>
-							</div>
+						<div class="footer-nav-link">
+							<ul>
+								<li><a href="#">All bouquets</a></li>
+								<li><a href="#">Popular</a></li>
+								<li><a href="#">Novelty</a></li>
+								<li><a href="#">Roses</a></li>
+								<li><a href="#">Low price</a></li>
+								<li><a href="#">News</a></li>
+							</ul>
 						</div>
-						<!-- /.col-xs-3 -->
-						<div class="col-xs-3">
-							<div class="footer-mobile-nav-link">
-								<a href="#"><img src="img/footer/write.png" alt="иконка заказать">
-									<span>Написать</span>
-								</a>
-							</div>
+						
+
+						
+						
+						
+						
+
+
+
+
+						
+					
+					
+					
+					
 						</div>
-						<!-- /.col-xs-3 -->
-						<div class="col-xs-3">
-							<div class="footer-mobile-nav-link">
-								<a href="#"><img src="img/footer/bell.png" alt="иконка заказать">
-									<span>Позвонить</span>
-								</a>
-							</div>
-						</div>
-						<!-- /.col-xs-3 --></div>
 				</div>
+				<!-- /.col-lg-6 -->
+
+
+
 
 			</div>
 		</div>
 	</footer>
 
-<!-- Соц сети слева -->
-<div class="social">
-	<ul>
-		<li><a href="#"><img class="social-img-top" src="img/social/vk.png" alt="вконтакте"></a></li>
-		<li><a href="#"><img src="img/social/fb.png" alt="фейсбук"></a></li>
-		<li><a href="#"><img src="img/social/mail.png" alt="майл.ру"></a></li>
-		<li><a href="#"><img class="social-img-bottom" src="img/social/ok.png" alt="однокласники"></a></li>
-	</ul>
-</div>
 
-<!-- меню справа -->
-<nav id="menu-right">
-		<ul>
-			<li><a href="#1"><div class="img_n"><img src="img/menu-right/order.png"></div></a>
-				<ul>
-					<li><a href="#">Заказать</a></li>
-				</ul>
-			</li>
-			<li><a href="#1"><div class="img_n"><img src="img/menu-right/contacts.png"></div></a>
-				<ul>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</li>
-			<li><a href="#1"><div class="img_n"><img src="img/menu-right/write.png"></div></a>
-				<ul>
-					<li><a href="#">Написать</a></li>
-				</ul>
-			</li>
-			<li><a href="#1"><div class="img_n"><img src="img/menu-right/bell.png"></div></a>
-				<ul>
-					<li><a href="#">Позвонить</a></li>
-				</ul>
-			</li>
-
-			
-		</ul>
-	</nav>
-
-
-
-<!-- Почитать о компании -->
-    <!-- Кнопка -->
-    <div class="popup">
-      <!-- само бtлое окно -->
-      <div class="popup-dialog">
-        <!-- содержимое модального окна -->
-        <div class="popup-content">
-        	<div class="popup-info-btn">
-        		<button>Почитать о компании?</button>
-        	</div>
-        	<button class="popup-close"><!-- &times; --><i class="fas fa-times"></i></button>
-        </div>
-      </div>
-    </div>
-
-
-	<!-- контент -->
-   <div class="popup-info">
-      <!-- само бtлое окно -->
-      <div class="popup-info-dialog">
-        <!-- содержимое модального окна -->
-        <div class="popup-info-content">
-            	<h4>Несколько слов от руководителя группы компаний АНО «Лаборатория экспертных Исследований» Евгения Романова</h4>
-				<p>Здравствуйте, уважаемый Клиент и Посетитель нашего сайта, Вы
-				сделали правильный выбор, посетив наш информационный ресурс в поисках квалифицированной профессиональной экспертной помощи. </p>
-				<p>Меня зовут Романов Евгений Юрьевич, я руководитель и учредитель Автономной некоммерческой организации «Лаборатория экспертных Исследований» (АНО «ЛэИ»). Автономная некоммерческая организация «Лаборатория экспертных Исследований» (АНО «ЛэИ») основана в 2008 году, основное направление деятельности - производство судебных экспертиз. </p>
-				<p>На сегодняшний день «Лаборатория экспертных Исследований» - это группа негосударственных судебно-экспертных организаций, имеющая четыре самостоятельных офиса: два офиса на территории города Москвы, один в городе Омске, и один в городе Санкт-Петербурге.</p>
-				<p>Эксперты ЛэИ - это профессионалы, имеющие специальные знания в различных областях науки, техники, искусства и ремесла. В нашей команде более 100 экспертов, с многолетним опытом работы в государственных судебно-экспертных учреждениях системы МВД, Министерства Юстиции Российской Федерации, вневедомственных и негосударственных экспертных организациях.</p> 
-				<p>Мы используем современное экспертное оборудование. В 2017 году был
-					приобретён ещё один программно- аналитический комплекс «Кристалл 5000» 2017 года выпуска. Наши приборы проходят ежегодное техническое обслуживание и поверку. </p>
-				<p>В основе используемых нами методик лежат классические ведомственные экспертные методики, расширенные и дополненные результатами последних достижений мировой криминалистики и современными знаниями из других области наук.</p> 
-				<p>Наша Экспертиза - это официальный процессуальный документ, выполненный в полном соответствии с требованиями процессуальных норм, как по форме, так и содержанию.</p>
-				<p>Количество экспертиз и исследований, выполненных силами АНО «ЛэИ», с 2008 по 2017 год более 15000 (пятнадцать тысяч). Учитывая потребности рынка в области экспертиз, оценки и исследований на сегодняшний день АНО «Лаборатория экспертных Исследований» успешно проводит:</p>
-				<p><strong>- Судебные экспертизы</strong> <br>
-					<strong>-Внесудебные исследования</strong> (исследование до, вне и после судебного разбирательства) <br>
-					<strong>- Оценку</strong> <br>
-					<strong>- Рецензирование экспертиз</strong> – проверка ранее выполненных судебных экспертиз и исследований на предмет соответствия требованиям действующего законодательства и методикам их проведения.</p>
-				<p>Мы понимаем и знаем методы, как противодействовать специалистам в области <strong>«антиэкспертиз»</strong> (сокрытие фактов и
-				обстоятельств, имеющих значение для разрешения дела). </p>
-				<p>Во время учёбы в ВУЗе мы неоднократно слышали: «В правильно
-				поставленном вопросе – половина ответа». Каждый из практикующих юристов подтвердит жизненность этой фразы. Правильно и вовремя поставленный вопрос может решить судьбу процессуального решения, документа или итогового решения Суда. Мы знаем, какие вопросы ставить
-				перед экспертами, специалистами и оценщиками. Своевременная консультация с нашей командой поможет Вам определиться с вопросами для назначения экспертизы, допроса эксперта по уже проведённой
-				экспертизе и во многих других процессуальных действиях и моментах.</p>
-				<p>Считаю, что команда АНО «Лаборатория экспертных Исследований»
-				в состоянии решить экспертные и оценочные задачи любой сложности, на
-				любом этапе разрешения Вашего спора.</p>
-				<p>Готовы к оказанию содействия в скорейшем и объективном
-				разрешении Ваших споров!!! <br>
-				<strong>С уважением, руководитель группы компаний <br> АНО «Лаборатория
-					экспертных Исследований» <br>
-					Е.Ю. Романов</strong></p>
-				<button class="popup-info-close"><!-- &times; --><i class="fas fa-times"></i></button>
-        </div>
-      </div>
-    </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-	<script>
-		$(document).ready(function($) {
-			$('.header-nav').click(function(event) {
-				$('.header-nav-link').toggleClass('nav_active');
-			});
-			/* Аккордеон*/
-			$(".accordeon dd").hide().prev().click(function() {
-			  $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
-			  $(this).next().not(":visible").slideDown().prev().addClass("active");
-			});
-			/* Модальные окна */
-			/* кнопка */
-			$('.popup-link').on('click', function(event) {
-			  event.preventDefault();
-			  $('.popup').fadeIn();
-			});
-			$('.popup-close').on('click', function(event) {
-			  event.preventDefault();
-			  $('.popup').fadeOut();
-			});
-			/* контент */
-			$('.popup-info-btn').on('click', function(event) {
-			  event.preventDefault();
-			  $('.popup-info').fadeIn();
-			  $('.popup').fadeOut();
-			});
-			$('.popup-info-close').on('click', function(event) {
-			  event.preventDefault();
-			  $('.popup-info').fadeOut();
-			});
+<script>
+    $(document).ready(function(){
+    	// $(".head h3").click(function() {
+     //        $(this).css('color', 'red');
+     //    });
+     //    $(".head h3").click(function() {
+     //        $(this).css('color', 'blue');
+     //    });
+    	/* Каталог */
+    	 $('.catalog-slider-for').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.catalog-slider-nav'
 		});
-	</script>
-	
+		$('.catalog-slider-nav').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  asNavFor: '.catalog-slider-for',
+		  centerMode: true,
+		  variableWidth: true,
+		  focusOnSelect: true,
+		  prevArrow: '<div class="catalog-slider-prev"></div>',
+		  nextArrow: '<div class="catalog-slider-next"></div>'
+		});
+		/* Каталог (товары)*/
+		$('.catalog-card-slider').slick({
+		    infinite: true,
+		    slidesToShow: 1,
+		    slidesToScroll: 1,
+		    arrows: true, 
+    	    prevArrow: '<i class="fas fa-chevron-left catalog-card-slider-arrows-prev"></i>',
+    	    nextArrow: '<i class="fas fa-chevron-right catalog-card-slider-arrows-next"></i>',
+		    variableWidth: false,
+		    dots: false
+		  });
+     	/* Закладки каталог */
+     	$('img.catalog-card-bookmarks').click(function() {
+     	  $(this).toggleClass("catalog-card-bookmarks-click");
+     	});
+     	/* Счетчик */
+		$(".catalog-card-slider").on('afterChange', function(event, slick, currentSlide){
+    	    $("#count").text(currentSlide + 1);
+    	 });
+		$(".catalog-card-slider").on('afterChange', function(event, slick, currentSlide){
+    	    $("#count2").text(currentSlide + 1);
+    	 });
+    	/* Отзывы */
+    	$('.reviews-slider').slick({
+    	    infinite: true,
+    	    slidesToShow: 1,
+    	    slidesToScroll: 1,
+    	    arrows: true, 
+    	    prevArrow: '<i class="fas fa-chevron-left reviews-slider-picture-prev"></i>',
+    	    nextArrow: '<i class="fas fa-chevron-right reviews-slider-picture-next"></i>',
+    	    dots: false
+    	 });
+    	$(".reviews-slider").on('afterChange', function(event, slick, currentSlide){
+    	    $("#counter").text(currentSlide + 1);
+    	 });
+		 //  /* Фиксированное меню */
+		 //  var topmenu =$('.nav').offset().top;
+		 //  $(function(){
+		 //  $(window).scroll(function() {
+		 //  var top = $(document).scrollTop();
 
-
-
-  </body> 
+			// console.log ( top );
+		 //  if(top > topmenu) { $('.nav').addClass('fixed'); } else {    $('.nav').removeClass('fixed');   } 
+		 //  });
+		 //  });
+		 //  /* Мобильное меню */
+		 //  $('.slider').slick({
+		 //      infinite: true,
+		 //      slidesToShow: 1,
+		 //      slidesToScroll: 1,
+		 //      arrows: false,
+		 //      dots: true
+		 //    });
+		});
+  </script>
+  </body>
 </html>
