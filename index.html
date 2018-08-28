@@ -13,7 +13,6 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link href="css/style.css" rel="stylesheet">
@@ -26,7 +25,7 @@
 
   <body>
 	
-<!-- Шапка сайта -->
+<!-- Навигация -->
 	<header>
 		<section class="header">
 			<div class="container">	
@@ -67,23 +66,138 @@
 					<!-- /.col-lg-6 -->
 					<div class="col-lg-2">
 						<div class="header-icons">
-							<a href="#"><img src="img/entrance.png" alt="ярлык входа"></a>
-							<a href="#"><img src="img/bookmarks_black.png" alt="избранное"></a>
+
+							<div class="header-icons-entrance">
+								<a href="#"><img src="img/entrance.png" alt="ярлык входа"></a>
+								<div class="header-icons-entrance_form">
+									<form action="#">
+										<input type="text" placeholder="Phone or email">
+										<input type="text" placeholder="Password">
+										<span>Forgot your password? <a href="#">Registration</a></span>
+										<input type="submit" value="Login">
+											<span>Sing with</span>
+											<a href="#"><img src="img/gmail.png" alt="gmail"></a>
+											<a href="#"><img src="img/fb.png" alt="fb"></a>
+									</form>
+								</div>
+							</div>
+							<div class="header-icons-bookmarks">
+								<a href="#"><img src="img/bookmarks.png" alt="ярлык закладок"></a>
+								<span class="header-icons-bookmarks-sum">0</span>
+								<div class="header-icons-bookmarks_parts">
+									<div class="header-icons-bookmarks_parts_content">
+										<span class="header-icons-bookmarks_parts_picture">
+											<span class="header-icons-bookmarks_parts_picture_close">&times;</span>
+										</span>
+										<span class="header-icons-bookmarks_parts_price">50 $</span>
+										<span class="header-icons-bookmarks_parts_quantity">1</span>
+										<span class="header-icons-bookmarks_parts_total">50 $</span>
+										<button class="header-icons-bookmarks_parts_btn">add to cart</button</div>
+									</div>	
+									<div class="header-icons-bookmarks_parts_content">
+										<span class="header-icons-bookmarks_parts_picture">
+											<span class="header-icons-bookmarks_parts_picture_close">&times;</span>
+										</span>
+										<span class="header-icons-bookmarks_parts_price">50 $</span>
+										<span class="header-icons-bookmarks_parts_quantity">2</span>
+										<span class="header-icons-bookmarks_parts_total">100 $</span>
+										<button class="header-icons-bookmarks_parts_btn">add to cart</button</div>
+									</div>	
+									<div class="header-icons-bookmarks_parts_content">
+										<span class="header-icons-bookmarks_parts_picture">
+											<span class="header-icons-bookmarks_parts_picture_close">&times;</span>
+										</span>
+										<span class="header-icons-bookmarks_parts_price">50 $</span>
+										<span class="header-icons-bookmarks_parts_quantity">2</span>
+										<span class="header-icons-bookmarks_parts_total">100 $</span>
+										<button class="header-icons-bookmarks_parts_btn">add to cart</button</div>
+									</div>
+								</div>
+							</div>
+
+							
 							<div class="header-icons-basket">
+								<a href="#"><img src="img/basket.png" alt="ярлык корзины"></a>
+								<span class="header-icons-basket-sum">0</span>
+								<div class="header-icons-basket_goods">
+									<div class="header-icons-basket_goods_content">
+										<div class="header-icons-basket_goods_parts">
+											<span class="header-icons-basket_goods_parts_picture"></span>
+											<span class="header-icons-basket_goods_parts_price">50 $</span>
+											<span class="header-icons-basket_goods_parts_quantity">2</span>
+											<span class="header-icons-basket_goods_parts_total">100 $</span>
+											
+										</div>
+									</div>
+									<div class="header-icons-basket_goods_content">
+										<div class="header-icons-basket_goods_parts">
+											<span class="header-icons-basket_goods_parts_picture"></span>
+											<span class="header-icons-basket_goods_parts_price">50 $</span>
+											<span class="header-icons-basket_goods_parts_quantity">2</span>
+											<span class="header-icons-basket_goods_parts_total">100 $</span>
+											
+										</div>
+									</div>
+									<div class="header-icons-basket_goods_content">
+										<div class="header-icons-basket_goods_parts">
+											<span class="header-icons-basket_goods_parts_picture"></span>
+											<span class="header-icons-basket_goods_parts_price">50 $</span>
+											<span class="header-icons-basket_goods_parts_quantity">2</span>
+											<span class="header-icons-basket_goods_parts_total">100 $</span>
+											
+										</div>
+									</div>
+									<span class="header-icons-basket_goods_parts_total_order">
+										<p>Order total:</p> 
+										<strong>200 $</strong>
+									</span>
+									<div class="header-icons-basket_goods_form">
+										<form action="#">
+											<div class="header-icons-basket_goods_form_head">
+												<p><small>I'm new client</small>/Regular customer</p>
+											</div>
+											<input type="text" placeholder="Name">
+											<input type="text" placeholder="Phone">
+											<input type="text" placeholder="Email">
+											<span>Sing with</span>
+											<a href="#"><img src="img/gmail.png" alt="gmail"></a>
+											<a href="#"><img src="img/fb.png" alt="fb"></a>
+											<input type="submit" value="Bay now">
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<!-- 
+							<ul>
+								<li class="header-icon_entrance">
+									<a href="#"><img src="img/entrance.png" alt="ярлык входа"></a>
+									<div class="header-icon_entrance_form">
+										shfsdkfhsdkfhsdfk
+									</div>
+								</li>
+								<li><a href="#"><img src="img/entrance.png" alt="ярлык входа"></a></li>
+								<li><a href="#"><img src="img/entrance.png" alt="ярлык входа"></a></li>
+							</ul> -->
+
+
+							<!-- <a href="#"><img src="img/entrance.png" alt="ярлык входа"></a> -->
+							<!-- <a href="#"><img src="img/bookmarks_black.png" alt="избранное"></a> -->
+							<!-- <div class="header-icons-basket">
 								<a href="#"><img src="img/basket_black.png" alt="корзина"></a>
 								<span>0</span>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- /.col-lg-2 -->
 					</div> <!-- row-->
+
 				</div>
 			</div>
 		</section>
 	</header>
 
-
-<!-- Информация о сайте -->
+<!-- Главный экран -->
 	<section class="info">
 		<div class="container">
 			<div class="row">
@@ -99,565 +213,107 @@
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col-lg-6">
-					<div class="info-picture">
-						<img src="img/bg.png" alt="">
-						<img class="info-picture_more" src="img/bg_.png" alt="">
-					</div>
 				</div>
 				<!-- /.col-lg-6 -->
 			</div>
 		</div>
 	</section>
+
+
+
+<!-- Популярные товары -->
+<section class="catalog-popular">
+	<div class="head catalog-popular-head">
+		<h3>Most <span>popular.</span></h3>
+	</div>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-3">
+	  			<div class="catalog-card">
+					<div class="catalog-card-wrapper">
+						<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+		  				<div class="catalog-card-content">
+		  					<span class="catalog-card-content_head">Pink roses</span>
+		  					<span class="catalog-card-content_price">25 $</span>
+		  					<button class="catalog-card-content_btn">BUY now</button>
+		  				</div>
+					</div>
+	  			</div>
+	  		</div>
+	  		<!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+	  			<div class="catalog-card">
+					<div class="catalog-card-wrapper">
+						<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+		  				<div class="catalog-card-content">
+		  					<span class="catalog-card-content_head">Pink roses</span>
+		  					<span class="catalog-card-content_price">25 $</span>
+		  					<button class="catalog-card-content_btn">BUY now</button>
+		  				</div>
+					</div>
+	  			</div>
+	  		</div>
+	  		<!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+	  			<div class="catalog-card">
+					<div class="catalog-card-wrapper">
+						<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+		  				<div class="catalog-card-content">
+		  					<span class="catalog-card-content_head">Pink roses</span>
+		  					<span class="catalog-card-content_price">25 $</span>
+		  					<button class="catalog-card-content_btn">BUY now</button>
+		  				</div>
+					</div>
+	  			</div>
+	  		</div>
+	  		<!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+	  			<div class="catalog-card">
+					<div class="catalog-card-wrapper">
+						<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+		  				<div class="catalog-card-content">
+		  					<span class="catalog-card-content_head">Pink roses</span>
+		  					<span class="catalog-card-content_price">25 $</span>
+		  					<button class="catalog-card-content_btn">BUY now</button>
+		  				</div>
+					</div>
+	  			</div>
+	  		</div>
+	  		<!-- /.col-lg-3 -->
+
+
+		</div>
+	</div>
+</section>
 
 <!-- Наши приимущества -->
 	<section class="advantages">
 		<div class="container">
 			<div class="row">
 				
-				<div class="col-lg-4">
+
+				<div class="col-lg-6 col-lg-offset-3">
 					<div class="advantages-content">
-						<p>More then <br>
-						<span>215 000</span> smiles</p>
-					</div>			
-				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<div class="advantages-content">
-						<p>Delivery in <br>
-							<span>200</span> countries</p>
-					</div>
-				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<div class="advantages-content">
-						<p>Over <br>
-							<span>2000</span> partners</p>
-					</div>
-				</div>
-				<!-- /.col-lg-4 -->
-
-
-
-
-			</div>
-		</div>
-	</section>
-
-
-
-
-<img class="catalog-card-bookmarks test" src="img/catalog/bookmarks.png" alt="bookmarks">
-
-
-
-
-<!-- Каталог -->
-	<section class="catalog">
-		<div class="head catlog-head">
-			<h3>Our <span>catalog.</span></h3>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="catalog-slider">
-					<div class="catalog-slider-nav">
-						<span class="catalog-slider-nav-item">Wedding bouquets</span>
-						<span class="catalog-slider-nav-item">With love</span>
-						<span class="catalog-slider-nav-item">Most popular</span>
-						<span class="catalog-slider-nav-item">New-born</span>
-						<span class="catalog-slider-nav-item">Business</span>
-						<span class="catalog-slider-nav-item">Sorry</span>
-					</div>
-
-
-					<div class="catalog-slider-for">
-					    <div>
-					  	<div class="catalog-card-slider">
-					  	  <div class="news-slider-content">
-							<div class="col-lg-3">
-					  			<div class="catalog-card">
-									<div class="catalog-card-wrapper">
-										<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-						  				<div class="catalog-card-content">
-						  					<span class="catalog-card-content_head">Pink roses</span>
-						  					<span class="catalog-card-content_price">25 $</span>
-						  					<button class="catalog-card-content_btn">BUY now</button>
-						  				</div>
-									</div>
-					  			</div>
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		<div class="col-lg-3">
-					  			<div class="catalog-card">
-					  				<div class="catalog-card-wrapper">
-					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-					  					<div class="catalog-card-content">
-					  						<span class="catalog-card-content_head">White roses</span>
-					  						<span class="catalog-card-content_price">30 $</span>
-					  						<button class="catalog-card-content_btn">BUY now</button>
-					  					</div>
-					  				</div>
-					  			</div>	
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		<div class="col-lg-3">
-					  			<div class="catalog-card">
-					  				<div class="catalog-card-wrapper">
-					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-					  					<div class="catalog-card-content">
-					  						<span class="catalog-card-content_head">Red roses</span>
-					  						<span class="catalog-card-content_price">50 $</span>
-					  						<button class="catalog-card-content_btn">BUY now</button>
-					  					</div>
-					  				</div>
-					  			</div>	
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		<div class="col-lg-3">
-					  			<div class="catalog-card">
-					  				<div class="catalog-card-wrapper">
-					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-					  					<div class="catalog-card-content">
-					  						<span class="catalog-card-content_head">Yellow roses</span>
-					  						<span class="catalog-card-content_price">45 $</span>
-					  						<button class="catalog-card-content_btn">BUY now</button>
-					  					</div>
-					  				</div>
-					  			</div>	
-					  		</div>
-					  		<!-- /.col-lg-3 --><div class="col-lg-3">
-					  			<div class="catalog-card">
-									<div class="catalog-card-wrapper">
-										<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-						  				<div class="catalog-card-content">
-						  					<span class="catalog-card-content_head">Pink roses</span>
-						  					<span class="catalog-card-content_price">25 $</span>
-						  					<button class="catalog-card-content_btn">BUY now</button>
-						  				</div>
-									</div>
-					  			</div>
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		<div class="col-lg-3">
-					  			<div class="catalog-card">
-					  				<div class="catalog-card-wrapper">
-					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-					  					<div class="catalog-card-content">
-					  						<span class="catalog-card-content_head">White roses</span>
-					  						<span class="catalog-card-content_price">30 $</span>
-					  						<button class="catalog-card-content_btn">BUY now</button>
-					  					</div>
-					  				</div>
-					  			</div>	
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		<div class="col-lg-3">
-					  			<div class="catalog-card">
-					  				<div class="catalog-card-wrapper">
-					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-					  					<div class="catalog-card-content">
-					  						<span class="catalog-card-content_head">Red roses</span>
-					  						<span class="catalog-card-content_price">50 $</span>
-					  						<button class="catalog-card-content_btn">BUY now</button>
-					  					</div>
-					  				</div>
-					  			</div>	
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		<div class="col-lg-3">
-					  			<div class="catalog-card">
-					  				<div class="catalog-card-wrapper">
-					  					<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-					  					<div class="catalog-card-content">
-					  						<span class="catalog-card-content_head">Yellow roses</span>
-					  						<span class="catalog-card-content_price">45 $</span>
-					  						<button class="catalog-card-content_btn">BUY now</button>
-					  					</div>
-					  				</div>
-					  			</div>	
-					  		</div>
-					  		<!-- /.col-lg-3 -->
-					  		
-
-					  	  </div>
-					  	  <!-- news-slider-content -->
-					  	  <div class="news-slider-content">
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-					  	  	<div class="col-lg-3">
-					  	  		<div class="catalog-card">
-					  	  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-					  	  			<div class="catalog-card-content">
-					  	  				<span class="catalog-card-content_head">Yellow roses</span>
-					  	  				<span class="catalog-card-content_price">45 $</span>
-					  	  				<button class="catalog-card-content_btn">BUY now</button>
-					  	  			</div>
-					  	  		</div>	
-					  	  	</div>
-					  	  	<!-- /.col-lg-3 -->
-
-					  	  </div>
-					  	  <!-- news-slider-content -->
-					  	</div>
-					  	<div class="catalog-card-slider-counter"><span id="count">1</span>/2</div>
-					    </div>
-					  <div>
-						<div class="catalog-card-slider">
-						  <div class="news-slider-content">
-
-							
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">Pink roses</span>
-										<span class="catalog-card-content_price">25 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
+						<div class="advantages-content-wrapper">
+							<div class="advantages-content-block">
+								<p>More then <br>
+								<span>215 000</span> smiles</p>
 							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">White roses</span>
-										<span class="catalog-card-content_price">30 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
+							<div class="advantages-content-block">
+								<p>Delivery in <br>
+									<span>200</span> countries</p>
 							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">Red roses</span>
-										<span class="catalog-card-content_price">50 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
+							<div class="advantages-content-block">
+								<p>Over <br>
+									<span>2000</span> partners</p>
 							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">Yellow roses</span>
-										<span class="catalog-card-content_price">45 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">Pink roses</span>
-										<span class="catalog-card-content_price">25 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">White roses</span>
-										<span class="catalog-card-content_price">30 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">Red roses</span>
-										<span class="catalog-card-content_price">50 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-lg-3">
-								<div class="catalog-card">
-									<img src="img/catalog/bookmarks.png" alt="bookmarks">
-									<div class="catalog-card-content">
-										<span class="catalog-card-content_head">Yellow roses</span>
-										<span class="catalog-card-content_price">45 $</span>
-										<button class="catalog-card-content_btn">BUY now</button>
-									</div>
-								</div>	
-							</div>
-							<!-- /.col-lg-3 -->
-
-						  </div>
-						  <!-- news-slider-content -->
-						  <div class="news-slider-content">
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-						  	<div class="col-lg-3">
-						  		<div class="catalog-card">
-						  			<img src="img/catalog/bookmarks.png" alt="bookmarks">
-						  			<div class="catalog-card-content">
-						  				<span class="catalog-card-content_head">Yellow roses</span>
-						  				<span class="catalog-card-content_price">45 $</span>
-						  				<button class="catalog-card-content_btn">BUY now</button>
-						  			</div>
-						  		</div>	
-						  	</div>
-						  	<!-- /.col-lg-3 -->
-
-						  </div>
-						  <!-- news-slider-content -->
 						</div>
-						<div class="catalog-card-slider-counter"><span id="count2">1</span>/2</div>
-					  </div>
-					  <div>3</div>
-					  <div>4</div>
-					  <div>5</div>
-					  <div>6</div>
-					</div>
+					</div>	
 				</div>
-
-
-		
-
-
-			
 			</div>
 		</div>
-		
 	</section>
-
-<!-- Отзывы -->
-<section class="reviews">
-  <div class="container">
-    <div class="row">
-      <div class="reviews-slider">
-      	<div class="reviews-slider-content">
-			<div class="col-lg-12">
-				<div class="col-lg-6">
-					<h4>Our <span>clients.</span></h4>
-					<p>Donec maximus nisi ut ligula elementum elementum. </p>
-					<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentu. Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
-					Vivamus consectetur fermentum</p>
-					<small><img src="img/quote.png" alt="quote">JOHN jones</small>
-				</div>
-				<!-- /.col-lg-6 -->
-				<div class="col-lg-6">
-					<div class="reviews-slider-picture">
-						<div class="reviews-slider-picture-count"><span>1</span>/3</div>
-					</div>
-					
-				</div>
-				<!-- /.col-lg-6 -->
-				<!-- <div class="reviews-count"><span id="counter">1</span>/3</div> -->
-			</div>
-			<!-- /.col-lg-12 -->
-		</div>
-      	<div class="reviews-slider-content">
-			<div class="col-lg-12">
-				<div class="col-lg-6">
-					<h4>Our <span>clients.</span></h4>
-					<p>Donec maximus nisi ut ligula elementum elementum. </p>
-					<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentu. Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
-					Vivamus consectetur fermentum</p>
-					<small><img src="img/quote.png" alt="quote">JOHN jones</small>
-				</div>
-				<!-- /.col-lg-6 -->
-				<div class="col-lg-6">
-					<div class="reviews-slider-picture">
-						<div class="reviews-slider-picture-count"><span>2</span>/3</div>
-					</div>
-				</div>
-				<!-- /.col-lg-6 -->
-			</div>
-			<!-- /.col-lg-12 -->
-		</div>
-      	<div class="reviews-slider-content">
-			<div class="col-lg-12">
-				<div class="col-lg-6">
-					<h4>Our <span>clients.</span></h4>
-					<p>Donec maximus nisi ut ligula elementum elementum. </p>
-					<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentu. Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
-					Vivamus consectetur fermentum</p>
-					<small><img src="img/quote.png" alt="quote">JOHN jones</small>
-				</div>
-				<!-- /.col-lg-6 -->
-				<div class="col-lg-6">
-					<div class="reviews-slider-picture">
-						<div class="reviews-slider-picture-count"><span>3</span>/3</div>
-					</div>
-				</div>
-				<!-- /.col-lg-6 -->
-			</div>
-			<!-- /.col-lg-12 -->
-		</div>
-
-
-
-
-      </div>
-      <!-- <div class="reviews-count"><span id="counter">1</span>/3</div> -->
-    </div>
-  </div>
-  <!-- <div class="reviews-count"><span id="counter">1</span>/3</div> -->
-  <!-- <div class="reviews-slider-picture-count"><span id="counter">1</span>/3</div> -->
-</section>
 
 <!-- Блог -->
 	<section class="blog">
@@ -665,48 +321,38 @@
 			<h3>Our <span>blog.</span></h3>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row">		
+				<div class="col-lg-6">
+					<div class="blog-picture"></div>
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+					<div class="blog-information">
+						<p>You will learn a lot of <small>useful
+							information</small> in 
+						<span>our blog</span></p>
+						<div class="blog-information-btn btn-black">
+							<button>Read more </button>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->				
+				<div class="col-lg-6">
+					<div class="blog-information">
+						<p>You will learn a lot of <small>useful
+							information</small> in 
+						<span>our blog</span></p>
+						<div class="blog-information-btn btn-black">
+							<button>Read more </button>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
 				
-				<div class="col-lg-8">
-					
-
-
-				<div class="blog-picture-info"></div>
-				<div class="blog-information">
-					<div class="blog-information-wrapper">
-						<p>You will learn a lot of useful <small>information</small> in <span>our blog.</span></p>
-						<div class="blog-btn btn-black">
-							<button>Read more</button>
-						</div>
-					</div>
+				<div class="col-lg-6">
+					<div class="blog-picture"></div>
 				</div>
-				<div class="blog-information-picture"></div>
-
-
-
-
-
-
-					
-					
-				</div>
-				<!-- /.col-lg-8 -->
-				<div class="col-lg-4">
-					<div class="blog-roses">
-						<div class="blog-roses-info">
-							<strong>Bouquet of <span>roses.</span></strong>
-							<p>Donec maximus nisi ut ligula elementum elementum.</p>
-							<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. 
-							
-							Vivamus consectetur fermentum </p>
-							<div class="blog-btn btn-black">
-								<button>Read more </button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /.col-lg-4 -->
-
+				<!-- /.col-lg-6 -->
 			</div>
 		</div>
 	</section>
@@ -740,6 +386,145 @@
 
 	</section>
 
+<!-- Фотогалерея -->
+
+	<section class="photogalery">
+		<div class="head photogalery-head">
+			<h3>Our <span>photogalery.</span></h3>
+		</div>
+		<div class="container">
+			<div class="row">
+				
+			
+			<div class="photogalery-slider">
+
+				<div class="photogalery-slider-content">
+					<div class="col-lg-4">
+						<div class="photogalery-picture">
+							<img class="photogalery-picture-img" src="img/pictures/galery/galery_1.jpg" alt="роза1">
+							<div class="photogalery-picture-wrapper">
+					
+								<div class="photogalery-picture-like">
+									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
+									<span>1243</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- reviews-slider-home-content -->
+
+
+				<div class="photogalery-slider-content">
+					<div class="col-lg-4">
+						<div class="photogalery-picture">
+							<img class="photogalery-picture-img" src="img/pictures/galery/galery_2.jpg" alt="роза2">
+							<div class="photogalery-picture-wrapper">
+					
+								<div class="photogalery-picture-like">
+									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+									<span>1243</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- reviews-slider-home-content -->
+
+				<div class="photogalery-slider-content">
+					<div class="col-lg-4">
+						<div class="photogalery-picture">
+							<img class="photogalery-picture-img" src="img/pictures/galery/galery_3.jpg" alt="роза3">
+							<div class="photogalery-picture-wrapper">
+					
+								<div class="photogalery-picture-like">
+									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+									<span>1243</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- reviews-slider-home-content -->
+
+				<div class="photogalery-slider-content">
+					<div class="col-lg-4">
+						<div class="photogalery-picture">
+							<img class="photogalery-picture-img" src="img/pictures/galery/galery_4.jpg" alt="роза4">
+							<div class="photogalery-picture-wrapper">
+					
+								<div class="photogalery-picture-like">
+									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
+									<span>1243</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- reviews-slider-home-content -->
+
+
+
+			</div>			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+<!-- Отзывы -->
+	<section class="reviews">
+		<div class="reviews-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="reviews-slider-home">
+						<div class="reviews-slider-home-content">
+							<div class="col-lg-8 col-lg-offset-2">
+								<p>Donec maximus nisi ut ligula elementum elementum. </p>
+								<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentum.</p>
+								<span><img src="img/quote.png" alt="quote">JOHN jones</span>
+							</div>
+							<!-- /.col-lg-8 -->
+						</div>
+						<!-- reviews-slider-home-content -->
+
+
+						<div class="reviews-slider-home-content">
+							<div class="col-lg-8 col-lg-offset-2">
+								<p>Donec maximus nisi ut ligula elementum elementum. </p>
+								<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentum.</p>
+								<span><img src="img/quote.png" alt="quote">David jones</span>
+							</div>
+							<!-- /.col-lg-8 -->
+						</div>
+						<!-- reviews-slider-home-content -->
+					
+					</div>			
+				</div>
+			</div>
+		</div>
+	</section>
+
 <!-- Клиенты -->
 	<section class="client">
 			<div class="head client-head">
@@ -771,86 +556,6 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				
-				<!-- <div class="col-lg-2">
-					<div class="footer-logo">
-						<a href="#">logo</a>
-					</div>
-					<div class="footer-city">
-						<i class="fas fa-map-marker-alt"></i>
-						<select>
-							<option>New York</option>
-							<option>Denver</option>
-						</select>
-					</div>
-					<div class="footer-phone">
-						<a href="#"><i class="fas fa-phone"></i>000 654 43 43</a>
-					</div>
-					<div class="footer-social">
-						<a href="#"><img src="img/footer/instagram.png" alt="instagram"></a>
-						<a href="#"><img src="img/footer/twitter.png" alt="twitter"></a>
-						<a href="#"><img src="img/footer/facebook.png" alt="facebook"></a>
-					</div>
-				</div>
-				/.col-lg-2
-				<div class="col-lg-4">
-					<div class="footer-icons">
-						<a href="#"><img src="img/footer/bookmarks.png" alt="избранное"></a>
-						<div class="header-icons-basket">
-							<a href="#"><img src="img/footer/basket.png" alt="корзина"></a>
-							<span>0</span>
-						</div>
-					</div>
-					<div class="footer-newsletter">
-							<div class="footer-newsletter-content">
-								<strong><span>News</span>letter</strong>
-								<small>Sing up for the news</small>
-							</div>
-							<div class="footer-newsletter-form">
-								<form action="#">
-									<input type="text" placeholder="Email">
-									<input type="submit" value="Subscribe >>">
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				/.col-lg-4
-				<div class="col-lg-6">
-					<div class="footer-nav">
-						
-				
-					<div class="footer-nav-link">
-						<ul>
-							<li>
-								<a href="#">Guarantee</a>
-							</li>
-							<li>
-								<a href="#">Privacy policy</a>
-							</li>
-							<li>
-								<a href="#">Goods replacement</a>
-							</li>
-							<li>
-								<a href="#">Order cancellation</a>
-							</li>
-							<li>
-								<a href="#">Bonuses policy</a>
-							</li>
-							<li>
-								<a href="#">flower delivery</a>
-							</li>
-						</ul>
-					</div>
-				
-				
-				
-				
-				
-					</div>
-				</div>
-				/.col-lg-6 -->
-
 				<div class="col-lg-2">
 					<div class="footer-logo">
 						<a href="#">logo</a>
@@ -879,22 +584,7 @@
 							<a href="#"><img src="img/footer/basket.png" alt="корзина"></a>
 							<span>0</span>
 						</div>
-					</div>
-					
-					<!-- <div class="footer-newsletter">
-							<div class="footer-newsletter-content">
-								<strong><span>News</span>letter</strong>
-								<small>Sing up for the news</small>
-							</div>
-							<div class="footer-newsletter-form">
-								<form action="#">
-									<input type="text" placeholder="Email">
-									<input type="submit" value="Subscribe >>">
-								</form>
-							</div>
-						</div>
-					</div> -->
-					
+					</div>					
 					<div class="footer-newsletter">
 						<div class="footer-newsletter-content">
 							<strong><span>News</span>letter</strong>
@@ -907,9 +597,6 @@
 							</form>
 						</div>
 					</div>
-
-
-
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col-lg-6">
@@ -943,28 +630,9 @@
 								<li><a href="#">News</a></li>
 							</ul>
 						</div>
-						
-
-						
-						
-						
-						
-
-
-
-
-						
-					
-					
-					
-					
 						</div>
 				</div>
 				<!-- /.col-lg-6 -->
-
-
-
-
 			</div>
 		</div>
 	</footer>
@@ -976,15 +644,13 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script>
     $(document).ready(function(){
-    	// $(".head h3").click(function() {
-     //        $(this).css('color', 'red');
-     //    });
-     //    $(".head h3").click(function() {
-     //        $(this).css('color', 'blue');
-     //    });
      	/* Закладки каталог */
      	$('img.catalog-card-bookmarks').click(function() {
      	  $(this).toggleClass("catalog-card-bookmarks-click");
+     	});
+     	/* Лайк (фотогалерея)*/
+     	$('img.photogalery-picture-like-bookmarks').click(function() {
+     	  $(this).toggleClass("photogalery-picture-like-bookmarks-click");
      	});
     	/* Каталог */
     	 $('.catalog-slider-for').slick({
@@ -1034,6 +700,26 @@
     	 });
     	$(".reviews-slider").on('afterChange', function(event, slick, currentSlide){
     	    $("#counter").text(currentSlide + 1);
+    	 });
+    	/* Отзывы (2) */
+    	$('.reviews-slider-home').slick({
+    	    infinite: true,
+    	    slidesToShow: 1,
+    	    slidesToScroll: 1,
+    	    arrows: true, 
+    	    prevArrow: '<i class="fas fa-chevron-left reviews-slider-home-prev"></i>',
+    	    nextArrow: '<i class="fas fa-chevron-right reviews-slider-home-next"></i>',
+    	    dots: false
+    	 });
+    	/* Фотогалерея */
+    	$('.photogalery-slider').slick({
+    	    infinite: true,
+    	    slidesToShow: 3,
+    	    slidesToScroll: 1,
+    	    arrows: true, 
+    	    prevArrow: '<i class="fas fa-chevron-left photogalery-slider-prev"></i>',
+    	    nextArrow: '<i class="fas fa-chevron-right photogalery-slider-next"></i>',
+    	    dots: false
     	 });
 		 //  /* Фиксированное меню */
 		 //  var topmenu =$('.nav').offset().top;
