@@ -9,14 +9,15 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="/favicon.ico"> -->
 
-    <title>Bloom</title>
+    <title>Cable Land</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="form styler/jquery.formstyler.css">
-    <link href="css/style_2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,849 +27,324 @@
 
   <body>
 	
-<!-- Навигация -->
+<!-- Шапка сайта -->
 	<header>
 		<section class="header">
 			<div class="container">	
 				<div class="row">
-					
-
-					<div class="col-lg-1">
+					<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
 						<div class="header-logo">
-							<a href="#"><span>l</span>ogo</a>
+							<a href="index.html"><h1>Cable <br>Land</h1></a>
 						</div>
 					</div>
-					<!-- /.col-lg-1 -->
-
-
-
-
-					<div class="col-lg-3">
-						<div class="header-city">
-							<i class="fas fa-map-marker-alt"></i>
-							<select class="header-city-select">
-								<option>New York</option>
-								<option>Denver</option>
-								<option>Moscow</option>
-								<option>Kazan</option>
-								<option>Ufa</option>
-							</select>
+					<!-- /.col-lg-2 -->
+					<div class="col-lg-2 col-lg-offset-3">
+						<div class="header-working">
+							<p>Звонки: Пн - Чт<br>
+								09:00 - 18:00 <br>
+								Пятница до 17:00</p>
 						</div>
-						<!-- /.header-city -->
+					</div>
+					<!-- /.col-lg-2 -->
+					<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
 						<div class="header-phone">
-							<div class="header-phone">
-								<a href="#"><i class="fas fa-phone"></i>000 654 43 43</a>
-							</div>
+							<a href="tel:+70443609232"><span>(044)</span> 360-92-32</a>
+							<a href="tel:+70674068032"><span>(067)</span> 406-80-32</a>
 						</div>
-						<!-- /.header-phone -->
 					</div>
 					<!-- /.col-lg-3 -->
-
-
-					<div class="col-lg-8 reset">
-						<div class="header-nav">
-							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#">catalog</a></li>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Reviews</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contacts</a></li>
-							</ul>
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+						<div class="header-btn btn">
+							<button><i class="fas fa-phone"></i>Заказать обратный звонок</button>
 						</div>
-						<!-- /.header-nav --> 
-						
-
-					
-						<div class="header-icons">
-						
-							<div class="header-icons-entrance">
-								<a href="#"><img src="img/entrance.png" alt="ярлык входа"></a>
-								<div class="header-icons-entrance_form">
-									<form action="#">
-										<input type="text" placeholder="Phone or email">
-										<input type="password" placeholder="Password">
-										<span>Forgot your password? <a href="#">Registration</a></span>
-										<input type="submit" value="Login">
-											<span>Sing with</span>
-											<a href="#"><img src="img/gmail.png" alt="gmail"></a>
-											<a href="#"><img src="img/fb.png" alt="fb"></a>
-									</form>
-								</div>
-							</div>
-							<!-- /header-icons-entrance --> 
-
-							<div class="header-icons-bookmarks">
-								<a href="#"><img src="img/bookmarks.png" alt="ярлык закладок"></a>
-								<span class="header-icons-bookmarks-sum">0</span>
-								<div class="header-icons-bookmarks_parts">
-									<div class="header-icons-bookmarks_parts_content">
-										<span class="header-icons-bookmarks_parts_picture">
-											<span class="header-icons-bookmarks_parts_picture_close">&times;</span>
-										</span>
-										<span class="header-icons-bookmarks_parts_price">50 $</span>
-										<span class="header-icons-bookmarks_parts_quantity">1</span>
-										<span class="header-icons-bookmarks_parts_total">50 $</span>
-										<button class="header-icons-bookmarks_parts_btn">add to cart</button</div>
-									</div>	
-									<div class="header-icons-bookmarks_parts_content">
-										<span class="header-icons-bookmarks_parts_picture">
-											<span class="header-icons-bookmarks_parts_picture_close">&times;</span>
-										</span>
-										<span class="header-icons-bookmarks_parts_price">50 $</span>
-										<span class="header-icons-bookmarks_parts_quantity">2</span>
-										<span class="header-icons-bookmarks_parts_total">100 $</span>
-										<button class="header-icons-bookmarks_parts_btn">add to cart</button</div>
-									</div>	
-									<div class="header-icons-bookmarks_parts_content">
-										<span class="header-icons-bookmarks_parts_picture">
-											<span class="header-icons-bookmarks_parts_picture_close">&times;</span>
-										</span>
-										<span class="header-icons-bookmarks_parts_price">50 $</span>
-										<span class="header-icons-bookmarks_parts_quantity">2</span>
-										<span class="header-icons-bookmarks_parts_total">100 $</span>
-										<button class="header-icons-bookmarks_parts_btn">add to cart</button</div>
-									</div>
-								</div>
-							</div>
-							<!-- /header-icons-bookmarks -->
-							
-							<div class="header-icons-basket">
-								<a href="#"><img src="img/basket.png" alt="ярлык корзины"></a>
-								<span class="header-icons-basket-sum">0</span>
-								<div class="header-icons-basket_goods">
-									<div class="header-icons-basket_goods_content">
-										<div class="header-icons-basket_goods_parts">
-											<span class="header-icons-basket_goods_parts_picture"></span>
-											<span class="header-icons-basket_goods_parts_price">50 $</span>
-											<span class="header-icons-basket_goods_parts_quantity">2</span>
-											<span class="header-icons-basket_goods_parts_total">100 $</span>
-											
-										</div>
-									</div>
-									<div class="header-icons-basket_goods_content">
-										<div class="header-icons-basket_goods_parts">
-											<span class="header-icons-basket_goods_parts_picture"></span>
-											<span class="header-icons-basket_goods_parts_price">50 $</span>
-											<span class="header-icons-basket_goods_parts_quantity">2</span>
-											<span class="header-icons-basket_goods_parts_total">100 $</span>
-											
-										</div>
-									</div>
-									<div class="header-icons-basket_goods_content">
-										<div class="header-icons-basket_goods_parts">
-											<span class="header-icons-basket_goods_parts_picture"></span>
-											<span class="header-icons-basket_goods_parts_price">50 $</span>
-											<span class="header-icons-basket_goods_parts_quantity">2</span>
-											<span class="header-icons-basket_goods_parts_total">100 $</span>
-											
-										</div>
-									</div>
-									<span class="header-icons-basket_goods_parts_total_order">
-										<p>Order total:</p> 
-										<strong>200 $</strong>
-									</span>
-									<div class="header-icons-basket_goods_form">
-										<form action="#">
-											<div class="header-icons-basket_goods_form_head">
-												<p><small>I'm new client</small>/Regular customer</p>
-											</div>
-											<input type="text" placeholder="Name">
-											<input type="text" placeholder="Phone">
-											<input type="text" placeholder="Email">
-											<span>Sing with</span>
-											<a href="#"><img src="img/gmail.png" alt="gmail"></a>
-											<a href="#"><img src="img/fb.png" alt="fb"></a>
-											<input type="submit" value="Bay now">
-										</form>
-									</div>
-								</div>
-							</div>
-							<!-- /header-icons-basket -->
-
-							
-						</div>
-						<!-- /.header-icons --> 
 					</div>
-					<!-- /.col-lg-6 -->
-
-						
+					<!-- /.col-lg-3 -->
 					</div> <!-- row-->
-
 				</div>
 			</div>
 		</section>
 	</header>
 
-
-<!-- Главный экран -->
-	<section class="info">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="info-content">
-						<h1><span>B</span>loom Flower</h1>
-						<small>Flower for your special day...</small>
-						<p><span>Look at yours best bouquet.</span> Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus</p>
-						<div class="info-content-btn btn-pink">
-							<button>Catalog </button>
-						</div>
-					</div>
-				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-6">
-				</div>
-				<!-- /.col-lg-6 -->
-			</div>
-		</div>
-	</section>
-
-
-
-<!-- Популярные товары -->
-	<div class="catalog-popular">
-		<div class="head catalog-popular-head">
-			<h3>Most <span>popular.</span></h3>
-		</div>
-
-				<div class="catalog-popular-content">
-					
-					<div class="catalog-card catalog-popular-content-card">
-		  				<img class="catalog-card-picture" src="img/pictures/catalog/pink_roses.jpg" alt="pink_roses">
-						<div class="catalog-card-bg">
-							<div class="catalog-card-bg-wrapper">
-								<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-				  				<div class="catalog-card-content">
-				  					<span class="catalog-card-content_head">Pink roses</span>
-				  					<span class="catalog-card-content_price">25 $</span>
-				  					<button class="catalog-card-content_btn">BUY now</button>
-				  				</div>
-							</div>
-						</div>
-		  			</div>
-					<!-- catalog-card -->
-
-					<div class="catalog-card catalog-popular-content-card">
-		  				<img class="catalog-card-picture" src="img/pictures/catalog/pink_roses.jpg" alt="pink_roses">
-						<div class="catalog-card-bg">
-							<div class="catalog-card-bg-wrapper">
-								<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-				  				<div class="catalog-card-content">
-				  					<span class="catalog-card-content_head">Pink roses</span>
-				  					<span class="catalog-card-content_price">25 $</span>
-				  					<button class="catalog-card-content_btn">BUY now</button>
-				  				</div>
-							</div>
-						</div>
-		  			</div>
-					<!-- catalog-card -->
-
-					<div class="catalog-card catalog-popular-content-card">
-		  				<img class="catalog-card-picture" src="img/pictures/catalog/white_roses.jpg" alt="pink_roses">
-						<div class="catalog-card-bg">
-							<div class="catalog-card-bg-wrapper">
-								<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-				  				<div class="catalog-card-content">
-				  					<span class="catalog-card-content_head">White roses</span>
-				  					<span class="catalog-card-content_price">30 $</span>
-				  					<button class="catalog-card-content_btn">BUY now</button>
-				  				</div>
-							</div>
-						</div>
-		  			</div>
-		  			<!-- catalog-card -->
-				
-					<div class="catalog-card catalog-popular-content-card">
-		  				<img class="catalog-card-picture" src="img/pictures/catalog/red_roses.jpg" alt="pink_roses">
-						<div class="catalog-card-bg">
-							<div class="catalog-card-bg-wrapper">
-								<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-				  				<div class="catalog-card-content">
-				  					<span class="catalog-card-content_head">Red roses</span>
-				  					<span class="catalog-card-content_price">50 $</span>
-				  					<button class="catalog-card-content_btn">BUY now</button>
-				  				</div>
-							</div>
-						</div>
-		  			</div>
-		  			<!-- catalog-card -->
-
-				  	<div class="catalog-card catalog-popular-content-card">
-		  				<img class="catalog-card-picture" src="img/pictures/catalog/yellow_roses.jpg" alt="pink_roses">
-						<div class="catalog-card-bg">
-							<div class="catalog-card-bg-wrapper">
-								<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-				  				<div class="catalog-card-content">
-				  					<span class="catalog-card-content_head">Yellow roses</span>
-				  					<span class="catalog-card-content_price">45 $</span>
-				  					<button class="catalog-card-content_btn">BUY now</button>
-				  				</div>
-							</div>
-						</div>
-		  			</div>
-		  			<!-- catalog-card -->
-
-				  	<div class="catalog-card catalog-popular-content-card">
-		  				<img class="catalog-card-picture" src="img/pictures/catalog/yellow_roses.jpg" alt="pink_roses">
-						<div class="catalog-card-bg">
-							<div class="catalog-card-bg-wrapper">
-								<img class="catalog-card-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-				  				<div class="catalog-card-content">
-				  					<span class="catalog-card-content_head">Yellow roses</span>
-				  					<span class="catalog-card-content_price">45 $</span>
-				  					<button class="catalog-card-content_btn">BUY now</button>
-				  				</div>
-							</div>
-						</div>
-		  			</div>
-		  			<!-- catalog-card -->
-
-				</div>
-				<!-- /.catalog-popular-content -->
-
-	</div>
-
-
-<!-- Наши приимущества -->
-	<section class="advantages">
-		<div class="container">
-			<div class="row">
-				
-
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="advantages-content">
-						<div class="advantages-content-wrapper">
-							<div class="advantages-content-block">
-								<p>More then <br>
-								<span>215 000</span> <small> smiles</small></p>
-							</div>
-							<div class="advantages-content-block">
-								<p>Delivery in <br>
-									<span>200</span> countries</p>
-							</div>
-							<div class="advantages-content-block">
-								<p>Over <br>
-									<span>2000</span> partners</p>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Блог -->
-		<section class="blog">
-			<div class="head blog-head">
-				<h3>Our <span>blog.</span></h3>
-			</div>
+<!-- Навигация -->
+	<nav>
+		<section class="nav">
 			<div class="container">
-				<div class="row">		
-					<div class="col-lg-6">
-						<div class="blog-picture"></div>
-					</div>
-					<!-- /.col-lg-6 -->
-					<div class="col-lg-6">
-						<div class="blog-information">
-							<p>You will learn a lot of <small>useful</small>
-								<small class="blog-information_info">information</small> in 
-							<span>our blog</span></p>
-							<div class="blog-information-btn btn-black">
-								<button>Read more </button>
-							</div>
-						</div>
-					</div>
-					<!-- /.col-lg-6 -->				
-					<div class="col-lg-6">
-						<div class="blog-information blog-roses">
-							<p>Bouquet of <span>roses</span></p>
-							<div class="blog-information-btn btn-black">
-								<button>Read more </button>
-							</div>
-						</div>
-					</div>
-					<!-- /.col-lg-6 -->
-					
-					<div class="col-lg-6">
-						<div class="blog-picture"></div>
-					</div>
-					<!-- /.col-lg-6 -->
-				</div>
-			</div>
-		</section>
-
-<!-- Рассылка -->
-		<section class="newsletter">
-			<div class="newsletter-wrapper">
-				<div class="container">
-					<div class="row">
-						
-						<div class="col-lg-5">
-							<div class="newsletter-content">
-								<strong><span>News</span>letter</strong>
-								<small>Sing up for the news</small>
-							</div>
-						</div>
-						<!-- /.col-lg-6 -->
-						<div class="col-lg-7">
-							<div class="newsletter-form">
-								<form action="#">
-									<input type="text" placeholder="Email">
-									<input type="submit" value="Subscribe >>">
-								</form>
-							</div>
-						</div>
-						<!-- /.col-lg-6 -->
-
-
-
-
-
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
+						<input type="checkbox" id="menu" class="toggleMenu">
+							<label for="menu" class="toggleMenu"><span></span></label>
+						<ul>
+							<li><a href="#">Кабель - провод</a></li>
+							<li><a href="#">Арматура СИП</a></li>
+							<li><a href="#">Электротехника</a></li>
+							<li><a href="#">Для монтажа кабеля</a></li>
+							<li><a href="#">Продукция SICAME</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
+	</nav>
 
-<!-- Фотогалерея -->
-
-<style>
-	.n {
-		display: none;
-	}
-</style>
-
-<div class="photogalery">
-	<div class="head photogalery-head">
-		<h3>Our <span>photogalery.</span></h3>
+<!-- Слайдер -->
+	<div class="slider">
+		<div class="slider-content">
+			<img src="img/cable.jpg" alt="бухта кабеля">
+		</div>
+		<div class="slider-content">
+			<img src="img/cable.jpg" alt="бухта кабеля">
+		</div>
+		<div class="slider-content">
+			<img src="img/cable.jpg" alt="бухта кабеля">
+		</div>
+	   
 	</div>
 
-	
-
-		<div class="container photogalery-reset">
+<!-- Инфо о магазине  -->
+	<section class="shop">
+		<div class="container">
 			<div class="row">
-				
-				<div class="photogalery-slider">
-					
-					<div class="photogalery-slider-content">
-						<div class="photogalery-picture">
-							<img class="photogalery-picture-img" src="img/pictures/galery/galery_1.jpg" alt="роза1">
-							<div class="photogalery-picture-wrapper">
-						
-								<div class="photogalery-picture-like">
-									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-									<span>1243</span>
-								</div>
-							</div>
-						</div>
-						<!-- photogalery-picture -->
-					</div>
-					<!-- photogalery-slider-content -->
-
-					<div class="photogalery-slider-content">
-						<div class="photogalery-picture">
-							<img class="photogalery-picture-img" src="img/pictures/galery/galery_2.jpg" alt="роза1">
-							<div class="photogalery-picture-wrapper">
-						
-								<div class="photogalery-picture-like">
-									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-									<span>1243</span>
-								</div>
-							</div>
-						</div>
-						<!-- photogalery-picture -->
-					</div>
-					<!-- photogalery-slider-content -->
-					
-					<div class="photogalery-slider-content">
-						<div class="photogalery-picture">
-							<img class="photogalery-picture-img" src="img/pictures/galery/galery_3.jpg" alt="роза1">
-							<div class="photogalery-picture-wrapper">
-						
-								<div class="photogalery-picture-like">
-									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-									<span>1243</span>
-								</div>
-							</div>
-						</div>
-						<!-- photogalery-picture -->
-					</div>
-					<!-- photogalery-slider-content -->
-					
-					<div class="photogalery-slider-content">
-						<div class="photogalery-picture">
-							<img class="photogalery-picture-img" src="img/pictures/galery/galery_4.jpg" alt="роза1">
-							<div class="photogalery-picture-wrapper">
-						
-								<div class="photogalery-picture-like">
-									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-									<span>1243</span>
-								</div>
-							</div>
-						</div>
-						<!-- photogalery-picture -->
-					</div>
-					<!-- photogalery-slider-content -->
-					
-					<div class="photogalery-slider-content">
-						<div class="photogalery-picture">
-							<img class="photogalery-picture-img" src="img/pictures/galery/galery_5.jpg" alt="роза1">
-							<div class="photogalery-picture-wrapper">
-						
-								<div class="photogalery-picture-like">
-									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-									<span>1243</span>
-								</div>
-							</div>
-						</div>
-						<!-- photogalery-picture -->
-					</div>
-					<!-- photogalery-slider-content -->
-					
-					<div class="photogalery-slider-content">
-						<div class="photogalery-picture">
-							<img class="photogalery-picture-img" src="img/pictures/galery/galery_1.jpg" alt="роза1">
-							<div class="photogalery-picture-wrapper">
-						
-								<div class="photogalery-picture-like">
-									<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-									<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-									<span>1243</span>
-								</div>
-							</div>
-						</div>
-						<!-- photogalery-picture -->
-					</div>
-					<!-- photogalery-slider-content -->
-
-
+				<div class="col-lg-12">
+					<h2>Интернет-магазин кабельной продукции</h2>
+					<p>Среди материалов, которые используются при строительных и ремонтных работах, кабельная продукция занимает особое место. Дело не только в том, что она выполняет важную функцию подведения электроэнергии от поставщика к потребителю. С использование проводов в электрических и других сетях обычно связаны вопросы пожарной и электрической безопасности. Следовательно, от правильного выбора и аккуратного монтажа зависит не только эффективность работы, но и жизнь и здоровье тех, кто будет находиться в здании или сооружении, для которых покупаются провода.</p>
+					<p>В нашем каталоге есть как сама кабельная продукция в широком ассортименте, так и арматура для СИП и сопутствующие товары, применяемые при прокладке кабеля. Мы стараемся удовлетворить потребности в проводах любых клиентов, поэтому любая позиция из ассортимента всегда есть на складе в достаточном количестве.</p>
+					<p>В общем, если вы собрались провести линию электропередач от основной магистрали к дому, развести проводку в квартире или офисе, подключить мощное промышленное оборудование или сделать обычный удлинитель, то вам стоит зайти именно на наш сайт.</p>
 				</div>
-				<!-- /.photogalery-slider -->
-
-
-
-
-
-
 			</div>
 		</div>
-
-
-
-
-			<div class="photogalery-slider n">
-				
-				<div class="photogalery-slider-content">
-					<div class="photogalery-picture">
-						<img class="photogalery-picture-img" src="img/pictures/galery/galery_1.jpg" alt="роза1">
-						<div class="photogalery-picture-wrapper">
-					
-							<div class="photogalery-picture-like">
-								<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-								<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-								<span>1243</span>
-							</div>
-						</div>
-					</div>
-					<!-- photogalery-picture -->
-				</div>
-				<!-- photogalery-slider-content -->
-
-				<div class="photogalery-slider-content">
-					<div class="photogalery-picture">
-						<img class="photogalery-picture-img" src="img/pictures/galery/galery_2.jpg" alt="роза1">
-						<div class="photogalery-picture-wrapper">
-					
-							<div class="photogalery-picture-like">
-								<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-								<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-								<span>1243</span>
-							</div>
-						</div>
-					</div>
-					<!-- photogalery-picture -->
-				</div>
-				<!-- photogalery-slider-content -->
-				
-				<div class="photogalery-slider-content">
-					<div class="photogalery-picture">
-						<img class="photogalery-picture-img" src="img/pictures/galery/galery_3.jpg" alt="роза1">
-						<div class="photogalery-picture-wrapper">
-					
-							<div class="photogalery-picture-like">
-								<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-								<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-								<span>1243</span>
-							</div>
-						</div>
-					</div>
-					<!-- photogalery-picture -->
-				</div>
-				<!-- photogalery-slider-content -->
-				
-				<div class="photogalery-slider-content">
-					<div class="photogalery-picture">
-						<img class="photogalery-picture-img" src="img/pictures/galery/galery_4.jpg" alt="роза1">
-						<div class="photogalery-picture-wrapper">
-					
-							<div class="photogalery-picture-like">
-								<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-								<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-								<span>1243</span>
-							</div>
-						</div>
-					</div>
-					<!-- photogalery-picture -->
-				</div>
-				<!-- photogalery-slider-content -->
-				
-				<div class="photogalery-slider-content">
-					<div class="photogalery-picture">
-						<img class="photogalery-picture-img" src="img/pictures/galery/galery_5.jpg" alt="роза1">
-						<div class="photogalery-picture-wrapper">
-					
-							<div class="photogalery-picture-like">
-								<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-								<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-								<span>1243</span>
-							</div>
-						</div>
-					</div>
-					<!-- photogalery-picture -->
-				</div>
-				<!-- photogalery-slider-content -->
-				
-				<div class="photogalery-slider-content">
-					<div class="photogalery-picture">
-						<img class="photogalery-picture-img" src="img/pictures/galery/galery_1.jpg" alt="роза1">
-						<div class="photogalery-picture-wrapper">
-					
-							<div class="photogalery-picture-like">
-								<img class="photogalery-picture-like-bookmarks" src="img/catalog/bookmarks.png" alt="bookmarks">
-								<!-- <img src="img/catalog/bookmarks.png" alt=""> -->
-								<span>1243</span>
-							</div>
-						</div>
-					</div>
-					<!-- photogalery-picture -->
-				</div>
-				<!-- photogalery-slider-content -->
-
-
-			</div>
-			<!-- /.photogalery-slider -->
+	</section>
 
 
 
 
 
-
-
-
-
+<!-- Каталог продукции -->
+	<section class="catalog">
+		<div class="catalog-header">
+			<h2>Каталог продукции</h2>
 		</div>
-	</div>
-
-
-
-
-
-
-
-</div>
-	
-
-
-
-				
-				
-				
-				
-				
-				
-				
-				
-
-
-
-
-
-
-
-
-
-	
-
-<!-- Отзывы -->
-		<section class="reviews">
-			<div class="reviews-wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="reviews-slider-home">
-							<div class="reviews-slider-home-content">
-								<div class="col-lg-8 col-lg-offset-2">
-									<p>Donec maximus nisi ut ligula elementum elementum. </p>
-									<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentum.</p>
-									<span><img src="img/quote.png" alt="quote">JOHN jones</span>
-								</div>
-								<!-- /.col-lg-8 -->
-							</div>
-							<!-- reviews-slider-home-content -->
-
-
-							<div class="reviews-slider-home-content">
-								<div class="col-lg-8 col-lg-offset-2">
-									<p>Donec maximus nisi ut ligula elementum elementum. </p>
-									<p>Fusce interdum, tellus sed aliquet condimentum, erat est congue velit, sed blandit lectus sem ut lectus. Vivamus consectetur fermentum.</p>
-									<span><img src="img/quote.png" alt="quote">David jones</span>
-								</div>
-								<!-- /.col-lg-8 -->
-							</div>
-							<!-- reviews-slider-home-content -->
-						
-						</div>			
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="catalog-content catalog-content-top">
+						<h3>Для монтажа кабеля</h3>
+						<ul>
+							<li>Гофротруба</li>
+							<li>Инструмент</li>
+							<li>Крепеж для кабеля и гофры</li>
+							<li>Кабельные наконечники, гильзы</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
 					</div>
 				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="catalog-content catalog-content-top">
+						<h3>Арматура СИП</h3>
+						<ul>
+							<li>Анкерно-подвесная арматура</li>
+							<li>Элементы оснащения опор</li>
+							<li>Соединительная арматура</li>
+							<li>Средства защиты и устройства заземления</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+					<div class="catalog-content catalog-content-top">
+						<h3>Электротехника</h3>
+						<ul>
+							<li>Розетки, выключатели VIKO</li>
+							<li>Коробки монтажные</li>
+							<li>Автоматика Eaton (Moeller)</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-3 -->
 			</div>
-		</section>
+			<div class="row">
+				<div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12">
+					<div class="catalog-content catalog-content-bottom">
+						<h3>Кабель - провод</h3>
+						<ul>
+							<li>Кабель - провод с ПВХ изоляцией</li>
+							<li>Силовые кабели с пропитанной бумажной изоляцией</li>
+							<li>Кабель для водопогружного насоса (двигателя)</li>
+							<li>Кабели контрольные</li>
+							<li>Кабели силовые гибкие в резиновой изоляции</li>
+							<li>Кабели силовые с XLPE изоляцией 6...35 кВ</li>
+							<li>Коаксиальный кабель TV</li>
+							<li>Витая пара (кабель для интернета)</li>
+							<li>Самонесущие изолированные провода СИП</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-5 -->
+				<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+					<div class="catalog-content catalog-content-bottom">
+						<h3>Продукция SICAME</h3>
+						<ul>
+							<li>Соединительная арматура Sicame</li>
+							<li>Кабельные муфты</li>
+							<li>Ограничители перенапряжений</li>
+							<li>Предохранитель-разъединитель</li>
+							<li>Элементы защиты от грозовых перенапряжений</li>
+							<li>Гасители вибрации</li>
+							<li>Спиральная арматура</li>
+							<li>Изоляторы</li>
+							<li>Элементы оснащения опор Sicame</li>
+							<li>Анкерно-подвесная арматура Sicame</li>
+							<li>Средства защиты и устройства заземления Sicame</li>
+							<li>Инструмент для монтажа кабеля</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-5 -->
+			</div>
 
 
-<!-- Клиенты -->
-<div class="client">
-	<div class="head client-head">
-		<h3>Our <span>clients.</span></h3>
-	</div>
 
-	<div class="client-picture">
-		<div class="client-picture-bg"></div>
-	</div>
-	<div class="client-picture">
-		<div class="client-picture-bg"></div>
-	</div>
-	<div class="client-picture client-picture-center">
-		<div class="client-picture-bg"></div>
-	</div>
-	<div class="client-picture">
-		<div class="client-picture-bg"></div>
-	</div>
-	<div class="client-picture">
-		<div class="client-picture-bg"></div>
-	</div>
-</div>
 
+
+
+
+
+
+			<!-- <div class="row catalog-content-two">
+				<div class="col-lg-4 col-lg-offset-1 col-sm-6">
+					<div class="catalog-content">
+						<h3>Кабель - провод</h3>
+						<ul>
+							<li>Кабель - провод с ПВХ изоляцией</li>
+							<li>Силовые кабели с пропитанной бумажной изоляцией</li>
+							<li>Кабель для водопогружного насоса (двигателя)</li>
+							<li>Кабели контрольные</li>
+							<li>Кабели силовые гибкие в резиновой изоляции</li>
+							<li>Кабели силовые с XLPE изоляцией 6...35 кВ</li>
+							<li>Коаксиальный кабель TV</li>
+							<li>Витая пара (кабель для интернета)</li>
+							<li>Самонесущие изолированные провода СИП</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
+					</div>
+				</div>
+				/.col-lg-4
+				<div class="col-lg-4 col-lg-offset-1 col-sm-6">
+					<div class="catalog-content">
+						<h3>Продукция SICAME</h3>
+						<ul>
+							<li>Соединительная арматура Sicame</li>
+							<li>Кабельные муфты</li>
+							<li>Ограничители перенапряжений</li>
+							<li>Предохранитель-разъединитель</li>
+							<li>Элементы защиты от грозовых перенапряжений</li>
+							<li>Гасители вибрации</li>
+							<li>Спиральная арматура</li>
+							<li>Изоляторы</li>
+							<li>Элементы оснащения опор Sicame</li>
+							<li>Анкерно-подвесная арматура Sicame</li>
+							<li>Средства защиты и устройства заземления Sicame</li>
+							<li>Инструмент для монтажа кабеля</li>
+						</ul>
+						<div class="catalog-content-btn">
+							<a href="#"><i class="fas fa-download"></i>Скачать прайс</a>
+						</div>
+					</div>
+				</div>
+				/.col-lg-4
+			</div>
+			/.row -->
+		</div>
+	</section>
+
+<!-- Уникальное предложение -->
+	<div class="offer">
+		<h4>Получите уникальное предложение прямо сейчас!</h4>
+		<div class="offer-btn">
+			<button><i class="fas fa-arrow-circle-right"></i>Узнать больше</button>
+		</div>
+	</div> 
 
 <!-- Футер -->
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				
-
-				<div class="col-lg-2">
-					<div class="footer-logo">
-						<a href="#">logo</a>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="footer-nav">
+						<span> &copy; 2018 ООО «Ведущая Торговая Компания»</span>
+						<!-- <hr> -->
+						<a href="#">О компании</a>
+						<a href="#">Покупателю</a>
+						<a href="#">Оплата и доставка</a>
+						<a href="#">Отправить отсканированный список</a>
 					</div>
-					<div class="footer-city">
-						<i class="fas fa-map-marker-alt"></i>
-						<select class="footer-city">
-							<option>New York</option>
-							<option>Denver</option>
-							<option>Moscow</option>
-							<option>Kazan</option>
-							<option>Ufa</option>
-						</select>
-					</div>
-					<div class="footer-phone">
-						<a href="#"><i class="fas fa-phone"></i>000 654 43 43</a>
-					</div>
-					<div class="footer-social">
-						<a href="#"><img src="img/footer/instagram.png" alt="instagram"></a>
-						<a href="#"><img src="img/footer/twitter.png" alt="twitter"></a>
-						<a href="#"><img src="img/footer/facebook.png" alt="facebook"></a>
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-2 col-md-6 col-lg-offset-1 col-sm-6 col-xs-12">
+					<div class="footer-contacts">
+						<h4>Контакты</h4>
+						<a href="tell:+70443609232"><i class="fas fa-phone"></i>(044) 360-92-32</a>
+						<a href="tell:+70673609232"><i class="fas fa-phone"></i>(067) 360-92-32</a>
+						<a href="tell:+70503609232"><i class="fas fa-phone"></i>(050) 360-92-32</a>
+						<a href="mailto: info@cableland.ru"><i class="fas fa-envelope"></i><span>info@cableland.ru</span></a>
 					</div>
 				</div>
 				<!-- /.col-lg-2 -->
-				<div class="col-lg-4">
-					<div class="footer-icons">
-						<a href="#"><img src="img/footer/bookmarks.png" alt="избранное"></a>
-						<div class="footer-icons-basket">
-							<a href="#"><img src="img/footer/basket.png" alt="корзина"></a>
-							<span>0</span>
-						</div>
+				<div class="col-lg-3 col-lg-offset-2 col-sm-12 col-sm-12 col-xs-12">
+					<div class="footer-btn btn">
+						<button><i class="fas fa-phone"></i>Заказать обратный звонок</button>
 					</div>
-					
-					<div class="footer-newsletter">
-						<div class="footer-newsletter-content">
-							<strong><span>News</span>letter</strong>
-							<small>Sing up for the news</small>
-						</div>
-						<div class="footer-newsletter-form">
-							<form action="#">
-								<input type="text" placeholder="Email">
-								<input type="submit" value="Subscribe >>">
-							</form>
-						</div>
+					<div class="footer-social">
+						<a href="#"><i class="fab fa-vk"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
 					</div>
-
-
-
 				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-6">
-					<div class="footer-nav">	
-						<div class="footer-nav-link">
-							<ul>
-								<li><a href="#">Guarantee</a></li>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="#">Goods replacement</a></li>
-								<li><a href="#">Order cancellation</a></li>
-								<li><a href="#">Bonuses policy</a></li>
-								<li><a href="#">flower delivery</a></li>
-							</ul>
-						</div>	
-						<div class="footer-nav-link">
-							<ul>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="#">Goods replacement</a></li>
-								<li><a href="#">Order cancellation</a></li>
-								<li><a href="#">Bonuses policy</a></li>
-								<li><a href="#">flower delivery</a></li>
-							</ul>
-						</div>
-						<div class="footer-nav-link footer-nav-link-colder">
-							<ul>
-								<li><a href="#">All bouquets</a></li>
-								<li><a href="#">Popular</a></li>
-								<li><a href="#">Novelty</a></li>
-								<li><a href="#">Roses</a></li>
-								<li><a href="#">Low price</a></li>
-								<li><a href="#">News</a></li>
-							</ul>
-						</div>	
-					
-						</div>
-				</div>
-				<!-- /.col-lg-6 -->
-
-
-
-
+				<!-- /.col-lg-3 -->
 			</div>
 		</div>
 	</footer>
 
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="form styler/jquery.formstyler.min.js"></script>
-<script src="js/main.js"></script>
+<script>
+    $(document).ready(function(){
+		  /* Фиксированное меню */
+		  var topmenu =$('.nav').offset().top;
+		  $(function(){
+		  $(window).scroll(function() {
+		  var top = $(document).scrollTop();
 
-
-
+			console.log ( top );
+		  if(top > topmenu) { $('.nav').addClass('fixed'); } else {    $('.nav').removeClass('fixed');   } 
+		  });
+		  });
+		  /* Мобильное меню */
+		  $('.slider').slick({
+		      infinite: true,
+		      slidesToShow: 1,
+		      slidesToScroll: 1,
+		      arrows: false,
+		      dots: true
+		    });
+		});
+  </script>
   </body>
 </html>
