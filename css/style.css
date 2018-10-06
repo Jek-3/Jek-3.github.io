@@ -208,6 +208,87 @@ body {
   padding: 30px;
   text-align: center;
 }
+/* Футер */
+.footer {
+  background-color: #373737;
+  color: #ffffff;
+}
+.footer__nav {
+  border-bottom: 2px solid #9b9b9b;
+}
+.footer__nav-list {
+  text-align: center;
+}
+.footer__nav-list-link {
+  position: relative;
+  display: inline-block;
+  margin-right: 60px;
+  line-height: 70px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.footer__nav-list-link::after {
+  content: '';
+  left: 0;
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  -webkit-transition: .8s;
+  -moz-transition: .8s;
+  -ms-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+}
+.footer__nav-list-link:hover {
+  cursor: pointer;
+}
+.footer__nav-list-link:hover:after {
+  background-color: #70c424;
+  -webkit-transition: .8s;
+  -moz-transition: .8s;
+  -ms-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+}
+.footer__contacts {
+  border-bottom: 2px solid #9b9b9b;
+  padding: 20px;
+  text-align: center;
+}
+.footer__contacts-phone {
+  display: inline-block;
+  border-right: 2px solid #9b9b9b;
+  padding-right: 20px;
+  height: 35px;
+}
+.footer__contacts-phone a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 35px;
+  font-size: 20px;
+  letter-spacing: 0.9px;
+  margin-right: 5px;
+}
+.footer__contacts-phone img {
+  width: 20px;
+}
+.footer__contacts-email {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.footer__contacts-email-link {
+  color: #ffffff;
+}
+.footer__license {
+  padding: 15px;
+  text-align: center;
+}
+.footer__license-text {
+  color: #cdcdcd;
+}
 @media all and (max-width: 500px) {
   .header {
     position: relative;
@@ -249,6 +330,7 @@ body {
   .nav {
     height: 100%;
     margin-top: 35px;
+    border-bottom: 3px solid #70c424;
   }
   .nav__links {
     display: none;
@@ -262,6 +344,46 @@ body {
   }
   .nav__link:hover:after {
     background-color: transparent;
+  }
+  .head {
+    padding-top: 10px;
+  }
+  .head__tittle {
+    font-size: 20px;
+  }
+  .vacansy {
+    padding: 10px;
+  }
+  .vacansy__content {
+    padding: 20px;
+  }
+  .vacansy__content-head {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .vacansy__content-head span {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+  .vacansy__up {
+    padding: 20px;
+  }
+  .footer__nav {
+    display: none;
+  }
+  .footer__contacts {
+    text-align: center;
+  }
+  .footer__contacts-phone {
+    display: block;
+    border-right: none;
+    padding-right: 0;
+  }
+  .footer__contacts-email {
+    display: block;
+    margin-left: 0;
   }
 }
 .active {
