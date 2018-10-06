@@ -14,7 +14,7 @@
     <!-- Шапка -->
    <header class="header">
        <div class="header__left">
-        <h1 class="header__left-head">Andriy <small>M</small> <a class="header__mobile" href="#">=</a></h1>
+        <h1 class="header__left-head">Andriy <small>M</small></h1>
         
         <p class="header__left-text">Робота за кордоном від <span>Андрія Марисюка</span></p>
        </div>
@@ -33,23 +33,30 @@
    </header>
 
 <div class="nav">
-    <ul>
-        <li class="nav__link nav__link-vacansy">Вакансії <small>11</small></li>
-        <li class="nav__link">Оформлення документів</li>
-        <li class="nav__link">Гарантії</li>
-        <li class="nav__link">Про себе</li>
-        <li class="nav__link">ЗМІ про мене</li>
-    </ul>
+    <div class="header__menu">
+        <a class="header__menu-mobile" href="#"></a>
+    </div>
+    <div class="nav__links">
+        <ul>
+            <li class="nav__link nav__link-vacansy">Вакансії <small>11</small></li>
+            <li class="nav__link">Оформлення документів</li>
+            <li class="nav__link">Гарантії</li>
+            <li class="nav__link">Про себе</li>
+            <li class="nav__link">ЗМІ про мене</li>
+        </ul>
+    </div>
 </div>
 
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.header__menu-mobile').click(function (event) {
+            $('.nav__links').toggleClass('active');
+        });
+    });
+</script>
 
 
-    
 
 </body>
 </html>
