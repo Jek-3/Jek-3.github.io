@@ -6,6 +6,7 @@ body {
 .active {
   display: block;
 }
+/* Шапка сайта */
 .header {
   position: relative;
   padding: 30px 35px;
@@ -156,6 +157,57 @@ body {
   -ms-transition: .8s;
   -o-transition: .8s;
   transition: .8s;
+}
+/* Заголовок */
+.head__tittle {
+  font-weight: normal;
+  font-size: 25px;
+  margin: 38px auto;
+  text-align: center;
+}
+/* Вакансії */
+.vacansy {
+  background-color: #fafafa;
+  padding: 20px 30px;
+  margin-bottom: 500px;
+}
+.vacansy__content {
+  background-color: #ffffff;
+  padding: 30px 30px 50px 30px;
+}
+.vacansy__content-head {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.vacansy__content-head span {
+  text-transform: none;
+  float: right;
+  padding: 5px 8px;
+  font-size: 16px;
+  background-color: #70c424;
+  color: #ffffff;
+  font-style: normal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.vacansy__content-list {
+  margin-top: 25px;
+}
+.vacansy__content-list-features {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.vacansy__up {
+  display: block;
+  font-weight: 700;
+  color: #007b9f;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
 }
 @media all and (max-width: 500px) {
   .header {
