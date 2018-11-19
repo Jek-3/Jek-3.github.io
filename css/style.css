@@ -755,9 +755,11 @@ span.news_active {
   margin-bottom: 75px;
 }
 .chat__new {
+  position: relative;
   display: inline-block;
   width: 67px;
   height: 489px;
+  float: left;
   background-color: #ffffff;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 5px;
@@ -812,6 +814,31 @@ span.news_active {
 .chat__new-slider-content:focus {
   outline: none;
 }
+.chat__new-slider-arrow-next {
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  margin: 0 auto;
+  width: 100%;
+  height: 25px;
+  background-color: #ffffff;
+}
+.chat__new-slider-arrow-next:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #8152b7;
+  border-top: none;
+  border-left: none;
+  margin: 0 auto;
+  margin-top: 5px;
+  cursor: pointer;
+  --webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 .chat__message {
   display: inline-block;
   float: right;
@@ -822,6 +849,7 @@ span.news_active {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  margin-top: -45px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
