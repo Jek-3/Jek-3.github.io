@@ -1,116 +1,1003 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Andriy M</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Шапка -->
-   <header id="top" class="header">
-       <div class="header__left">
-        <h1 class="header__left-head">Andriy <small>M</small></h1>
-        
-        <p class="header__left-text">Робота за кордоном від <span>Андрія Марисюка</span></p>
-       </div>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="/favicon.ico"> -->
 
+    <title>Want Play</title>
 
-       <div class="header__right">
-        <span class="header__right-connection">Завжди на зв'язку</span>
-        
-        <div class="header__right-phone">
-            <a href="tel:+380961500100">+38 096 15 00 100</a>
-            
-            <img src="img/viber.png" alt="viber">
-            <img src="img/whatsapp.png" alt="whatsapp">
-        </div>
-       </div>
-   </header>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="form styler/jquery.formstyler.css">
+	<link rel="stylesheet" href="slick/slick.css">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
-<!-- Навигация -->
-<div class="nav">
-    <div class="header__menu">
-        <a class="header__menu-mobile" href="#"></a>
-    </div>
-    <div class="nav__links">
-        <ul>
-            <li class="nav__link nav__link-vacansy">Вакансії <small>11</small></li>
-            <li class="nav__link">Оформлення документів</li>
-            <li class="nav__link">Гарантії</li>
-            <li class="nav__link">Про себе</li>
-            <li class="nav__link">ЗМІ про мене</li>
-        </ul>
-    </div>
-</div>
+  <body>
 
-<!-- Заголовок -->
-<div class="head">
-    <h2 class="head__tittle">Актуальні вакансії на сьогодні (3.10)</h2>
-</div>
+		<!-- навигация -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="header__logo">
+							<a href="#"><img src="img/logo.png" alt="логотип сайта"></a>
+						</div>	
+					</div>
 
+					<div class="col-lg-6">
+						<div class="header__nav">
+							<ul class="header__nav-list">	
+								<li class="header__nav-list-link"><a href="#">Новости</a></li>
+								<li class="header__nav-list-link"><a href="#">Найти партнера по игре</a></li>
+								<li class="header__nav-list-link"><a href="#">Создать клан/гильдию</a></li>
+								<li class="header__nav-list-link"><a href="#">Форум</a></li>
+							</ul>
+						</div>						                              
+					</div>
+					<!-- /.col-lg-6 -->
 
-<!-- Вакансії -->
-
-<div class="vacansy">
-    <div class="vacansy__content">
-        <h3 class="vacansy__content-head">LG - телевізори, комплектування дрібних деталей <span>Вакансія безкоштовна</span></h3>
-        <hr>
-
-        <ul class="vacansy__content-list">
-            <li class="vacansy__content-list-features">Країна: Польща</li>
-            <li class="vacansy__content-list-features">Місто: MLAWA</li>
-        </ul>
-    </div>
-
-    <a class="vacansy__up" href="#top">Піднятись на початок сторінки</a>
-</div>
-
-
-
-<!-- Футер -->
-
-<footer class="footer">
-    <div class="footer__nav">
-        <ul class="footer__nav-list">
-            <li class="footer__nav-list-link">Вакансії</li>
-            <li class="footer__nav-list-link">Оформлення документів</li>
-            <li class="footer__nav-list-link">Гарантії</li>
-            <li class="footer__nav-list-link">Про себе</li>
-            <li class="footer__nav-list-link">ЗМІ про мене</li>
-        </ul>
-    </div>
-    <div class="footer__contacts">
-        <div class="footer__contacts-phone">
-            <a href="tel:+380961500100">+38 096 15 00 100</a>
-            
-            <img src="img/viber.png" alt="viber">
-            <img src="img/whatsapp.png" alt="whatsapp">
-        </div>
-        <div class="footer__contacts-email">
-            <a href="#" class="footer__contacts-email-link">robota@andriym.com</a>
-        </div>
-    </div>
-    <div class="footer__license">
-        <p class="footer__license-text">Робота за кордоном від Андрія Марисюка &copy; 2018. Ліцензія номер 1615 видана міністерством соціальної політики України. Всі права захищено</p>
-    </div>
-</footer>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.header__menu-mobile').click(function (event) {
-            $('.nav__links').toggleClass('active');
-        });
-    });
-</script>
+					<div class="col-lg-3">
+						<div class="header__account">
+							<div class="header__acvount-avatar">
+								<a href="#" class="header__account-user">
+									<img src="img/arrow.svg" alt="" class="header__account-user-arrow">
+									<span class="header__account-user-wrapper">
+										<img src="img/queen.png" alt="фото пользователя" class="header__account-user-avatar">
+									</span>
+									<span class="header__account-user-name">jongood</span>
+								</a>
+								<button class="header__account-btn">Выйти</button>
+							</div>
+							
+						</div>
+					</div>
+					<!-- /.col-lg-3 -->
+					<div class="col-lg-1">
+						<div class="header__language">
+							<!-- <div class="flag"></div> -->
+							<img src="img/language/Ru.png" alt="русский язык" class="header__language-flag">
+							<select name="header__language-list" class="header__language-list">
+								<option value="1">RU</option>
+								<option value="2">EN</option>
+								<option value="3">DE</option>
+								<option value="4">UA</option>
+							</select>
+						</div>
+						<div class="header__color">
+							<input class="switcher__input" type="checkbox" name="watched" id="switcher">
+						    <label class="switcher__label" for="switcher"></label>
+						    <span class="header__color-text">White</span>
+						</div>
+					</div>
+					
+					
+					
 
 
 
-</body>
+				</div>
+			</div>
+		</header>
+
+
+		<!-- панель игрока -->
+		<section class="player">
+			<div class="container">
+				<div class="row">
+					<div class="player__wrapper">
+
+						<div class="col-lg-2">
+							<div class="player__avatar">
+								<div class="player__avatar-wrapper">
+									<img src="img/queen.png" alt="аватар клана" class="nav__player-avatar-foto">
+								</div>
+							</div>
+							<img src="img/crown_yellow1.png" alt="корона" class="player__crown">
+						</div>
+						<!-- /.col-lg-2 -->
+						<div class="col-lg-7 reset">
+							<div class="player__nav">
+								<ul class="player__nav-list">
+									<li class="player__nav-list-link">
+										<a href="#">
+											<div class="hr__vertical"></div>
+											<div class="player__nav-list-link-foto wood"></div>
+											<span class="player__nav-list-link-text">Дерево</span> 
+										</a>
+									</li>
+									<li class="player__nav-list-link">
+										<a href="#">
+											<div class="hr__vertical"></div>
+											<div class="player__nav-list-link-foto guild"></div>
+											<span class="player__nav-list-link-text">О гильдии</span> 
+										</a>
+									</li>
+									<li class="player__nav-list-link">
+										<a href="#">
+											<div class="hr__vertical"></div>
+											<div class="player__nav-list-link-foto party"></div>
+											<span class="player__nav-list-link-text">Учасники</span> 
+										</a>
+									</li>
+									<li class="player__nav-list-link">
+										<a href="#">
+											<div class="hr__vertical"></div>
+											<div class="player__nav-list-link-foto blog"></div>
+											<span class="player__nav-list-link-text">Блог</span> 
+										</a>
+									</li>
+									<li class="player__nav-list-link">
+										<a href="#">
+											<div class="hr__vertical"></div>
+											<div class="player__nav-list-link-foto news"></div>
+											<span class="player__nav-list-link-text">Новости</span> 
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /.col-lg-7 -->
+						<div class="col-lg-3">
+							<button class="player__btn">Создать гильдию/клан</button>
+						</div>
+						<!-- /.col-lg-3 -->
+
+					</div>
+					
+
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<!-- игра -->
+		<section  class="play">
+			<div class="container">
+				<div class="row">
+					
+
+					<div class="col-lg-8">
+						<div class="players">
+							<!-- игроки -->
+							<div class="players__block">
+								<div class="players__wrapp margin-none">
+									<a href="#"><img src="img/players/skill_sword.png" alt="скилл" class="players__skill"></a>
+									<a href="#"><img src="img/crown_yellow1.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/queen.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="line__horizontally-small"></div>
+								<div class="line__vertical line__vertical-small-left-center"></div>
+								<div class="line__vertical line__vertical-small-right-center"></div>
+							</div>
+							<div class="players__block">
+								<div class="players__wrapp margin-none">
+									<a href="#"><img src="img/players/lance.png" alt="скилл" class="players__skill"></a>
+									<a href="#"><img src="img/players/crown_gray.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_1.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-left-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<a href="#"><img src="img/players/bow.png" alt="скилл" class="players__skill"></a>
+									<a href="#"><img src="img/players/crown_gray.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_1.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<a href="#"><img src="img/players/messenger.png" alt="скилл" class="players__skill"></a>
+									<a href="#"><img src="img/players/crown_gray.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_1.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-right-center"></div>
+								</div>
+
+								<div class="line__vertical line__vertical-small-left"></div>
+								<div class="line__horizontally"></div>
+								<div class="line__vertical line__vertical-small-right"></div>
+							</div>
+							<div class="players__block">
+								<div class="players__wrapp margin-none">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-left-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+									<div class="line__vertical line__vertical-right-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-right"></div>
+								</div>
+							</div>
+							<div class="players__block">
+								<div class="players__wrapp margin-none">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-left-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+									<div class="line__vertical line__vertical-right-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/secondary/avatar_2.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-right"></div>
+								</div>
+							</div>
+							<div class="players__block">
+								<div class="players__wrapp margin-none">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-left-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+									<div class="line__vertical line__vertical-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+									<div class="line__vertical line__vertical-right-center"></div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="line__vertical line__vertical-right"></div>
+								</div>
+							</div>
+							<div class="players__block">
+								<div class="players__wrapp margin-none">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>											
+								</div>
+								<div class="players__wrapp">
+									<img src="img/players/skill_none.png" alt="скилл" class="players__skill">
+									<a href="#"><img src="img/players/crown_dark.png" alt="статус игрока" class="players__rank"></a>
+									<div class="players__avatar">
+										<div class="players__avatar-wrapper">
+											<a href="#"><img src="img/players/avatar_none.png" alt="аватар игрока" class="players__avatar-foto"></a>
+										</div>
+									</div>
+									<div class="players__nav">
+										<ul class="players__nav-list">
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/info.png" alt="информаци об игроке"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/messages.png" alt="сообщения с игроком"></a>
+											</li>
+											<li class="players__nav-list-link">
+												<a href="#"><img src="img/players/nav/pencil.png" alt="написать игроку"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							
+
+
+
+							
+							<!-- новости -->
+							<div class="players__news">
+								<div class="players__news-tabs players__news-tab-list">
+									<span class="players__news-tab players__news-tab-list-link developments news_active">Последние события</span>
+									<span class="players__news-tab players__news-tab-list-link ads">Объявления</span>
+								</div>
+								<div class="players__news-tab-content">
+									<div class="players__news-tab_item news_active">
+										 <div class="players__news-content-wrapper">
+		                                   	<h4 class="players__news-content-header">новые возможности сервиса </h4>
+		                                    <p class="players__news-content-text">
+		                                    	Любое возмущение затухает, если электромеханическая система опасна. Устойчивость
+												опасна. Под воздействием изменяемого вектора гравитации прибор апериодичен.
+												Динамическое уравнение Эйлера косвенно даёт большую проекцию на оси, чем
+												жидкий угол крена, даже если рамки подвеса буду ориентированы под прямым углом
+		                                    </p>
+	                                   </div>
+	                                   <a href="#" class="players__news-content-arrow"></a>
+									</div>
+									<div class="players__news-tab_item">
+										<div class="players__news-content-wrapper">
+		                                   	<h4 class="players__news-content-header">объявление</h4>
+		                                    <p class="players__news-content-text">
+		                                    	объявление объявление объявление объявление объявление объявление 
+		                                    	объявление объявление объявление объявление объявление объявление 
+		                                    </p>
+	                                   </div>
+	                                   <a href="#" class="players__news-content-arrow"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-8 -->
+
+
+
+					<div class="col-lg-4">
+						<div class="chat">
+							<!-- новые игроки -->
+							<div class="chat__new">
+								<h3 class="chat__new-header">
+									Новые игроки
+									<div class="hr__horizontally"></div>
+								</h3>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-avatar">
+									<a href="#" class="chat__new-avatar-wrapper">
+										<img src="img/secondary/avatar-new.png" alt="аватар нового игрока" class="chat__new-avatar-foto">
+									</a>
+								</div>
+								<div class="chat__new-arrow"></div>
+							</div>
+							<!-- чат -->
+							<div class="chat__message">
+								<div class="chat__message-tabs">
+									<span class="chat__message-tab">Чат</span>
+									<span class="chat__message-tab message__active">Сообщения</span>
+									<span class="chat__message-tab"><img src="img/settings.png" alt="настройка чата"></span>
+								</div>
+								<div class="chat__message-tab-content">
+									<div class="chat__message-tab_item">Содержимое 1</div>
+									<div class="chat__message-tab_item message__active">
+										
+										<div class="messages">
+											<div class="messages__tabs">
+												<span class="messages__tab">Все</span>
+												<span class="messages__tab messages__active">Общий</span>
+												<span class="messages__tab">Бой</span>
+												<span class="messages__tab">Группа</span>
+											</div>
+											<div class="messages__tab-content">
+												<div class="messages__tab_item">Содержимое 1</div>
+												<div class="messages__tab_item messages__active">
+													<div class="chat__message-communication">
+											    		<div class="chat__message-interlocutor">
+											    			<div class="chat__message-name"><a href="#">Ерик</a></div>		    			
+											    			<p class="chat__message-text">Привет, что будим делать? Это очень важный момент!</p>
+											    		</div>
+												    	<div class="chat__message-my">
+												    		<div class="chat__message-name"><a href="#">Я</a></div>		    			
+											    			<p class="chat__message-text">Думаю решить его вместе с ночным эльфом</p>
+												    	</div>
+											    		<div class="chat__message-interlocutor">
+											    			<div class="chat__message-name"><a href="#">Ерик</a></div>		    			
+											    			<p class="chat__message-text">Он уехал копать картошку к бабушке на дачу</p>
+											    		</div>
+												    	<div class="chat__message-my">
+												    		<div class="chat__message-name"><a href="#">Я</a></div>		    			
+											    			<p class="chat__message-text">Во дела, там у него инета нет</p>
+												    	</div>
+
+														<div class="chat__message-input">
+															<div class="chat__message-input-line-left"></div>
+															<button class="chat__message-input-btn-smile"><img src="img/smile.png" alt="отправить сообщение"></button>
+															<textarea name="#" rows="1">
+															</textarea>
+															<!-- <div class="send"></div> -->
+															<div class="chat__message-input-line-right"></div>
+															<button class="chat__message-input-btn-send"><img src="img/send.png" alt="отправить сообщение"></button>
+														</div>
+
+
+
+											    	</div>
+												</div>
+												<div class="messages__tab_item">Содержимое 3</div>
+												<div class="messages__tab_item">Содержимое 4</div>
+											</div>
+										</div>
+
+
+
+									</div>
+									<div class="chat__message-tab_item">Содержимое 3</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+				<!-- футер -->
+				<footer class="footer">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-lg-2">
+								<img src="img/footer_logo.png" alt="логотип" class="footer__logo">
+							</div>
+							<!-- /.col-lg-2 -->
+							<div class="col-lg-4">
+								<div class="footer__nav">
+									<ul class="footer__nav-list">
+										<li class="footer__nav-list-link"><a href="#">Главная</a></li>
+										<li class="footer__nav-list-link"><a href="#">О нас</a></li>
+										<li class="footer__nav-list-link"><a href="#">разработчики</a></li>
+									</ul>
+								</div>
+								<div class="footer__description">
+									<span>Flaticon is a project by Freepik</span>
+									<span>&copy; 2013-2018 Freepik Company S.L. All rights reserved.</span>
+								</div>
+							</div>
+							<!-- /.col-lg-3 -->
+							<div class="col-lg-3 col-lg-offset-3">
+								<button class="footer__btn">Связатся с нами</button>
+									<div class="footer__connection-social">
+
+										<a href="#" class="footer__social-link">
+											<div class="footer__social-link-wrap">
+											<div class="footer__social-link-wrap-bg">
+												<div class="footer__social-link-wrap-foto telegram"></div>
+											</div>
+										</div>
+										</a>
+										<a href="#" class="footer__social-link">
+											<div class="footer__social-link-wrap">
+											<div class="footer__social-link-wrap-bg">
+												<div class="footer__social-link-wrap-foto youtube"></div>
+											</div>
+										</div>
+										</a>
+										<a href="#" class="footer__social-link">
+											<div class="footer__social-link-wrap">
+											<div class="footer__social-link-wrap-bg">
+												<div class="footer__social-link-wrap-foto twitter"></div>
+											</div>
+										</div>
+										</a>
+										<a href="#" class="footer__social-link">
+											<div class="footer__social-link-wrap">
+											<div class="footer__social-link-wrap-bg">
+												<div class="footer__social-link-wrap-foto instagram"></div>
+											</div>
+										</div>
+										</a>
+										<a href="#" class="footer__social-link">
+											<div class="footer__social-link-wrap">
+											<div class="footer__social-link-wrap-bg">
+												<div class="footer__social-link-wrap-foto vk"></div>
+											</div>
+										</div>
+										</a>
+									</div>
+							</div>
+							<!-- /.col-lg-4 -->
+
+
+
+						</div>
+					</div>
+				</footer>
+
+			<div class="article-slider">
+				<div class="article-slider-content">
+					<img src="img/secondary/avatar-new.png" alt="">
+				</div>
+				<div class="article-slider-content">
+					<img src="img/secondary/avatar-new.png" alt="">
+				</div>
+				<div class="article-slider-content">
+					<img src="img/secondary/avatar-new.png" alt="">
+				</div>	
+			</div>
+														
+
+
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/autoresize.js"></script>
+	<script src="form styler/jquery.formstyler.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	
+
+  </body>
 </html>
